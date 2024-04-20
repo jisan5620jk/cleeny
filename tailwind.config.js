@@ -13,7 +13,7 @@ export default {
         HoverColor: ["#0a2a99"],
         HeadingColor: ["#00197e"],
         TextColor: ["#3a4268"],
-        BodyBg:["#f3f4f8"],
+        BodyBg: ["#f3f4f8"],
         BorderColor: ["#0202021a"],
       },
       screens: {
@@ -76,9 +76,6 @@ export default {
           from: { transform: "rotate(0deg)" },
           to: { transform: "rotate(360deg)" },
         },
-        btnPulse:{
-          
-        }
       },
       animation: {
         movebtn: "movebtn 3s ease-in-out infinite",
@@ -87,7 +84,7 @@ export default {
         zoomInOut: "zoomInOut 2s alternate infinite",
         swing: "swing 1s ease-in-out 1s forwards infinite alternate",
         headerSlideDown:
-          " 500ms ease-in-out 0s normal none 1 running headerSlideDown",
+          "500ms ease-in-out 0s normal none 1 running headerSlideDown",
       },
       boxShadow: {
         cases: "0px 10px 15px rgba(187, 187, 187, 0.2)",
