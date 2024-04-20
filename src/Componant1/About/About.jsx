@@ -37,7 +37,7 @@ const About = () => {
             <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
               Making Your House Clean For Looks As a New
             </h1>
-            <p className="font-Poppins text-TextColor-0 font-light">
+            <p className="font-Poppins text-TextColor2 font-light">
               Competently repurpose go forward benefits without goal-oriented
               ROI conveniently target e-business opportunities whereas parallel
               task multimedia based web services

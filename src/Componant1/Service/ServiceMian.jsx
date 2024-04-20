@@ -1,18 +1,21 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRightLong, FaCheck } from "react-icons/fa6";
-import serviceThumb from "/public/images/service-img.png"
-import serviceThumb2 from "/public/images/service-img2.png"
-import serviceThumb3 from "/public/images/service-img3.png"
-import serviceIcon from "/public/images/service-icon.png"
-import serviceIcon2 from "/public/images/service-icon2.png"
-import serviceIcon3 from "/public/images/service-icon3.png"
+import serviceThumb from "/public/images/service-img.png";
+import serviceThumb2 from "/public/images/service-img2.png";
+import serviceThumb3 from "/public/images/service-img3.png";
+import serviceIcon from "/public/images/service-icon.png";
+import serviceIcon2 from "/public/images/service-icon2.png";
+import serviceIcon3 from "/public/images/service-icon3.png";
 import ServiceCard from "./ServiceCard";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 const serviceData = [
   {
     id: 1,
-    serviceThumb: serviceThumb, 
+    serviceThumb: serviceThumb,
     serviceIcon: serviceIcon,
     serviceTitle: `Office Floor Cleaning`,
     serviceListIcon: <FaCheck />,
@@ -24,7 +27,7 @@ const serviceData = [
   },
   {
     id: 2,
-    serviceThumb: serviceThumb2, 
+    serviceThumb: serviceThumb2,
     serviceIcon: serviceIcon2,
     serviceTitle: `House Wash & Clean`,
     serviceListIcon: <FaCheck />,
@@ -36,7 +39,7 @@ const serviceData = [
   },
   {
     id: 3,
-    serviceThumb: serviceThumb3, 
+    serviceThumb: serviceThumb3,
     serviceIcon: serviceIcon3,
     serviceTitle: `House Kitchen Cleaning`,
     serviceListIcon: <FaCheck />,
@@ -48,7 +51,7 @@ const serviceData = [
   },
   {
     id: 4,
-    serviceThumb: serviceThumb, 
+    serviceThumb: serviceThumb,
     serviceIcon: serviceIcon,
     serviceTitle: `Office Floor Cleaning`,
     serviceListIcon: <FaCheck />,
@@ -61,6 +64,34 @@ const serviceData = [
 ];
 
 const ServiceMian = () => {
+  const settings = {
+    loop: true,
+    spaceBetween: 30,
+    speed: 1000,
+    centeredSlides: true,
+    initialSlide: 1,
+    autoplay: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1400: {
+        slidesPerView: 3,
+      },
+    },
+  };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
     <section className="pt-28">
       <div className="Container">
@@ -68,43 +99,47 @@ const ServiceMian = () => {
           <h5 className="font-Inter font-medium text-PrimaryColor-0">
             OUR SERVICES
           </h5>
-          <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white mt-3 mb-3">
+          <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white mt-3">
             Professional cleeny Services
           </h1>
         </div>
-        <div>
-          <div>
-            {serviceData.map(
-              ({
-                id,
-                serviceThumb,
-                serviceIcon,
-                serviceTitle,
-                serviceListIcon,
-                serviceListContent,
-                serviceListContent2,
-                serviceUrl,
-                buttonContent,
-                buttonIcon,
-              }) => {
-                return (
-                  <div key={id} className="p-2">
-                    <ServiceCard
-                      serviceThumb={serviceThumb}
-                      serviceIcon={serviceIcon}
-                      serviceTitle={serviceTitle}
-                      serviceListIcon={serviceListIcon}
-                      serviceListContent={serviceListContent}
-                      serviceListContent2={serviceListContent2}
-                      serviceUrl={serviceUrl}
-                      buttonContent={buttonContent}
-                      buttonIcon={buttonIcon}
-                    />
-                  </div>
-                );
-              }
-            )}
-          </div>
+        <div className="pb-16 mt-[60px]">
+          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
+            <div>
+              {serviceData.map(
+                ({
+                  id,
+                  serviceThumb,
+                  serviceIcon,
+                  serviceTitle,
+                  serviceListIcon,
+                  serviceListContent,
+                  serviceListContent2,
+                  serviceUrl,
+                  buttonContent,
+                  buttonIcon,
+                }) => {
+                  return (
+                    <SwiperSlide key={id}>
+                      <div className="pb-[80px]">
+                        <ServiceCard
+                          serviceThumb={serviceThumb}
+                          serviceIcon={serviceIcon}
+                          serviceTitle={serviceTitle}
+                          serviceListIcon={serviceListIcon}
+                          serviceListContent={serviceListContent}
+                          serviceListContent2={serviceListContent2}
+                          serviceUrl={serviceUrl}
+                          buttonContent={buttonContent}
+                          buttonIcon={buttonIcon}
+                        />
+                      </div>
+                    </SwiperSlide>
+                  );
+                }
+              )}
+            </div>
+          </Swiper>
         </div>
       </div>
     </section>

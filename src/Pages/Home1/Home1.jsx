@@ -1,6 +1,7 @@
 import About from "../../Componant1/About/About";
 import Banner from "../../Componant1/Banner/Banner";
 import Feature from "../../Componant1/Feature/Feature";
+import ProcessCard from "../../Componant1/Process/Process";
 import Service from "../../Componant1/Service/Service";
 
 const Home1 = () => {
@@ -10,6 +11,7 @@ const Home1 = () => {
       <Feature />
       <About />
       <Service />
+      <ProcessCard/>
     </>
   );
 };

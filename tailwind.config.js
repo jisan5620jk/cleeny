@@ -15,6 +15,7 @@ export default {
         TextColor: ["#3a4268"],
         BodyBg: ["#f3f4f8"],
         BorderColor: ["#0202021a"],
+        BorderColor2: ["#223FA2"],
       },
       screens: {
         sm: "576px",
@@ -89,6 +90,7 @@ export default {
       boxShadow: {
         cases: "0px 10px 15px rgba(187, 187, 187, 0.2)",
         shade: "0px 0px 20px rgba(187, 187, 187, 0.2)",
+        shadow: "0px 30px 50px rgba(152,178,240,0.5)",
       },
       lineHeight: {},
     },

@@ -15,7 +15,7 @@ const Banner = () => {
               BEST CLEENY AGENCY
             </h5>
             <h1 className="font-Inter font-extrabold text-white text-[65px] leading-[72px] mt-6 mb-6">
-              NEED CLEENY? CALL{" "}
+              NEED CLEENY? CALL
               <span className="text-PrimaryColor-0">US TODAY</span>
             </h1>
             <p className="font-Poppins text-white opacity-80 mb-9 w-10/12">
