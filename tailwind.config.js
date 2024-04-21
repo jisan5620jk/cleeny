@@ -80,7 +80,7 @@ export default {
       },
       animation: {
         movebtn: "movebtn 3s ease-in-out infinite",
-        wiggle: "wiggle 3s ease-in-out infinite",
+        wiggle: "wiggle 5s ease-in-out infinite",
         rotational: "rotational 10s linear infinite",
         zoomInOut: "zoomInOut 2s alternate infinite",
         swing: "swing 1s ease-in-out 1s forwards infinite alternate",

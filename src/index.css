@@ -45,7 +45,32 @@ span.swiper-pagination-bullet {
   width: 10px !important;
 }
 
-
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #ffc803 !important;
+}
+
+.portfolio .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.portfolio span.swiper-pagination-bullet {
+  background: #ccd9f9 !important;
+  height: 8px !important;
+  width: 40px !important;
+  border-radius: 5px;
+}
+
+.portfolio span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #316fff !important;
+}
+
+.swiper-slide:hover .portfolio-content,
+.swiper-slide.swiper-slide-active .portfolio-content {
+  bottom: 0;
+}
+
+.swiper-slide:hover .portfolio-thumb-title,
+.swiper-slide.swiper-slide-active .portfolio-thumb-title {
+  left: 25px;
+  opacity: 1;
 }

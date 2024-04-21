@@ -50,7 +50,7 @@ const serviceData = [
     buttonIcon: <FaArrowRightLong />,
   },
   {
-    id: 4,
+    id: 1,
     serviceThumb: serviceThumb,
     serviceIcon: serviceIcon,
     serviceTitle: `Office Floor Cleaning`,
@@ -68,8 +68,6 @@ const ServiceMian = () => {
     loop: true,
     spaceBetween: 30,
     speed: 1000,
-    centeredSlides: true,
-    initialSlide: 1,
     autoplay: true,
     breakpoints: {
       320: {
