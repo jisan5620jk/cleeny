@@ -50,7 +50,7 @@ const serviceData = [
     buttonIcon: <FaArrowRightLong />,
   },
   {
-    id: 1,
+    id: 4,
     serviceThumb: serviceThumb,
     serviceIcon: serviceIcon,
     serviceTitle: `Office Floor Cleaning`,

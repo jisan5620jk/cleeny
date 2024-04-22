@@ -56,7 +56,7 @@ const pricingData = [
 
 const Pricing = () => {
   return (
-    <section className="pt-28">
+    <section className="py-28">
       <div className="Container">
         <div className="text-center">
           <div>

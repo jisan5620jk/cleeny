@@ -1,69 +1,54 @@
 /* eslint-disable no-unused-vars */
-import { FaArrowRightLong, FaCheck } from "react-icons/fa6";
-import serviceThumb from "/public/images/service-img.png";
-import serviceThumb2 from "/public/images/service-img2.png";
-import serviceThumb3 from "/public/images/service-img3.png";
-import serviceIcon from "/public/images/service-icon.png";
-import serviceIcon2 from "/public/images/service-icon2.png";
-import serviceIcon3 from "/public/images/service-icon3.png";
-import ServiceCard from "./ServiceCard";
+import testiImg from "/public/images/testi-thumb-2.png";
+import testiImg2 from "/public/images/testi-thumb.png";
+import testiIcon from "/public/images/testi-icon.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import { MdOutlineStarPurple500 } from "react-icons/md";
+import TestmonialCard from "./TestmonialCard";
 
-const serviceData = [
+const testiData = [
   {
     id: 1,
-    serviceThumb: serviceThumb,
-    serviceIcon: serviceIcon,
-    serviceTitle: `Office Floor Cleaning`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
-    serviceUrl: "/",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
+    testiImg: testiImg,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiName: "Jhon D. Alexon",
+    testiDesignation: "Web Developer",
+    testiTitle: "Service Quality",
+    testiDesc: `“Competently cultivate worldwide e-tailers through to principles
+                professionally engineer high-payoff deliverables without excet
+                Rapidiously network effective”`,
+    testiIcon: testiIcon,
   },
   {
     id: 2,
-    serviceThumb: serviceThumb2,
-    serviceIcon: serviceIcon2,
-    serviceTitle: `House Wash & Clean`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
-    serviceUrl: "/",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
+    testiImg: testiImg2,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiName: "Anjelina Watson",
+    testiDesignation: "UI/UX Designer",
+    testiTitle: "Service Quality",
+    testiDesc: `“Competently cultivate worldwide e-tailers through to principles
+                professionally engineer high-payoff deliverables without excet
+                Rapidiously network effective”`,
+    testiIcon: testiIcon,
   },
   {
     id: 3,
-    serviceThumb: serviceThumb3,
-    serviceIcon: serviceIcon3,
-    serviceTitle: `House Kitchen Cleaning`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
-    serviceUrl: "/",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
-  },
-  {
-    id: 1,
-    serviceThumb: serviceThumb,
-    serviceIcon: serviceIcon,
-    serviceTitle: `Office Floor Cleaning`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
-    serviceUrl: "/",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
+    testiImg: testiImg,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiName: "Jhon D. Alexon",
+    testiDesignation: "Web Developer",
+    testiTitle: "Service Quality",
+    testiDesc: `“Competently cultivate worldwide e-tailers through to principles
+                professionally engineer high-payoff deliverables without excet
+                Rapidiously network effective”`,
+    testiIcon: testiIcon,
   },
 ];
 
-const ServiceMian = () => {
+const Testimonial = () => {
   const settings = {
     loop: true,
     spaceBetween: 30,
@@ -77,10 +62,10 @@ const ServiceMian = () => {
         slidesPerView: 2,
       },
       992: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       1400: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
     },
   };
@@ -91,45 +76,41 @@ const ServiceMian = () => {
     },
   };
   return (
-    <section className="pt-28">
+    <section className="bg-[url('/public/images/testi-bg.png')] bg-cover bg-center bg-no-repeat py-28">
       <div className="Container">
         <div className="text-center">
           <h5 className="font-Inter font-medium text-PrimaryColor-0">
-            OUR SERVICES
+            TESTIMONIALS
           </h5>
           <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white mt-3">
-            Professional cleeny Services
+            Our Customer’s Feedback
           </h1>
         </div>
-        <div className="pb-16 mt-[60px]">
+        <div className="mt-[60px]">
           <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
             <div>
-              {serviceData.map(
+              {testiData.map(
                 ({
                   id,
-                  serviceThumb,
-                  serviceIcon,
-                  serviceTitle,
-                  serviceListIcon,
-                  serviceListContent,
-                  serviceListContent2,
-                  serviceUrl,
-                  buttonContent,
-                  buttonIcon,
+                  testiImg,
+                  testiRatingIcon,
+                  testiName,
+                  testiDesignation,
+                  testiTitle,
+                  testiDesc,
+                  testiIcon,
                 }) => {
                   return (
                     <SwiperSlide key={id}>
                       <div className="pb-[80px]">
-                        <ServiceCard
-                          serviceThumb={serviceThumb}
-                          serviceIcon={serviceIcon}
-                          serviceTitle={serviceTitle}
-                          serviceListIcon={serviceListIcon}
-                          serviceListContent={serviceListContent}
-                          serviceListContent2={serviceListContent2}
-                          serviceUrl={serviceUrl}
-                          buttonContent={buttonContent}
-                          buttonIcon={buttonIcon}
+                        <TestmonialCard
+                          testiImg={testiImg}
+                          testiRatingIcon={testiRatingIcon}
+                          testiName={testiName}
+                          testiDesignation={testiDesignation}
+                          testiTilte={testiTitle}
+                          testiDesc={testiDesc}
+                          testiIcon={testiIcon}
                         />
                       </div>
                     </SwiperSlide>
@@ -144,4 +125,4 @@ const ServiceMian = () => {
   );
 };
 
-export default ServiceMian;
+export default Testimonial;
