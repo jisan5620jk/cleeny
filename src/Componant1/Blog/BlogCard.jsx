@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const BlogCard = ({blogThumb,thumbDate,thumbMonth,blogUrl,blogTitle,blogDesc,btnContent,btnIcon}) => {
     return (
-      <div className="bg-[#f3f4f8] group transition-all duration-500 hover:bg-white hover:shadow-cases">
+      <div className="bg-[#f3f4f8] group transition-all duration-500 hover:bg-white hover:shadow-cases rounded-md">
         <div className="relative overflow-hidden rounded-md">
           <img src={blogThumb} className="transition-all duration-500 scale-100 group-hover:scale-110"/>
           <div className="absolute left-5 bottom-4">

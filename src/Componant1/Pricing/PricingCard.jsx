@@ -20,7 +20,7 @@ const PricingCard = ({
 }) => {
   return (
     <div className="group bg-[#f4f5f8] rounded-xl relative z-10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:opacity-0 before:bg-SecondaryColor-0 before:rounded-xl before:-z-10 before:transition-all before:duration-500 hover:before:h-full hover:before:opacity-100 hover:before:top-0">
-      <div className="absolute top-1/2 left-1/2 -translate-1/2 animate-zoomInOut -z-10">
+      <div className="absolute top-1/4 left-0 right-0 animate-zoomInOut -z-10">
         <img src={pricingShape} />
       </div>
       <div className="relative z-10 -top-6 mb-3">
