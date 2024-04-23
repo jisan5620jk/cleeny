@@ -3,6 +3,7 @@ import { FaArrowRightLong, FaCheck } from "react-icons/fa6";
 import serviceThumb from "/public/images/service-img.png";
 import serviceThumb2 from "/public/images/service-img2.png";
 import serviceThumb3 from "/public/images/service-img3.png";
+import serviceShape from "/public/images/service-shape.png";
 import serviceIcon from "/public/images/service-icon.png";
 import serviceIcon2 from "/public/images/service-icon2.png";
 import serviceIcon3 from "/public/images/service-icon3.png";
@@ -17,6 +18,7 @@ const serviceData = [
     id: 1,
     serviceThumb: serviceThumb,
     serviceIcon: serviceIcon,
+    serviceShape: serviceShape,
     serviceTitle: `Office Floor Cleaning`,
     serviceListIcon: <FaCheck />,
     serviceListContent: `House Floor Cleaning`,
@@ -29,6 +31,7 @@ const serviceData = [
     id: 2,
     serviceThumb: serviceThumb2,
     serviceIcon: serviceIcon2,
+    serviceShape: serviceShape,
     serviceTitle: `House Wash & Clean`,
     serviceListIcon: <FaCheck />,
     serviceListContent: `House Floor Cleaning`,
@@ -41,6 +44,7 @@ const serviceData = [
     id: 3,
     serviceThumb: serviceThumb3,
     serviceIcon: serviceIcon3,
+    serviceShape: serviceShape,
     serviceTitle: `House Kitchen Cleaning`,
     serviceListIcon: <FaCheck />,
     serviceListContent: `House Floor Cleaning`,
@@ -53,6 +57,7 @@ const serviceData = [
     id: 4,
     serviceThumb: serviceThumb,
     serviceIcon: serviceIcon,
+    serviceShape: serviceShape,
     serviceTitle: `Office Floor Cleaning`,
     serviceListIcon: <FaCheck />,
     serviceListContent: `House Floor Cleaning`,
@@ -63,7 +68,7 @@ const serviceData = [
   },
 ];
 
-const ServiceMian = () => {
+const ServiceMain = () => {
   const settings = {
     loop: true,
     spaceBetween: 30,
@@ -101,7 +106,7 @@ const ServiceMian = () => {
             Professional cleeny Services
           </h1>
         </div>
-        <div className="pb-16 mt-[60px]">
+        <div className="mt-[60px]">
           <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
             <div>
               {serviceData.map(
@@ -109,6 +114,7 @@ const ServiceMian = () => {
                   id,
                   serviceThumb,
                   serviceIcon,
+                  serviceShape,
                   serviceTitle,
                   serviceListIcon,
                   serviceListContent,
@@ -123,6 +129,7 @@ const ServiceMian = () => {
                         <ServiceCard
                           serviceThumb={serviceThumb}
                           serviceIcon={serviceIcon}
+                          serviceShape={serviceShape}
                           serviceTitle={serviceTitle}
                           serviceListIcon={serviceListIcon}
                           serviceListContent={serviceListContent}
@@ -144,4 +151,4 @@ const ServiceMian = () => {
   );
 };
 
-export default ServiceMian;
+export default ServiceMain;

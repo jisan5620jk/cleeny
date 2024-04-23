@@ -22,25 +22,25 @@ const Footer = () => {
         <img src={footerShape} />
       </div>
       <div className="Container">
-        <div className="grid grid-cols-3 items-center bg-[url('/public/images/subscribe-bg.png')] bg-center bg-cover bg-no-repeat py-[30px] px-10 rounded-b-3xl mb-[120px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:items-center bg-[url('/public/images/subscribe-bg.png')] bg-center bg-cover bg-no-repeat py-[30px] px-5 sm:px-10 rounded-b-3xl mb-[120px]">
           <div className="col-span-1">
-            <div className="flex items-center gap-6">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-6">
               <div className="w-[70px] h-[70px] rounded-full flex items-center justify-center bg-white">
                 <img src={callImg} />
               </div>
-              <div>
+              <div className="flex-1">
                 <p className="text-HeadingColor-0 font-Poppins font-light text-[15px]">
                   Call Us Now
                 </p>
                 <Link to={"/"}>
-                  <button className="font-Inter font-semibold text-HeadingColor-0 text-[22px] mt-1">
+                  <button className="font-Inter text-left font-semibold text-HeadingColor-0 text-[22px] mt-1">
                     +980 765 (546) 900
                   </button>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="col-span-2 text-right flex gap-[70px] justify-end items-center">
+          <div className="col-span-2 text-left lg:text-right flex flex-col gap-7 lg:gap-[70px] justify-end lg:items-center">
             <h4 className="font-Inter font-semibold text-white text-[28px]">
               Subscribe Now
             </h4>
@@ -51,7 +51,7 @@ const Footer = () => {
                 id="email"
                 placeholder="Enter E-Mail*"
                 required
-                className="lg:w-[300px] 2xl:w-[394px] h-[56px] rounded-md bg-white text-TextColor-0 placeholder:text-TextColor-0 px-5 py-2"
+                className="w-full lg:w-[300px] 2xl:w-[394px] h-[56px] rounded-md bg-white text-TextColor-0 placeholder:text-TextColor-0 px-5 py-2"
               />
               <div className="absolute right-0 top-0">
                 <button
@@ -64,7 +64,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <img src={footerLogo} />
             <p className="font-Poppins text-white mt-7 mb-9">
@@ -221,10 +221,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-center py-6 border-t border-[#334899] mt-24">
+        <div className="text-left sm:text-center py-6 border-t border-[#334899] mt-24">
           <p className="font-Poppins text-white">
-            © Copyrights 2024 Cleeny All rights reserved by{" "}
-            <span className="text-PrimaryColor-0">Dream IT</span>
+            © Copyrights 2024 Cleeny All rights reserved by
+            <span className="text-PrimaryColor-0"> Dream IT</span>
           </p>
         </div>
       </div>

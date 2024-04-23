@@ -50,13 +50,13 @@ const Navbar = () => {
       <header className="bg-SecondaryColor-0 overflow-hidden md:block">
         <div className="Container flex items-center justify-between">
           <div className="flex items-center gap-10">
-            <p className="font-Poppins text-[15px] text-white flex items-center gap-1 relative before:absolute before:top-1/2 before:right-0 before:w-[1px] before:h-5 before:bg-BorderColor-0 before-:translate-1/2">
+            <p className="font-Poppins text-[15px] text-white flex items-center gap-1 relative before:absolute before:top-1/2 before:right-0 before:w-[1px] before:h-5 before:bg-BorderColor-0 before-:translate-1/2 hidden">
               <IoLocationOutline className="text-xl relative bottom-[2px]" />
               102/B New Market, Sandigo-USA
             </p>
             <Link
               to={"/"}
-              className="font-Poppins text-[15px] text-white flex items-center gap-2"
+              className="font-Poppins text-[15px] text-white flex items-center gap-2 hidden"
             >
               <BsEnvelope size={"18"} />
               example@gmail.com
@@ -97,7 +97,7 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 hidden">
               <h6 className="flex items-center gap-2 text-sm text-white font-Poppins font-light">
                 <IoMdCall className="w-[14px] h-[14px] rounded-sm bg-white text-xs text-SecondaryColor-0" />
                 Call :

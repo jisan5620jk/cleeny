@@ -2,6 +2,8 @@
 import processIcon from "/public/images/work-icon.png";
 import processIcon2 from "/public/images/work-icon2.png";
 import processIcon3 from "/public/images/work-icon3.png";
+import processShape from "/public/images/work-shape3.png";
+import processShape2 from "/public/images/work-shape4.png";
 import ProcessCard from "./ProcessCard";
 
 const serviceData = [
@@ -30,7 +32,9 @@ const serviceData = [
 
 const ServiceMian = () => {
   return (
-    <section className="pt-28">
+    <section className="pt-28 pb-10 relative">
+      <div className="processShape"><img src={processShape} className="absolute left-0 top-1/3 -translate-y-1/2 animate-dance3 hidden 2xl:block"/></div>
+      <div className="processShape2"><img src={processShape2} className="absolute right-[5%] top-[20%] -translate-y-1/2 animate-movebtn hidden 2xl:block"/></div>
       <div className="Container">
         <div className="text-center">
           <div>
@@ -40,14 +44,14 @@ const ServiceMian = () => {
             <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
               Easy Steps to Works
             </h1>
-            <p className="font-Poppins text-TextColor-0 font-light">
+            <p className="font-Poppins text-TextColor-0 font-light 2xl:w-3/4 mx-auto">
               Competently repurpose go forward benefits without goal-oriented
               ROI <br/> conveniently target e-business opportunities whereas
             </p>
           </div>
         </div>
         <div className="pb-16 mt-[60px]">
-          <div className="grid grid-cols-3 gap-7">
+          <div className="grid grid-cols-1 gap-7">
             {serviceData.map(
               ({ id, processIcon, processTitle, boxNumber, processDesc }) => {
                 return (

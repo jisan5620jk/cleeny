@@ -85,7 +85,7 @@ const Portfolio = () => {
   return (
     <section className="bg-[url('/public/images/portfolio-bg.png')] bg-cover bg-center bg-no-repeat py-28 portfolio">
       <div className="Container">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col gap-7 sm:items-center justify-between">
           <div>
             <h5 className="font-Inter font-medium text-SecondaryColor-0">
               CLEENY PORTFOLIO

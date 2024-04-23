@@ -13,7 +13,7 @@ const blogData = [
     thumbDate: "02",
     thumbMonth: "MAY",
     blogUrl: "/",
-    blogTitle: "Newest cleaning Tools for House 2024",
+    blogTitle: "Newest Cleaning Tools for House 2024",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
     btnContent: "Read More",
@@ -25,7 +25,7 @@ const blogData = [
     thumbDate: "12",
     thumbMonth: "MAY",
     blogUrl: "/",
-    blogTitle: "10 Most Popular cleeny Tips for House",
+    blogTitle: "10 Most Popular Cleaning Tips for House",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
     btnContent: "Read More",
@@ -37,7 +37,7 @@ const blogData = [
     thumbDate: "25",
     thumbMonth: "MAY",
     blogUrl: "/",
-    blogTitle: "Floor cleeny & WashingUse New Equipment",
+    blogTitle: "Floor Cleaning Use New Equipment",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
     btnContent: "Read More",
@@ -49,7 +49,7 @@ const Blog = () => {
   return (
     <section className="py-28">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:items-center">
           <div>
             <div>
               <h5 className="font-Inter font-medium text-SecondaryColor-0">
@@ -60,7 +60,7 @@ const Blog = () => {
               </h1>
             </div>
           </div>
-          <div className="flex justify-end">
+          <div className="flex lg:justify-end">
             <Link to={"/"}>
               <button className="primary-btn">
                 Veiw All Blog
@@ -70,7 +70,7 @@ const Blog = () => {
           </div>
         </div>
         <div className="mt-[60px]">
-          <div className="grid grid-cols-3 gap-7">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
             {blogData.map(
               ({
                 id,

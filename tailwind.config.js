@@ -37,6 +37,10 @@ export default {
           "0%": { transform: "translateX(0px)" },
           "100%": { transform: "translateX(235px)" },
         },
+        dance3: {
+          "0%": { transform: "translateX(0px)" },
+          "100%": { transform: "translateX(-35px)" },
+        },
         shrink: {
           "0%": { transform: "translateY(20px) translateX(-50%)" },
           "50%": { transform: "translateY(-20px) translateX(-50%)" },
@@ -83,6 +87,8 @@ export default {
         wiggle: "wiggle 5s ease-in-out infinite",
         rotational: "rotational 10s linear infinite",
         zoomInOut: "zoomInOut 2s alternate infinite",
+        dance2: "dance2 2s alternate infinite",
+        dance3: "dance3 2s alternate infinite",
         swing: "swing 1s ease-in-out 1s forwards infinite alternate",
         headerSlideDown:
           "500ms ease-in-out 0s normal none 1 running headerSlideDown",

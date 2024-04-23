@@ -2,6 +2,7 @@ import { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import { FaArrowRightLong, FaCircleCheck } from "react-icons/fa6";
 import aboutThumb from "/public/images/about-thumb.png";
+import aboutShape from "/public/images/about-shape2.png";
 import icon from "/public/images/counter-icon.png";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
@@ -30,7 +31,8 @@ const About = () => {
               />
             </div>
           </div>
-          <div>
+          <div className="relative">
+            <img src={aboutShape} className="absolute -top-6 right-0 animate-rotational"/>
             <h5 className="font-Inter font-medium text-SecondaryColor-0">
               ABOUT US
             </h5>
@@ -42,7 +44,7 @@ const About = () => {
               ROI conveniently target e-business opportunities whereas parallel
               task multimedia based web services
             </p>
-            <div className="flex justify-between mt-7">
+            <div className="flex flex-col gap-8 justify-between mt-7">
               <div>
                 <ul>
                   <li className="flex items-center gap-2 font-Inter text-HeadingColor-0 mb-[14px]">

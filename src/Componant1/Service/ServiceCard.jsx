@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const ServiceCard = ({
   serviceThumb,
   serviceIcon,
+  serviceShape,
   serviceTitle,
   serviceListIcon,
   serviceListContent,
@@ -18,6 +19,11 @@ const ServiceCard = ({
         <img src={serviceThumb} />
       </div>
       <div className="w-11/12 bg-HoverColor-0 rounded-ee-md rounded-r-md rounded-b-md px-8 pb-6 -mt-8 relative z-10 before:absolute before:right-0 before:w-0 before:h-full before:rounded-ee-md before:rounded-r-md before:rounded-b-md before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0">
+        <img
+          src={serviceShape}
+          className="absolute bottom-10 right-10 animate-dance2 -z-10 opacity-0 transition-all
+           duration-500 group-hover:opacity-100"
+        />
         <div className="w-[80px] h-[80px] rounded-full bg-white transition-all duration-500 flex justify-center items-center group-hover:bg-PrimaryColor-0 group-hover:rotate-[360deg] relative -top-10">
           <img src={serviceIcon} />
         </div>

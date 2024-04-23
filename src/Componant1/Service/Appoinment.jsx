@@ -8,7 +8,7 @@ const Appoinment = () => {
             Get A Free Appoinmnet
           </h1>
         </div>
-        <form action="#" method="post" className="grid grid-cols-4 gap-7 items-center mt-14">
+        <form action="#" method="post" className="grid grid-cols-1 gap-7 items-center mt-14">
           <input
             type="text"
             name="name"
