@@ -123,7 +123,7 @@ const Navbar = () => {
           {/* main Navbar */}
           <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[70px] bg-white">
             {/* website Logo */}
-            <div className=" w-48 lg:w-52 lg:p-4">
+            <div className=" w-48 lg:w-52">
               <Link to="/">
                 <img
                   src={Logo}
