@@ -15,7 +15,7 @@ const ProcessCard = ({processShape,processIcon,processTitle,boxNumber,processDes
         <h5 className="font-Inter font-semibold inline-block text-HeadingColor-0 text-2xl relative z-10 before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-7 before:h-[2px] before:transition-all before:duration-500 before:bg-SecondaryColor-0 group-hover:before:w-full group-hover:left-0 mt-9 pb-3 mb-7">
           {processTitle}
         </h5>
-        <p className="font-Poppins text-TextColor-0 2xl:w-3/4 mx-auto">
+        <p className="font-Poppins text-TextColor-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
           {processDesc}
         </p>
       </div>

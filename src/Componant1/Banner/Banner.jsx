@@ -7,14 +7,14 @@ import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/public/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[1000px] lg:h-[814px] flex items-center">
+    <section className="bg-[url('/public/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[75rem] lg:h-[814px] flex items-center">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-36 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-36 md:gap-32 lg:gap-0 items-center">
           <div>
             <h5 className="font-Inter text-lg text-PrimaryColor-0 font-medium">
               BEST CLEENY AGENCY
             </h5>
-            <h1 className="font-Inter font-extrabold text-white text-[34px] leading-[44px] lg:text-[58px] 2xl:text-[65px] leading-[72px] mt-6 mb-6">
+            <h1 className="font-Inter font-extrabold text-white text-[34px] leading-[44px] sm:text-6xl sm:leading-[70px] lg:text-[58px] 2xl:text-[65px] 2xl:leading-[72px] mt-6 mb-6">
               NEED CLEENY? CALL
               <span className="text-PrimaryColor-0">US TODAY</span>
             </h1>
@@ -30,7 +30,7 @@ const Banner = () => {
             </Link>
           </div>
           <div className="relative">
-            <div className="bg-[url('/public/images/hero-shape3.png')] bg-no-repeat bg-contain bg-right h-[130px] w-[205px] flex flex-col items-center justify-center gap-1 absolute left-0 -top-[8rem] -left-[6rem] -top-[2rem]">
+            <div className="bg-[url('/public/images/hero-shape3.png')] bg-no-repeat bg-contain bg-right h-[130px] w-[205px] flex flex-col items-center justify-center gap-1 absolute left-0 sm:-top-[6rem] -top-[8rem] lg:-left-[6rem] lg:-top-[5rem] xl:-top-[2rem]">
               <TypeAnimation
                 sequence={["Help Line", 1000, "Call Us", 1000]}
                 wrapper="span"

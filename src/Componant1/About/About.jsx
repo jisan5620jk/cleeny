@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section className="py-[120px]">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-24 items-center">
           <div className="relative">
             <img src={aboutThumb} />
             <div className="absolute top-[4.5rem] right-[3rem]">
@@ -44,7 +44,7 @@ const About = () => {
               ROI conveniently target e-business opportunities whereas parallel
               task multimedia based web services
             </p>
-            <div className="flex flex-col gap-8 justify-between mt-7">
+            <div className="flex flex-col md:flex-row gap-8 justify-between mt-7">
               <div>
                 <ul>
                   <li className="flex items-center gap-2 font-Inter text-HeadingColor-0 mb-[14px]">

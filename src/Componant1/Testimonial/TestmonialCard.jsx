@@ -2,7 +2,7 @@
 const TestmonialCard = ({testiImg,testiRatingIcon,testiName,testiDesignation,testiTilte,testiDesc,testiIcon}) => {
     return (
       <div className="px-5 sm:px-10 relative bg-HoverColor-0 group rounded-xl z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
-        <div className="flex flex-col sm:items-center gap-5 pt-14">
+        <div className="flex flex-col lg:items-center gap-5 pt-14">
           <div>
             <img src={testiImg} />
           </div>

@@ -22,7 +22,7 @@ const Footer = () => {
         <img src={footerShape} />
       </div>
       <div className="Container">
-        <div className="grid grid-cols-1 md:grid-cols-3 md:items-center bg-[url('/public/images/subscribe-bg.png')] bg-center bg-cover bg-no-repeat py-[30px] px-5 sm:px-10 rounded-b-3xl mb-[120px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:items-center bg-[url('/public/images/subscribe-bg.png')] bg:left lg:bg-center md:gap-7 lg:gap-0 bg-cover bg-no-repeat py-[30px] px-5 sm:px-10 rounded-b-3xl mb-[120px]">
           <div className="col-span-1">
             <div className="flex flex-col sm:flex-row sm:items-center gap-6">
               <div className="w-[70px] h-[70px] rounded-full flex items-center justify-center bg-white">
@@ -40,7 +40,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-2 text-left lg:text-right flex flex-col gap-7 lg:gap-[70px] justify-end lg:items-center">
+          <div className="col-span-2 text-left lg:text-right flex flex-col lg:flex-row gap-7 lg:gap-4 xl:gap-[70px] justify-end lg:items-center">
             <h4 className="font-Inter font-semibold text-white text-[28px]">
               Subscribe Now
             </h4>
@@ -64,7 +64,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
           <div>
             <img src={footerLogo} />
             <p className="font-Poppins text-white mt-7 mb-9">
