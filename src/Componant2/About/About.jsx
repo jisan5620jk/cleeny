@@ -1,43 +1,28 @@
-import { useState } from "react";
-import FsLightbox from "fslightbox-react";
+
 import { FaArrowRightLong, FaCircleCheck } from "react-icons/fa6";
-import aboutThumb from "/public/images/about-thumb.png";
-import aboutShape from "/public/images/about-shape2.png";
+import aboutThumb from "/public/images/about-thumb2.png";
+import aboutShape from "/public/images/about-shape3.png";
+import aboutShape2 from "/public/images/about-shape4.png";
 import icon from "/public/images/counter-icon.png";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
-import { CiPlay1 } from "react-icons/ci";
 
 const About = () => {
-  const [toggler, setToggler] = useState(false);
   return (
-    <section className="py-[120px]">
+    <section className="py-[120px] bg-[url('/public/images/about-bg.png')] bg-cover bg-center bg-no-repeat">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-24 items-center">
-          <div className="relative">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-20 items-center">
+          <div className="relative z-10">
             <img src={aboutThumb} />
-            <div className="absolute top-[4.5rem] right-[3rem]">
-              <button
-                className="h-[90px] w-[90px] rounded-full bg-SecondaryColor-0 border-4 border-white text-white flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-SecondaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping"
-                onClick={() => setToggler(!toggler)}
-              >
-                <CiPlay1 size={"30"} />
-              </button>
-              <FsLightbox
-                toggler={toggler}
-                sources={[
-                  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-                ]}
-              />
-            </div>
+            <img src={aboutShape} className="absolute top-0 right-0 -z-10 animate-movebtn"/>
+            <img src={aboutShape2} className="absolute bottom-0 left-[10%] -z-10 animate-movebtn"/>
           </div>
-          <div className="relative">
-            <img src={aboutShape} className="absolute -top-6 right-0 animate-rotational"/>
+          <div>
             <h5 className="font-Inter font-medium text-SecondaryColor-0">
               ABOUT US
             </h5>
             <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
-              Making Your House Clean For Looks As a New
+              Making Your House Clean <br/> For Looks As a New
             </h1>
             <p className="font-Poppins text-TextColor-0 font-light">
               Competently repurpose go forward benefits without goal-oriented
