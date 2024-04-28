@@ -46,7 +46,7 @@ const Process = () => {
             </h1>
             <p className="font-Poppins text-TextColor-0 font-light lg:w-3/5 2xl:w-3/4 mx-auto">
               Competently repurpose go forward benefits without goal-oriented
-              ROI <br className="hidden"/> conveniently target e-business opportunities whereas
+              ROI <br className="hidden lg:block"/> conveniently target e-business opportunities whereas
             </p>
           </div>
         </div>

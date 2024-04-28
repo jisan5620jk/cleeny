@@ -7,7 +7,10 @@ import { Link } from "react-router-dom";
 const WhyChoose = () => {
   return (
     <section className="pt-[120px] bg-[url('/public/images/contact-bg.png')] bg-cover bg-center bg-no-repeat relative">
-      <img src={WhyChooseShape} className="absolute left-20 -bottom-[88px] hidden 2xl:block" />
+      <img
+        src={WhyChooseShape}
+        className="absolute left-20 -bottom-[88px] hidden 2xl:block"
+      />
       <div className="Container">
         <div className="grid grid-cols-2 gap-24 2xl:gap-[142px]">
           <div className="bg-SecondaryColor-0 rounded-t-md pt-10 pb-[60px]">
@@ -63,9 +66,9 @@ const WhyChoose = () => {
           </div>
           <div>
             <h5 className="font-Inter font-medium text-PrimaryColor-0">
-              CLEENY PORTFOLIO
+              WHY CHOOSE US?
             </h5>
-            <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white mt-3">
+            <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-3">
               Dramatically negotiate high <br /> payoff services cleaning
             </h1>
             <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-7 mt-12">
@@ -77,7 +80,8 @@ const WhyChoose = () => {
                   House cleeny
                 </h5>
                 <p className="font-Poppins text-white opacity-70 text-[15px] mt-3">
-                  Competently repurpose go forward benefits conveniently target
+                  Competently repurpose go forward benefits
+                  <br className="hidden 2xl:block" /> conveniently target
                   e-business
                 </p>
               </div>
@@ -91,7 +95,8 @@ const WhyChoose = () => {
                   instrument
                 </h5>
                 <p className="font-Poppins text-white opacity-70 text-[15px] mt-3">
-                  Competently repurpose go forward benefits conveniently target
+                  Competently repurpose go forward benefits
+                  <br className="hidden 2xl:block" /> conveniently target
                   e-business
                 </p>
               </div>

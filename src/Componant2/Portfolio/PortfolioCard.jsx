@@ -20,7 +20,7 @@ const PortfolioCard = ({
         <div className="portfolio-content bg-SecondaryColor-0 rounded-s-md rounded-e-md border-b-4 border-PrimaryColor-0 absolute -bottom-full transition-all duration-500 left-0 flex justify-between items-center w-11/12 pt-7 px-4 lg:px-6 2xl:px-[30px] pb-8">
           <div>
             <p className="flex items-center gap-2 text-white font-Inter text-sm">
-              <div className="text-base">{portfolioLocateIcon}</div>
+              <span className="text-base">{portfolioLocateIcon}</span>
               {portfolioLocation}
             </p>
             <Link to={portfolioUrl}>
