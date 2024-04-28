@@ -54,7 +54,7 @@ const serviceData = [
 const Service = () => {
 
   return (
-    <section className="pt-28 relative z-10 before:absolute before:w-full before:h-[70%] before:-z-10 before:top-0 before:left-0 before:bg-[url('/public/images/service-bg2.png')] before:bg-cover before:bg-center before:bg-no-repeat">
+    <section className="pt-28 relative z-10 before:absolute before:w-full before:h-[80%] before:-z-10 before:top-0 before:left-0 before:bg-[url('/public/images/service-bg2.png')] before:bg-cover before:bg-center before:bg-no-repeat">
       <div className="Container">
         <div className="text-center">
           <h5 className="font-Inter font-medium text-PrimaryColor-0">

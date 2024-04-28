@@ -47,7 +47,7 @@ const ServiceCard = ({
               {buttonIcon}
             </button>
           </Link>
-          <div className="brightness-0 invert-[1]">
+          <div className="brightness-0 invert-[1] transition-all duration-500 group-hover:rotate-[360deg]">
             <img src={serviceIcon} />
           </div>
         </div>

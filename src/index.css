@@ -45,8 +45,18 @@ span.swiper-pagination-bullet {
   width: 10px !important;
 }
 
-span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #ffc803 !important;
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #ffc702 !important;
+}
+
+.portfolio2 span.swiper-pagination-bullet {
+  height: 12px !important;
+  width: 12px !important;
+  background: #d4e2fd !important;
+}
+
+.portfolio2 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #316fff !important;
 }
 
 .portfolio .swiper-pagination {

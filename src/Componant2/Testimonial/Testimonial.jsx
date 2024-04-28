@@ -1,11 +1,10 @@
 /* eslint-disable no-unused-vars */
 import testiImg from "/public/images/testi-thumb-2.png";
 import testiImg2 from "/public/images/testi-thumb.png";
-import testiIcon from "/public/images/testi-icon.png";
+import testiIcon from "/public/images/testi-icon2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import TestmonialCard from "./TestmonialCard";
 
@@ -69,25 +68,19 @@ const Testimonial = () => {
       },
     },
   };
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + ' pagination-bullet"></span>';
-    },
-  };
   return (
-    <section className="bg-[url('/public/images/testi-bg.png')] bg-cover bg-center bg-no-repeat py-28">
+    <section className="bg-[url('/public/images/testi-bg2.png')] bg-cover bg-center bg-no-repeat pt-28 pb-[120px]">
       <div className="Container">
         <div className="text-center">
           <h5 className="font-Inter font-medium text-PrimaryColor-0">
             TESTIMONIALS
           </h5>
-          <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white mt-3">
+          <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3">
             Our Customer’s Feedback
           </h1>
         </div>
-        <div className="mt-[60px]">
-          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
+        <div className="mt-[40px]">
+          <Swiper {...settings}>
             <div>
               {testiData.map(
                 ({
@@ -102,7 +95,7 @@ const Testimonial = () => {
                 }) => {
                   return (
                     <SwiperSlide key={id}>
-                      <div className="pb-[80px]">
+                      <div className="pt-3">
                         <TestmonialCard
                           testiImg={testiImg}
                           testiRatingIcon={testiRatingIcon}

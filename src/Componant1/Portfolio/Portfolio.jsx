@@ -83,9 +83,9 @@ const Portfolio = () => {
     },
   };
   return (
-    <section className="bg-[url('/public/images/portfolio-bg.png')] bg-cover bg-center bg-no-repeat py-28 portfolio">
+    <section className="portfolio2 bg-[url('/public/images/portfolio-bg.png')] bg-cover bg-center bg-no-repeat py-28 portfolio">
       <div className="Container">
-        <div className="flex flex-col gap-7 md::items-center justify-between">
+        <div className="flex flex-col md:flex-row gap-7 md:items-center justify-between">
           <div>
             <h5 className="font-Inter font-medium text-SecondaryColor-0">
               CLEENY PORTFOLIO

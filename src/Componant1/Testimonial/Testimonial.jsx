@@ -86,7 +86,7 @@ const Testimonial = () => {
             Our Customer’s Feedback
           </h1>
         </div>
-        <div className="mt-[60px]">
+        <div className="mt-[40px]">
           <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
             <div>
               {testiData.map(
@@ -102,7 +102,7 @@ const Testimonial = () => {
                 }) => {
                   return (
                     <SwiperSlide key={id}>
-                      <div className="pb-[80px]">
+                      <div className="pb-[80px] pt-3">
                         <TestmonialCard
                           testiImg={testiImg}
                           testiRatingIcon={testiRatingIcon}
