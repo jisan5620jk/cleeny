@@ -15,7 +15,6 @@ import { BiChevronDown } from "react-icons/bi";
 import Logo from "/public/images/logo.png";
 import { useState, useEffect } from "react";
 import { IoMdCall, IoMdClose } from "react-icons/io";
-import { VscHeart } from "react-icons/vsc";
 import { BsEnvelope } from "react-icons/bs";
 import { IoSearch } from "react-icons/io5";
 import { TbGridDots } from "react-icons/tb";
@@ -232,6 +231,13 @@ const Navbar = () => {
                           <li className="hover:ml-3 duration-300">
                             <Link to="/Home2" className="py-2 block">
                               Home Two
+                            </Link>
+                          </li>
+                        </div>
+                        <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <li className="hover:ml-3 duration-300">
+                            <Link to="/Home3" className="py-2 block">
+                              Home Three
                             </Link>
                           </li>
                         </div>

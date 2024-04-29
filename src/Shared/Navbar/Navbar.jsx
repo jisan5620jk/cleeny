@@ -197,6 +197,13 @@ const Navbar = () => {
                           </Link>
                         </li>
                       </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/Home3" className="py-2 block">
+                            Home Three
+                          </Link>
+                        </li>
+                      </div>
                     </ul>
                   </div>
                 </NavLink>
@@ -309,7 +316,7 @@ const Navbar = () => {
                   to="#"
                 >
                   <span className="flex items-center">
-                    BLOG
+                    Blog
                     <BiChevronDown className="ml-1" />
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">

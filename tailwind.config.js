@@ -16,6 +16,7 @@ export default {
         BodyBg: ["#f3f4f8"],
         BorderColor: ["#0202021a"],
         BorderColor2: ["#223FA2"],
+        BorderColor3: ["#83A8FF"],
       },
       screens: {
         sm: "576px",
@@ -35,7 +36,7 @@ export default {
         },
         dance7: {
           "0%": { transform: "translateX(0px)" },
-          "100%": { transform: "translateX(235px)" },
+          "100%": { transform: "translateX(320px)" },
         },
         dance3: {
           "0%": { transform: "translateX(0px)" },
@@ -89,6 +90,7 @@ export default {
         zoomInOut: "zoomInOut 2s alternate infinite",
         dance2: "dance2 2s alternate infinite",
         dance3: "dance3 2s alternate infinite",
+        dance7: "dance7 4s alternate infinite",
         swing: "swing 1s ease-in-out 1s forwards infinite alternate",
         headerSlideDown:
           "500ms ease-in-out 0s normal none 1 running headerSlideDown",
