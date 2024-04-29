@@ -12,7 +12,7 @@ const WhyChoose = () => {
         className="absolute left-20 -bottom-[88px] hidden 2xl:block"
       />
       <div className="Container">
-        <div className="grid grid-cols-2 gap-24 2xl:gap-[142px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 2xl:gap-[142px]">
           <div className="bg-SecondaryColor-0 rounded-t-md pt-10 pb-[60px]">
             <div className="text-center">
               <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white">
@@ -22,7 +22,7 @@ const WhyChoose = () => {
             <form
               action="#"
               method="post"
-              className="grid grid-cols-1 gap-[22px] items-center mt-9 px-[60px]"
+              className="grid grid-cols-1 gap-[22px] items-center mt-9 px-5 sm:px-[60px]"
             >
               <input
                 type="text"
@@ -64,14 +64,14 @@ const WhyChoose = () => {
               </button>
             </form>
           </div>
-          <div>
+          <div className="mb-28">
             <h5 className="font-Inter font-medium text-PrimaryColor-0">
               WHY CHOOSE US?
             </h5>
-            <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-3">
+            <h1 className="font-Inter font-bold text-[20px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-3">
               Dramatically negotiate high <br /> payoff services cleaning
             </h1>
-            <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-7 mt-12">
+            <div className="flex flex-col sm:flex-row gap-7 mt-12">
               <div>
                 <img src={boxImg} />
               </div>
@@ -81,12 +81,12 @@ const WhyChoose = () => {
                 </h5>
                 <p className="font-Poppins text-white opacity-70 text-[15px] mt-3">
                   Competently repurpose go forward benefits
-                  <br className="hidden 2xl:block" /> conveniently target
-                  e-business
+                  <br className="hidden sm:block 2xl:block" /> conveniently
+                  target e-business
                 </p>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-7 mt-7">
+            <div className="flex flex-col sm:flex-row gap-7 mt-7">
               <div>
                 <img src={boxImg3} />
               </div>
@@ -96,8 +96,8 @@ const WhyChoose = () => {
                 </h5>
                 <p className="font-Poppins text-white opacity-70 text-[15px] mt-3">
                   Competently repurpose go forward benefits
-                  <br className="hidden 2xl:block" /> conveniently target
-                  e-business
+                  <br className="hidden sm:block 2xl:block" /> conveniently
+                  target e-business
                 </p>
               </div>
             </div>

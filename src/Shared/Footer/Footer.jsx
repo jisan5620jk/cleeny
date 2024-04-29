@@ -22,7 +22,7 @@ const Footer = () => {
         <img src={footerShape} />
       </div>
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-3 lg:items-center bg-[url('/public/images/subscribe-bg.png')] bg:left lg:bg-center md:gap-7 lg:gap-0 bg-cover bg-no-repeat py-[30px] px-5 sm:px-10 rounded-b-3xl mb-[120px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:items-center bg-[url('/public/images/subscribe-bg.png')] bg-bottom sm:bg-right lg:bg-center md:gap-7 lg:gap-0 bg-cover bg-no-repeat py-[30px] px-5 sm:px-10 rounded-b-3xl mb-[120px]">
           <div className="col-span-1">
             <div className="flex flex-col sm:flex-row sm:items-center gap-6">
               <div className="w-[70px] h-[70px] rounded-full flex items-center justify-center bg-white">

@@ -85,7 +85,7 @@ const Portfolio = () => {
   return (
     <section className="py-28 portfolio2 relative">
       <div className="Container">
-        <div className="flex flex-col gap-7 md:flex-row md:items-center justify-between">
+        <div className="flex flex-col gap-7 lg:flex-row lg:items-center justify-between">
           <div>
             <h5 className="font-Inter font-medium text-SecondaryColor-0">
               CLEENY PORTFOLIO

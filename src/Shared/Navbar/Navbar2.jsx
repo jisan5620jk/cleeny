@@ -52,10 +52,10 @@ const Navbar = () => {
       className={`w-full transition-all duration-300 bg-transparent relativee text-[#7d7f8c] z-[99999]`}
     >
       {/* top Navbar */}
-      <header className="bg-[#021233] overflow-hidden md:block">
+      <header className="bg-[#021233] overflow-hidden md:block relative z-10">
         <div className="Container flex items-center justify-between">
           <div className="flex items-center gap-10">
-            <p className="font-Poppins text-[15px] text-white md:flex items-center gap-2 relative before:absolute before:top-1/2 before:right-0 before:w-[1px] before:h-5 before:bg-BorderColor-0 before-:translate-1/2 hidden">
+            <p className="font-Poppins text-[15px] text-white sm:flex items-center gap-2 relative before:absolute before:top-1/2 before:right-0 before:w-[1px] before:h-5 before:bg-BorderColor-0 before-:translate-1/2 hidden">
               <FaHandsClapping className="text-xl relative bottom-[2px] text-PrimaryColor-0" />
               Welcome to Cleeny Cleaing Service
             </p>
@@ -117,7 +117,7 @@ const Navbar = () => {
         data-aos="zoom-in"
         data-aos-duration="1000"
       >
-        <div className="bg-white relative z-10 before:absolute before:top-0 before:left-0 before:h-full before:w-[30%] before:bg-[#f3f4f8] before:-z-10">
+        <div className="bg-white relative z-10 before:absolute before:top-0 before:left-0 before:h-full before:w-[30%] before:bg-[#f3f4f8] before:-z-10 hidden lg:block">
           <div className="Container">
             <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[100px]">
               {/* website Logo */}
@@ -172,7 +172,7 @@ const Navbar = () => {
                 <Link to="/">
                   <img
                     src={Logo}
-                    className="block lg:hidden "
+                    className="block lg:hidden brightness-0 invert-[1]"
                     alt="constre_website_logo"
                   />
                 </Link>
@@ -184,9 +184,9 @@ const Navbar = () => {
               >
                 {/* modal open and close */}
                 {isOpen ? (
-                  <IoMdClose className="w-6 h-6 text-HeadingColor-0" />
+                  <IoMdClose className="w-6 h-6 text-white" />
                 ) : (
-                  <FaBars className="w-5 h-5 text-HeadingColor-0" />
+                  <FaBars className="w-5 h-5 text-white" />
                 )}
               </button>
             </div>
@@ -194,7 +194,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between w-full px-10">
               <div className="text-white flex items-center gap-7">
                 <div>
-                  <TbGridDots size={"36"} />
+                  <TbGridDots size={"36"} className="hidden lg:block"/>
                 </div>
                 <ul
                   className={`${

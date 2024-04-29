@@ -33,8 +33,18 @@ const processData = [
 const Process = () => {
   return (
     <section className="pt-28 pb-10 relative">
-      <div className="processShape"><img src={processShape} className="absolute left-0 top-1/3 -translate-y-1/2 animate-dance3 hidden 2xl:block"/></div>
-      <div className="processShape2"><img src={processShape2} className="absolute right-[5%] top-[20%] -translate-y-1/2 animate-movebtn hidden 2xl:block"/></div>
+      <div className="processShape">
+        <img
+          src={processShape}
+          className="absolute left-0 top-1/3 -translate-y-1/2 animate-dance3 hidden 2xl:block"
+        />
+      </div>
+      <div className="processShape2">
+        <img
+          src={processShape2}
+          className="absolute right-[5%] top-[20%] -translate-y-1/2 animate-movebtn hidden 2xl:block"
+        />
+      </div>
       <div className="Container">
         <div className="text-center">
           <div>
@@ -46,7 +56,8 @@ const Process = () => {
             </h1>
             <p className="font-Poppins text-TextColor-0 font-light lg:w-3/5 2xl:w-3/4 mx-auto">
               Competently repurpose go forward benefits without goal-oriented
-              ROI <br className="hidden"/> conveniently target e-business opportunities whereas
+              ROI <br className="hidden lg:block" /> conveniently target
+              e-business opportunities whereas
             </p>
           </div>
         </div>
