@@ -1,70 +1,70 @@
-
-import { FaArrowRightLong, FaCircleCheck } from "react-icons/fa6";
-import aboutThumb from "/public/images/about-thumb2.png";
-import aboutShape from "/public/images/about-shape3.png";
-import aboutShape2 from "/public/images/about-shape4.png";
-import icon from "/public/images/counter-icon.png";
+import { FaArrowRightLong } from "react-icons/fa6";
+import aboutThumb from "/public/images/about-thumb3.png";
+import aboutShape from "/public/images/about-shape5.png";
+import aboutIcon from "/public/images/about-icon.png";
+import aboutIcon2 from "/public/images/about-icon2.png";
 import { Link } from "react-router-dom";
-import CountUp from "react-countup";
 
 const About = () => {
   return (
-    <section className="py-[120px] bg-[url('/public/images/about-bg.png')] bg-cover bg-center bg-no-repeat">
+    <section className="pb-[120px] bg-[#f3f4f8] bg-cover bg-center bg-no-repeat">
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[92px] lg:gap-5 xl:gap-20 items-center">
           <div className="relative z-10">
             <img src={aboutThumb} />
-            <img src={aboutShape} className="absolute top-0 right-0 -z-10 animate-movebtn"/>
-            <img src={aboutShape2} className="absolute bottom-0 left-[10%] -z-10 animate-movebtn"/>
+            <div className="absolute bottom-0 left-0">
+              <div className="relative before:w-full before:h-full before:border before:rounded-full before:border-dashed before:absolute before:top-0 before:left-0 before:border-PrimaryColor-0 before:animate-rotational">
+                <img src={aboutShape} />
+              </div>
+            </div>
           </div>
           <div>
-            <h5 className="font-Inter font-medium text-SecondaryColor-0">
-              ABOUT US
+            <h5 className="font-Inter text-lg text-SecondaryColor-0 font-medium pl-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
+              ABOUT CLEENY
             </h5>
-            <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3 mb-3">
-              Making Your House Clean <br/> For Looks As a New
+            <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[46px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-HeadingColor-0 mt-3 mb-4">
+              Your Trusted <span className="text-PrimaryColor-0">Cleaning</span>{" "}
+              <br /> Service Partner
             </h1>
             <p className="font-Poppins text-TextColor-0 font-light">
-              Competently repurpose go forward benefits without goal-oriented
-              ROI conveniently target e-business opportunities whereas parallel
-              task multimedia based web services
+              Need Clean of your home or office Just Feel Free contact us based
+              web services we try to Help you as soon as possible your home or
+              office Just Feel Free contact us based web develop.
             </p>
-            <div className="flex flex-col md:flex-row gap-8 justify-between mt-7">
-              <div>
-                <ul>
-                  <li className="flex items-center gap-2 font-Inter text-HeadingColor-0 mb-[14px]">
-                    <FaCircleCheck className="text-lg text-SecondaryColor-0" />
-                    Cleeny Your Home or Office
-                  </li>
-                  <li className="flex items-center gap-2 font-Inter text-HeadingColor-0 mb-[14px]">
-                    <FaCircleCheck className="text-lg text-SecondaryColor-0" />
-                    24/7 Emmergency Quality Services
-                  </li>
-                  <li className="flex items-center gap-2 font-Inter text-HeadingColor-0 mb-[14px]">
-                    <FaCircleCheck className="text-lg text-SecondaryColor-0" />
-                    Online Booking System available
-                  </li>
-                </ul>
-                <Link to={"/"}>
-                  <button className="primary-btn2 mt-9">
-                    More About Us
-                    <FaArrowRightLong size={"20"} />
-                  </button>
-                </Link>
+            <div className="flex gap-7 items-center mt-8">
+              <div className="w-[75px] h-[75px] rounded-full border-[5px] border-white">
+                <img src={aboutIcon} />
               </div>
-              <div className="bg-PrimaryColor-0 rounded-lg w-[192px] h-[192px] flex justify-center items-center flex-col">
-                <img src={icon} />
-                <CountUp
-                  start={-11}
-                  end={12}
-                  suffix="+"
-                  className="text-[36px] font-Inter font-bold text-HeadingColor-0"
-                />
-                <p className="font-Poppins text-TextColor-0 font-light">
-                  Years Experience
+              <div className="flex-1">
+                <h6 className="font-Inter font-semibold text-xl text-HeadingColor-0">
+                  Customer Focused Reviews
+                </h6>
+                <p className="font-Poppins text-TextColor-0 font-light mt-3">
+                  Need Clean of your home or Feel Free contact us based web
+                  services we to you as soon as possible trusted.
                 </p>
               </div>
             </div>
+            <div className="flex gap-7 items-center mt-8">
+              <div className="w-[75px] h-[75px] rounded-full border-[5px] border-white">
+                <img src={aboutIcon2} />
+              </div>
+              <div className="flex-1">
+                <h6 className="font-Inter font-semibold text-xl text-HeadingColor-0">
+                  egular & Monthly cleaning
+                </h6>
+                <p className="font-Poppins text-TextColor-0 font-light mt-3">
+                  Need Clean of your home or Feel Free contact us based web
+                  services we to you as soon as possible trusted.
+                </p>
+              </div>
+            </div>
+            <Link to={"/"}>
+              <button className="primary-btn2 mt-9">
+                More About Us
+                <FaArrowRightLong size={"20"} />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
