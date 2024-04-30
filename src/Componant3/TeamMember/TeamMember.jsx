@@ -1,4 +1,7 @@
-import teamThumb from "/public/images/team-thumb.png";
+import teamThumb from "/public/images/team-thumb5.png";
+import teamThumb2 from "/public/images/team-thumb6.png";
+import teamThumb3 from "/public/images/team-thumb7.png";
+import teamThumb4 from "/public/images/team-thumb8.png";
 import TeamCard from "./TeamCard";
 import { FaLinkedinIn, FaPinterestP, FaXTwitter } from "react-icons/fa6";
 
@@ -11,6 +14,33 @@ const teamData = [
     socialIcon2: <FaLinkedinIn />,
     socialIcon3: <FaPinterestP />,
     teamDesc: "Anjelina Watson",
+  },
+  {
+    id: 2,
+    teamThumb: teamThumb2,
+    teamTitle: "Office Cleaner",
+    socialIcon: <FaXTwitter />,
+    socialIcon2: <FaLinkedinIn />,
+    socialIcon3: <FaPinterestP />,
+    teamDesc: "David Miller",
+  },
+  {
+    id: 3,
+    teamThumb: teamThumb3,
+    teamTitle: "Room Cleaner",
+    socialIcon: <FaXTwitter />,
+    socialIcon2: <FaLinkedinIn />,
+    socialIcon3: <FaPinterestP />,
+    teamDesc: "Annee Marie",
+  },
+  {
+    id: 4,
+    teamThumb: teamThumb4,
+    teamTitle: "Floar Cleaner",
+    socialIcon: <FaXTwitter />,
+    socialIcon2: <FaLinkedinIn />,
+    socialIcon3: <FaPinterestP />,
+    teamDesc: "Ricard Powel",
   },
 ];
 
