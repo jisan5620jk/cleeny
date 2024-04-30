@@ -1,98 +1,91 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRightLong, FaCheck } from "react-icons/fa6";
-import serviceThumb from "/public/images/service-img.png";
-import serviceThumb2 from "/public/images/service-img2.png";
-import serviceThumb3 from "/public/images/service-img3.png";
-import serviceShape from "/public/images/service-shape.png";
-import serviceIcon from "/public/images/service-icon.png";
-import serviceIcon2 from "/public/images/service-icon2.png";
-import serviceIcon3 from "/public/images/service-icon3.png";
+import serviceThumb from "/public/images/service-thumb.png";
+import serviceIcon from "/public/images/service-icon7.png";
+import serviceIcon2 from "/public/images/service-icon8.png";
+import serviceIcon3 from "/public/images/service-icon9.png";
+import serviceIcon4 from "/public/images/service-icon10.png";
 import ServiceCard from "./ServiceCard";
 
 const serviceData = [
   {
     id: 1,
-    serviceThumb: serviceThumb,
     serviceIcon: serviceIcon,
-    serviceShape: serviceShape,
-    serviceTitle: `House Wash & Clean`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
+    serviceTitle: `Resort Cleaning`,
     serviceUrl: "/",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
+    serviceBtn: `Read More`,
+    serviceBtnIcon: <FaArrowRightLong />,
+    serviceNumber: "01",
   },
   {
-    id: 2,
-    serviceThumb: serviceThumb2,
+    id: 1,
     serviceIcon: serviceIcon2,
-    serviceShape: serviceShape,
-    serviceTitle: `Office Floor Cleaning`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
+    serviceTitle: `Window Cleaning`,
     serviceUrl: "/",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
+    serviceBtn: `Read More`,
+    serviceBtnIcon: <FaArrowRightLong />,
+    serviceNumber: "01",
   },
   {
-    id: 3,
-    serviceThumb: serviceThumb3,
+    id: 1,
     serviceIcon: serviceIcon3,
-    serviceShape: serviceShape,
     serviceTitle: `Kitchen Cleaning`,
-    serviceListIcon: <FaCheck />,
-    serviceListContent: `House Floor Cleaning`,
-    serviceListContent2: `Roof Clean & Wash`,
     serviceUrl: "/",
-    buttonContent: `Veiw Details`,
-    buttonIcon: <FaArrowRightLong />,
+    serviceBtn: `Read More`,
+    serviceBtnIcon: <FaArrowRightLong />,
+    serviceNumber: "01",
+  },
+  {
+    id: 1,
+    serviceIcon: serviceIcon4,
+    serviceTitle: `Garden Cleaning`,
+    serviceUrl: "/",
+    serviceBtn: `Read More`,
+    serviceBtnIcon: <FaArrowRightLong />,
+    serviceNumber: "01",
   },
 ];
 
 const Service = () => {
   return (
-    <section className="pt-28 relative z-10 before:absolute before:w-full before:h-[80%] before:-z-10 before:top-0 before:left-0 before:bg-[url('/public/images/service-bg2.png')] before:bg-cover before:bg-center before:bg-no-repeat">
+    <section className="pt-28 pb-[90px] relative bg-[url('/public/images/service-bg3.png')] bg-cover bg-center bg-no-repeat">
       <div className="Container">
-        <div className="text-center">
-          <h5 className="font-Inter font-medium text-PrimaryColor-0">
-            OUR SERVICES
-          </h5>
-          <h1 className="font-Inter font-bold text-[20px] leading-8 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white mt-3">
-            Professional cleeny Services <br />
-            What we Provide
-          </h1>
-        </div>
-        <div className="mt-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 lg:items-center lg:grid-cols-2 xl:gap-28 2xl:gap-36">
+          <div>
+            <h5 className="font-Inter text-lg text-PrimaryColor-0 font-medium pl-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
+              CLEENY SERVICES
+            </h5>
+            <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-white mt-3 mb-4">
+              Your Trusted <span className="text-PrimaryColor-0">Cleaning</span><br/>
+              Service Partner
+            </h1>
+            <p className="font-Poppins text-white font-light mb-14">
+              Services we partners you as soon as possible your home or office
+              Just <br className="hidden 2xl:block" /> Feel Free contact us
+              based web develop.
+            </p>
+            <img src={serviceThumb} />
+          </div>
+          <div>
             {serviceData.map(
               ({
                 id,
-                serviceThumb,
                 serviceIcon,
-                serviceShape,
                 serviceTitle,
-                serviceListIcon,
-                serviceListContent,
-                serviceListContent2,
                 serviceUrl,
-                buttonContent,
-                buttonIcon,
+                serviceBtn,
+                serviceBtnIcon,
+                serviceNumber,
               }) => {
                 return (
                   <div key={id}>
                     <ServiceCard
-                      serviceThumb={serviceThumb}
                       serviceIcon={serviceIcon}
-                      serviceShape={serviceShape}
                       serviceTitle={serviceTitle}
-                      serviceListIcon={serviceListIcon}
-                      serviceListContent={serviceListContent}
-                      serviceListContent2={serviceListContent2}
                       serviceUrl={serviceUrl}
-                      buttonContent={buttonContent}
-                      buttonIcon={buttonIcon}
+                      serviceBtn={serviceBtn}
+                      serviceBtnIcon={serviceBtnIcon}
+                      serviceNumber={serviceNumber}
                     />
                   </div>
                 );

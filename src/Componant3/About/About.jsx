@@ -51,7 +51,7 @@ const About = () => {
               </div>
               <div className="flex-1">
                 <h6 className="font-Inter font-semibold text-xl text-HeadingColor-0">
-                  egular & Monthly cleaning
+                  Regular & Monthly cleaning
                 </h6>
                 <p className="font-Poppins text-TextColor-0 font-light mt-3">
                   Need Clean of your home or Feel Free contact us based web

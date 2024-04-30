@@ -17,10 +17,10 @@ const Home1 = () => {
       <Feature/>
       <About />
       <Service />
+      <TeamMember />
       <Process />
       <WhyChoose />
       <Portfolio />
-      <TeamMember />
       <Testimonial />
       <Support />
       <Blog />

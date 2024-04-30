@@ -2,55 +2,33 @@
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({
-  serviceThumb,
   serviceIcon,
-  serviceShape,
   serviceTitle,
-  serviceListIcon,
-  serviceListContent,
-  serviceListContent2,
   serviceUrl,
-  buttonContent,
-  buttonIcon,
+  serviceBtn,
+  serviceBtnIcon,
+  serviceNumber,
 }) => {
   return (
-    <div className="group">
-      <div>
-        <img src={serviceThumb} className="w-full" />
+    <div className="rounded-md bg-HoverColor-0 p-6 flex items-center gap-6 group relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:rounded-md hover:before:w-full hover:before:left-0 mb-7">
+      <div className="w-[85px] h-[85px] rounded-full bg-SecondaryColor-0 relative flex justify-center items-center z-10 overflow-hidden before:absolute before:top-0 before:left-0 before:w-full before:-z-10 before:h-full before:bg-white before:transition-all before:duration-500 before:scale-0 group-hover:before:scale-100">
+        <img src={serviceIcon} className="brightness-0 invert-[1] transition-all duration-500 group-hover:brightness-100 group-hover:invert-0"/>
       </div>
-
-      <div className="bg-HoverColor-0 pb-5">
-        <div className="w-10/12 mb-5 -mt-[30px] bg-white rounded-e-md px-4 px-8 pb-6 transition-all duration-500 relative z-10 before:absolute before:right-0 before:w-0 before:h-full before:rounded-e-md before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 group-hover:-mt-[120px]">
-          <img
-            src={serviceShape}
-            className="absolute bottom-0 right-10 animate-dance2 -z-10 opacity-0 transition-all
-           duration-500 group-hover:opacity-100"
-          />
-          <h5 className="font-Inter font-semibold text-HeadingColor-0 xl:text-lg 2xl:text-2xl transition-all duration-500 group-hover:text-white pt-4">
-            {serviceTitle}
-          </h5>
-          <ul className="-mt-[90px] transition-all duration-500 opacity-0 group-hover:mt-0 group-hover:border-white group-hover:opacity-100">
-            <li className="flex items-center gap-2 text-[#B8B9D5] font-Poppins mt-5 mb-3 transition-all duration-500 group-hover:text-white">
-              <div className="text-PrimaryColor-0">{serviceListIcon}</div>
-              {serviceListContent}
-            </li>
-            <li className="flex items-center gap-2 text-[#B8B9D5] font-Poppins mb-2 transition-all duration-500 group-hover:text-white">
-              <div className="text-PrimaryColor-0">{serviceListIcon}</div>
-              {serviceListContent2}
-            </li>
-          </ul>
-        </div>
-        <div className="flex justify-between items-center px-8">
-          <Link to={serviceUrl}>
-            <button className="text-white font-medium font-Inter flex items-center gap-2">
-              {buttonContent}
-              {buttonIcon}
-            </button>
-          </Link>
-          <div className="brightness-0 invert-[1] transition-all duration-500 group-hover:rotate-[360deg]">
-            <img src={serviceIcon} />
-          </div>
-        </div>
+      <div>
+        <h5 className="font-Inter font-bold text-white text-[22px]">
+          {serviceTitle}
+        </h5>
+        <Link to={serviceUrl}>
+          <button className="font-Poppins font-medium text-[15px] text-white flex items-center gap-2 mt-1">
+            {serviceBtn}
+            <span>{serviceBtnIcon}</span>
+          </button>
+        </Link>
+      </div>
+      <div className="absolute top-1/2 -translate-y-1/2 -right-[23px]">
+        <h6 className="font-Inter font-medium text-lg text-white w-[46px] h-[46px] rounded-full bg-SecondaryColor-0 relative flex justify-center items-center z-10 overflow-hidden before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:-z-10 before:duration-500 before:scale-0 group-hover:before:scale-100">
+          {serviceNumber}
+        </h6>
       </div>
     </div>
   );
