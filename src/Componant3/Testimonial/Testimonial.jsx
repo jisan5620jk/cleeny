@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
-import testiImg from "/public/images/testi-thumb-2.png";
-import testiImg2 from "/public/images/testi-thumb.png";
-import testiIcon from "/public/images/testi-icon2.png";
+import testiImg from "/public/images/testi-thumb-3.png";
+import testiImg2 from "/public/images/testi-thumb-4.png";
+import testiImg3 from "/public/images/testi-thumb-5.png";
+import testiShape from "/public/images/testi-shape4.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import TestmonialCard from "./TestmonialCard";
+import { BiSolidQuoteRight } from "react-icons/bi";
 
 const testiData = [
   {
@@ -14,36 +14,12 @@ const testiData = [
     testiImg: testiImg,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiName: "Jhon D. Alexon",
-    testiDesignation: "Web Developer",
-    testiTitle: "Service Quality",
-    testiDesc: `“Competently cultivate worldwide e-tailers through to principles
-                professionally engineer high-payoff deliverables without excet
-                Rapidiously network effective”`,
-    testiIcon: testiIcon,
-  },
-  {
-    id: 2,
-    testiImg: testiImg2,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "UI/UX Designer",
-    testiTitle: "Service Quality",
-    testiDesc: `“Competently cultivate worldwide e-tailers through to principles
-                professionally engineer high-payoff deliverables without excet
-                Rapidiously network effective”`,
-    testiIcon: testiIcon,
-  },
-  {
-    id: 3,
-    testiImg: testiImg,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Jhon D. Alexon",
-    testiDesignation: "Web Developer",
-    testiTitle: "Service Quality",
-    testiDesc: `“Competently cultivate worldwide e-tailers through to principles
-                professionally engineer high-payoff deliverables without excet
-                Rapidiously network effective”`,
-    testiIcon: testiIcon,
+    testiDesignation: "Home Cleaner",
+    testiDesc: `Sometimes goods can arrive early when to
+								being brought into the solution creative for
+								desig have space needs.`,
+    testiIcon: <BiSolidQuoteRight />,
+    testiShape: testiShape,
   },
 ];
 
@@ -61,22 +37,22 @@ const Testimonial = () => {
         slidesPerView: 2,
       },
       992: {
-        slidesPerView: 2,
+        slidesPerView: 3,
       },
-      1400: {
-        slidesPerView: 2,
+      1200: {
+        slidesPerView: 3,
       },
     },
   };
   return (
-    <section className="bg-[url('/public/images/testi-bg2.png')] bg-cover bg-center bg-no-repeat pt-28 pb-[120px]">
+    <section className="bg-[url('/public/images/service-bg3.png')] bg-cover bg-center bg-no-repeat pt-28 pb-[120px]">
       <div className="Container">
-        <div className="text-center">
-          <h5 className="font-Inter font-medium text-PrimaryColor-0">
-            TESTIMONIALS
+        <div>
+          <h5 className="font-Inter inline-block text-lg text-PrimaryColor-0 font-medium px-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
+           TESTIMONIAL
           </h5>
-          <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3">
-            Our Customer’s Feedback
+          <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-white mt-3 mb-4">
+            Our Clients <span className="text-PrimaryColor-0"> Reviews</span>
           </h1>
         </div>
         <div className="mt-[40px]">
@@ -89,9 +65,9 @@ const Testimonial = () => {
                   testiRatingIcon,
                   testiName,
                   testiDesignation,
-                  testiTitle,
                   testiDesc,
                   testiIcon,
+                  testiShape,
                 }) => {
                   return (
                     <SwiperSlide key={id}>
@@ -101,9 +77,9 @@ const Testimonial = () => {
                           testiRatingIcon={testiRatingIcon}
                           testiName={testiName}
                           testiDesignation={testiDesignation}
-                          testiTilte={testiTitle}
                           testiDesc={testiDesc}
                           testiIcon={testiIcon}
+                          testiShape={testiShape}
                         />
                       </div>
                     </SwiperSlide>

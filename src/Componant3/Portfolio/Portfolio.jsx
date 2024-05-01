@@ -1,53 +1,42 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRight, FaArrowRightLong, FaLocationDot } from "react-icons/fa6";
-import portfolioThumb from "/public/images/portfolio-img.png";
+import portfolioThumb from "/public/images/portfolio-img5.png";
 import portfolioThumb2 from "/public/images/portfolio-img7.png";
-import portfolioThumb3 from "/public/images/portfolio-img2.png";
+import portfolioThumb3 from "/public/images/portfolio-img6.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
-import { Link } from "react-router-dom";
 import PortfolioCard from "./PortfolioCard";
 
 const PortfolioData = [
   {
     id: 1,
     portfolioThumb: portfolioThumb,
-    thumbTitle: "Cleaning",
-    portfolioLocateIcon: <FaLocationDot />,
-    portfolioLocation: "Sandigo, USA",
-    portfolioTitle: "House Floor Cleaning",
+    portfolioSubTitle:"RENEWABLE POWER",
+    portfolioTitle: "Window Cleaning",
     portfolioUrl: "/",
     portfolioIcon: <FaArrowRight />,
   },
   {
     id: 2,
     portfolioThumb: portfolioThumb2,
-    thumbTitle: "Cleaning",
-    portfolioLocateIcon: <FaLocationDot />,
-    portfolioLocation: "Sandigo, USA",
-    portfolioTitle: "House Floor Cleaning",
+    portfolioSubTitle:"RENEWABLE POWER",
+    portfolioTitle: "Window Cleaning",
     portfolioUrl: "/",
     portfolioIcon: <FaArrowRight />,
   },
   {
     id: 3,
     portfolioThumb: portfolioThumb3,
-    thumbTitle: "Cleaning",
-    portfolioLocateIcon: <FaLocationDot />,
-    portfolioLocation: "Sandigo, USA",
-    portfolioTitle: "House Floor Cleaning",
+    portfolioSubTitle:"RENEWABLE POWER",
+    portfolioTitle: "Window Cleaning",
     portfolioUrl: "/",
     portfolioIcon: <FaArrowRight />,
   },
   {
     id: 4,
     portfolioThumb: portfolioThumb,
-    thumbTitle: "Cleaning",
-    portfolioLocateIcon: <FaLocationDot />,
-    portfolioLocation: "Sandigo, USA",
-    portfolioTitle: "House Floor Cleaning",
+    portfolioSubTitle:"RENEWABLE POWER",
+    portfolioTitle: "Window Cleaning",
     portfolioUrl: "/",
     portfolioIcon: <FaArrowRight />,
   },
@@ -76,56 +65,43 @@ const Portfolio = () => {
       },
     },
   };
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + ' pagination-bullet"></span>';
-    },
-  };
   return (
     <section className="py-28 portfolio2 relative">
       <div className="Container">
-        <div className="flex flex-col gap-7 lg:flex-row lg:items-center justify-between">
-          <div>
-            <h5 className="font-Inter font-medium text-SecondaryColor-0">
-              CLEENY PORTFOLIO
-            </h5>
-            <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-HeadingColor-0 mt-3">
-              Latest cleeny Portfolio <br /> from Work Galary
-            </h1>
-          </div>
-          <div>
-            <Link to={"/"}>
-              <button className="primary-btn">
-                Veiw All Work
-                <FaArrowRightLong size={"20"} />
-              </button>
-            </Link>
-          </div>
+        <div className="text-center">
+          <h5 className="font-Inter inline-block text-lg text-PrimaryColor-0 font-medium px-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2 after:absolute after:top-1/2 after:right-0 after:w-6 after:h-3 after:bg-[url(/public/images/cleaning-shapes2.png)] after:bg-no-repeat after:bg-[inherit] after:-translate-y-1/2">
+            CLEENY PORTFOLIO
+          </h5>
+          <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-HeadingColor-0 mt-3 mb-4">
+            Latest cleeny<span className="text-PrimaryColor-0"> Portfolio</span><br/>
+            From Work Gallary
+          </h1>
+          <p className="font-Poppins text-TextColor-0 font-light mb-14">
+            Services we partners you as soon as possible your home or office
+            Just
+            <br className="hidden md:block" /> Feel Free contact us based web
+            develop Expert.
+          </p>
         </div>
       </div>
       <div className="mt-[60px]">
-        <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
+        <Swiper {...settings}>
           <div>
             {PortfolioData.map(
               ({
                 id,
                 portfolioThumb,
-                thumbTitle,
-                portfolioLocateIcon,
-                portfolioLocation,
+                portfolioSubTitle,
                 portfolioUrl,
                 portfolioTitle,
                 portfolioIcon,
               }) => {
                 return (
                   <SwiperSlide key={id}>
-                    <div className="pb-[80px]">
+                    <div className="pb-10">
                       <PortfolioCard
                         portfolioThumb={portfolioThumb}
-                        thumbTitle={thumbTitle}
-                        portfolioLocateIcon={portfolioLocateIcon}
-                        portfolioLocation={portfolioLocation}
+                        portfolioSubTitle={portfolioSubTitle}
                         portfolioUrl={portfolioUrl}
                         portfolioTitle={portfolioTitle}
                         portfolioIcon={portfolioIcon}

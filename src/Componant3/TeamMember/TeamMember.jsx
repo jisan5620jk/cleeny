@@ -46,16 +46,16 @@ const teamData = [
 
 const TeamMember = () => {
   return (
-    <section className="bg-[url('/public/images/team-bg.png')] bg-center bg-cover bg-no-repeat py-28">
+    <section className="bg-[#f3f4f8] py-28">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-Inter text-lg text-PrimaryColor-0 font-medium pl-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
+          <h5 className="font-Inter inline-block text-lg text-SecondaryColor-0 font-medium px-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2 after:absolute after:top-1/2 after:right-0 after:w-6 after:h-3 after:bg-[url(/public/images/cleaning-shapes.png)] after:bg-no-repeat after:bg-[inherit] after:-translate-y-1/2">
             EXPERT TEAM
           </h5>
-          <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-white mt-3 mb-4">
+          <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-HeadingColor-0 mt-3 mb-4">
             Our Working <span className="text-PrimaryColor-0"> Experts</span>
           </h1>
-          <p className="font-Poppins text-white font-light mb-14">
+          <p className="font-Poppins text-TextColor-0 font-light mb-14">
             Services we partners you as soon as possible your home or office
             Just
             <br className="hidden md:block" /> Feel Free contact us based web

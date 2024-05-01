@@ -79,6 +79,11 @@ span.swiper-pagination-bullet {
   bottom: 0;
 }
 
+.swiper-slide:hover .portfolio-content2,
+.swiper-slide.swiper-slide-active .portfolio-content2 {
+  bottom: -40px;
+}
+
 .swiper-slide:hover .portfolio-thumb-title,
 .swiper-slide.swiper-slide-active .portfolio-thumb-title {
   left: 25px;
