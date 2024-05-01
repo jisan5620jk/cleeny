@@ -1,7 +1,7 @@
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { useSwiper } from "swiper/react";
 
-const BannerNavigation = () => {
+const TestimonialNavigation = () => {
   const swiper = useSwiper();
 
   return (
@@ -22,4 +22,4 @@ const BannerNavigation = () => {
   );
 };
 
-export default BannerNavigation;
+export default TestimonialNavigation;

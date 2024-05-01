@@ -3,10 +3,16 @@ import testiImg from "/public/images/testi-thumb-3.png";
 import testiImg2 from "/public/images/testi-thumb-4.png";
 import testiImg3 from "/public/images/testi-thumb-5.png";
 import testiShape from "/public/images/testi-shape4.png";
+import counterIcon from "/public/images/counter-icon2.png";
+import counterIcon2 from "/public/images/counter-icon3.png";
+import counterIcon3 from "/public/images/counter-icon4.png";
+import counterIcon4 from "/public/images/counter-icon5.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import TestmonialCard from "./TestmonialCard";
 import { BiSolidQuoteRight } from "react-icons/bi";
+import TestimonialNavigation from "./TestimonialNavigation";
+import TestiCounter from "./TestiCounter";
 
 const testiData = [
   {
@@ -20,6 +26,69 @@ const testiData = [
 								desig have space needs.`,
     testiIcon: <BiSolidQuoteRight />,
     testiShape: testiShape,
+  },
+  {
+    id: 2,
+    testiImg: testiImg2,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiName: "Mario Tina",
+    testiDesignation: "Home Cleaner",
+    testiDesc: `Sometimes goods can arrive early when to
+								being brought into the solution creative for
+								desig have space needs.`,
+    testiIcon: <BiSolidQuoteRight />,
+    testiShape: testiShape,
+  },
+  {
+    id: 3,
+    testiImg: testiImg3,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiName: "Jhon Sina",
+    testiDesignation: "Home Cleaner",
+    testiDesc: `Sometimes goods can arrive early when to
+								being brought into the solution creative for
+								desig have space needs.`,
+    testiIcon: <BiSolidQuoteRight />,
+    testiShape: testiShape,
+  },
+  {
+    id: 4,
+    testiImg: testiImg,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiName: "Jhon D Alexon",
+    testiDesignation: "Home Cleaner",
+    testiDesc: `Sometimes goods can arrive early when to
+								being brought into the solution creative for
+								desig have space needs.`,
+    testiIcon: <BiSolidQuoteRight />,
+    testiShape: testiShape,
+  },
+];
+
+const testiCounterData = [
+  {
+    id: 1,
+    counterIcon: counterIcon,
+    counterPrice: "520",
+    counterDesc: "Happy Clients",
+  },
+  {
+    id: 2,
+    counterIcon: counterIcon2,
+    counterPrice: "22",
+    counterDesc: "EXPERT TEAM",
+  },
+  {
+    id: 3,
+    counterIcon: counterIcon3,
+    counterPrice: "218",
+    counterDesc: "ROJECT DONE",
+  },
+  {
+    id: 4,
+    counterIcon: counterIcon4,
+    counterPrice: "14",
+    counterDesc: "WORK EXPERIENCE",
   },
 ];
 
@@ -49,7 +118,7 @@ const Testimonial = () => {
       <div className="Container">
         <div>
           <h5 className="font-Inter inline-block text-lg text-PrimaryColor-0 font-medium px-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
-           TESTIMONIAL
+            TESTIMONIAL
           </h5>
           <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-white mt-3 mb-4">
             Our Clients <span className="text-PrimaryColor-0"> Reviews</span>
@@ -70,24 +139,46 @@ const Testimonial = () => {
                   testiShape,
                 }) => {
                   return (
-                    <SwiperSlide key={id}>
-                      <div className="pt-3">
-                        <TestmonialCard
-                          testiImg={testiImg}
-                          testiRatingIcon={testiRatingIcon}
-                          testiName={testiName}
-                          testiDesignation={testiDesignation}
-                          testiDesc={testiDesc}
-                          testiIcon={testiIcon}
-                          testiShape={testiShape}
-                        />
-                      </div>
-                    </SwiperSlide>
+                    <>
+                      <SwiperSlide key={id}>
+                        <div className="pt-3">
+                          <TestmonialCard
+                            testiImg={testiImg}
+                            testiRatingIcon={testiRatingIcon}
+                            testiName={testiName}
+                            testiDesignation={testiDesignation}
+                            testiDesc={testiDesc}
+                            testiIcon={testiIcon}
+                            testiShape={testiShape}
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <TestimonialNavigation />
+                    </>
                   );
                 }
               )}
             </div>
           </Swiper>
+        </div>
+      </div>
+      <div className="Container">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-[108px]">
+          {testiCounterData.map(
+            ({ id, counterIcon, counterPrice, counterDesc }) => {
+              return (
+                <>
+                  <div className="pt-3" key={id}>
+                    <TestiCounter
+                      counterIcon={counterIcon}
+                      counterPrice={counterPrice}
+                      counterDesc={counterDesc}
+                    />
+                  </div>
+                </>
+              );
+            }
+          )}
         </div>
       </div>
     </section>

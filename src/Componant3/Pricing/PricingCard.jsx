@@ -31,7 +31,7 @@ const PricingCard = ({
               start={-11}
               end={price}
               suffix=""
-              className="text-[42px] font-bold"
+              className="text-[42px] font-bold font-Inter"
             />
           </div>
           <p>{pricingDateLine}</p>
