@@ -31,7 +31,7 @@ const About = () => {
               web services we try to Help you as soon as possible your home or
               office Just Feel Free contact us based web develop.
             </p>
-            <div className="flex gap-7 items-center mt-8">
+            <div className="flex flex-col gap-7 sm:flex-row sm:items-center mt-8">
               <div className="w-[75px] h-[75px] rounded-full border-[5px] border-white">
                 <img src={aboutIcon} />
               </div>
@@ -45,7 +45,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-7 items-center mt-8">
+            <div className="flex flex-col gap-7 sm:flex-row sm:items-center mt-8">
               <div className="w-[75px] h-[75px] rounded-full border-[5px] border-white">
                 <img src={aboutIcon2} />
               </div>

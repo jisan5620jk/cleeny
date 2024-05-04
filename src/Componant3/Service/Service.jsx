@@ -50,7 +50,7 @@ const Service = () => {
   return (
     <section className="pt-28 pb-[90px] relative bg-[url('/public/images/service-bg3.png')] bg-cover bg-center bg-no-repeat">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:items-center lg:grid-cols-2 xl:gap-28 2xl:gap-36">
+        <div className="grid grid-cols-1 lg:items-center lg:grid-cols-2 gap-14 xl:gap-28 2xl:gap-36">
           <div>
             <h5 className="font-Inter text-lg text-PrimaryColor-0 font-medium pl-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
               CLEENY SERVICES

@@ -18,7 +18,7 @@ const PortfolioCard = ({
               {portfolioSubTitle}
             </p>
             <Link to={portfolioUrl}>
-              <button className="font-Inter font-semibold text-2xl text-white mt-2 text-left">
+              <button className="font-Inter font-semibold text-xl sm:text-2xl text-white mt-2 text-left">
                 {portfolioTitle}
               </button>
             </Link>

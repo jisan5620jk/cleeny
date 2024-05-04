@@ -6,12 +6,12 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/public/images/hero-bg-2.png')] bg-cover bg-center bg-no-repeat h-[800px] flex items-center overflow-hidden">
+    <section className="bg-[url('/public/images/hero-bg-2.png')] bg-cover bg-center bg-no-repeat h-[1000px] lg:h-[800px] flex items-center overflow-hidden">
       <div className="Container">
-        <div className="grid grid-cols-2 items-center justify-between">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-between">
           <div className="relative">
             <h5 className="font-Inter text-lg text-PrimaryColor-0 font-medium pl-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
-              BEST CLEENY SERVICES
+              BEST CLEANING SERVICES
             </h5>
             <h1 className="font-Inter font-extrabold text-white text-[26px] leading-[44px] sm:text-5xl sm:leading-[68px] lg:text-[50px] 2xl:text-[60px] 2xl:leading-[70px] mt-6 mb-5">
               Bringing <span className="text-PrimaryColor-0">Professional</span>
@@ -39,7 +39,7 @@ const Banner = () => {
             />
           </div>
           <div>
-            <img src={bannerThumb} className="relative top-5" />
+            <img src={bannerThumb} className="relative top-[5rem] 2xl:top-5" />
           </div>
         </div>
       </div>

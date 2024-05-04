@@ -114,9 +114,9 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="bg-[url('/public/images/service-bg3.png')] bg-cover bg-center bg-no-repeat pt-28 pb-[120px]">
+    <section className="relative bg-[url('/public/images/service-bg3.png')] bg-cover bg-center bg-no-repeat pt-28 pb-[120px]">
       <div className="Container">
-        <div>
+        <div className="md:-mb-[7.6rem]">
           <h5 className="font-Inter inline-block text-lg text-PrimaryColor-0 font-medium px-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
             TESTIMONIAL
           </h5>
@@ -141,7 +141,7 @@ const Testimonial = () => {
                   return (
                     <>
                       <SwiperSlide key={id}>
-                        <div className="pt-3">
+                        <div className="pt-[136px]">
                           <TestimonialCard
                             testiImg={testiImg}
                             testiRatingIcon={testiRatingIcon}
@@ -153,12 +153,12 @@ const Testimonial = () => {
                           />
                         </div>
                       </SwiperSlide>
-                      <TestimonialNavigation />
                     </>
                   );
                 }
               )}
             </div>
+            <TestimonialNavigation />
           </Swiper>
         </div>
       </div>

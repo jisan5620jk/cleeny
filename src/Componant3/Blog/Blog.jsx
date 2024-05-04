@@ -24,7 +24,7 @@ const blogData = [
     blogDate: "Mar 15, 2024",
     blogComment: "1 Comments",
     blogUrl: "/",
-    blogTitle: "Add fragrance and boost cleaning power.",
+    blogTitle: "Add fragrance and your boost cleaning power.",
     btnContent: "EXPLORE MORE",
     btnIcon: <FaArrowRightLong />,
   },
