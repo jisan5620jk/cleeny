@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const TestmonialCard = ({
+const TestimonialCard = ({
   testiImg,
   testiRatingIcon,
   testiName,
@@ -12,7 +12,9 @@ const TestmonialCard = ({
     <div className="px-5 pt-5 pb-8 sm:px-10 relative shadow-lg bg-HoverColor-0 group rounded-xl z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
       <div className="flex justify-between items-center">
         <div className="transition-all duration-500 group-hover:text-white">
-          <h1 className="text-PrimaryColor-0 text-5xl rotate-180">{testiIcon}</h1>
+          <h1 className="text-PrimaryColor-0 text-5xl rotate-180">
+            {testiIcon}
+          </h1>
         </div>
         <ul className="flex gap-1 items-center text-xl text-PrimaryColor-0">
           <li>{testiRatingIcon}</li>
@@ -45,4 +47,4 @@ const TestmonialCard = ({
   );
 };
 
-export default TestmonialCard;
+export default TestimonialCard;

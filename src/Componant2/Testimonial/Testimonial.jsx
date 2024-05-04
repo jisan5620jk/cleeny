@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { MdOutlineStarPurple500 } from "react-icons/md";
-import TestmonialCard from "./TestmonialCard";
+import TestimonialCard from "./TestimonialCard";
 
 const testiData = [
   {
@@ -96,7 +96,7 @@ const Testimonial = () => {
                   return (
                     <SwiperSlide key={id}>
                       <div className="pt-3">
-                        <TestmonialCard
+                        <TestimonialCard
                           testiImg={testiImg}
                           testiRatingIcon={testiRatingIcon}
                           testiName={testiName}

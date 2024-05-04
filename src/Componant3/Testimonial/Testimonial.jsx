@@ -9,10 +9,10 @@ import counterIcon3 from "/public/images/counter-icon4.png";
 import counterIcon4 from "/public/images/counter-icon5.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MdOutlineStarPurple500 } from "react-icons/md";
-import TestmonialCard from "./TestmonialCard";
 import { BiSolidQuoteRight } from "react-icons/bi";
 import TestimonialNavigation from "./TestimonialNavigation";
 import TestiCounter from "./TestiCounter";
+import TestimonialCard from "./TestimonialCard";
 
 const testiData = [
   {
@@ -142,7 +142,7 @@ const Testimonial = () => {
                     <>
                       <SwiperSlide key={id}>
                         <div className="pt-3">
-                          <TestmonialCard
+                          <TestimonialCard
                             testiImg={testiImg}
                             testiRatingIcon={testiRatingIcon}
                             testiName={testiName}
