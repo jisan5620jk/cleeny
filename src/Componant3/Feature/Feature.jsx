@@ -29,7 +29,7 @@ const Feature = () => {
   return (
     <section className="py-[120px] bg-[#f3f4f8]">
       <div className="Container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[78px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[78px] sm:gap-7 md:gap-7 xl:gap-[78px]">
           {processData.map(({ id, featureIcon, featureTitle, featureDesc }) => {
             return (
               <div key={id}>

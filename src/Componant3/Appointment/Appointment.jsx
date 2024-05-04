@@ -13,7 +13,7 @@ const Appointment = () => {
           <div className="relative">
             <img
               src={appointmentThumb}
-              className="w-full lg:max-w-[inherit] lg:-ml-[24rem] 2xl:-ml-[19.5rem]"
+              className="w-full lg:w-[inherit] lg:max-w-[inherit] lg:-ml-[28.8rem] xl:-ml-[24rem] 2xl:-ml-[19.5rem]"
             />
             <div className="absolute top-0 right-0 2xl:right-7 bg-SecondaryColor-0 w-[100px] h-[100px] md:w-[150px] md:h-[150px] rounded-es-xl flex justify-center items-center">
               <button

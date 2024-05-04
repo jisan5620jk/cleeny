@@ -9,7 +9,7 @@ const TestimonialCard = ({
   testiShape,
 }) => {
   return (
-    <div className="px-5 pt-5 pb-8 sm:px-10 relative shadow-lg bg-HoverColor-0 group rounded-xl z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
+    <div className="px-5 sm:px-10 lg:px-7 xl:px-10 pt-5 pb-8 relative shadow-lg bg-HoverColor-0 group rounded-xl z-10 overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
       <div className="flex justify-between items-center">
         <div className="transition-all duration-500 group-hover:text-white">
           <h1 className="text-PrimaryColor-0 text-5xl rotate-180">
@@ -32,7 +32,7 @@ const TestimonialCard = ({
           <img src={testiImg} />
         </div>
         <div>
-          <h5 className="font-Inter font-medium text-white text-xl">
+          <h5 className="font-Inter font-medium text-white text-xl lg:text-lg xl:text-xl">
             {testiName}
           </h5>
           <p className="font-Poppins text-white font-light transition-all duration-500 text-[15px] relative z-10 pl-4 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-PrimaryColor-0">
