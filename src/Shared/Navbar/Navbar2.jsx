@@ -320,8 +320,8 @@ const Navbar = () => {
 
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/volunteer2" className="py-2 block">
-                              Become Volunteer
+                            <Link to="/projectDetails" className="py-2 block">
+                              Project Details
                             </Link>
                           </li>
                         </div>

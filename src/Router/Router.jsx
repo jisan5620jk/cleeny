@@ -6,6 +6,7 @@ import Home1 from "../Pages/Home1/Home1";
 import Home2 from "../Pages/Home2/Home2";
 import Home3 from "../Pages/Home3/Home3";
 import ErrorPage from "../Shared/ErrorPage/ErrorPage";
+import ProjectDetails from "../Pages/InnerPage/ProjectDetails/ProjectDetails";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/home2",
         element: <Home2 />,
+      },
+      {
+        path: "/projectDetails",
+        element: <ProjectDetails />,
       },
     ],
   },
