@@ -2,8 +2,18 @@ import { Link } from "react-router-dom";
 import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
 import profilethumb from "/public/images/project-det-team-thumb.png";
 import wedgetIcon from "/public/images/widget-icon.png";
+import projectDetailsIcon from "/public/images/sidber-icon.png";
+import projectDetailsIcon2 from "/public/images/sidber-icon2.png";
 import projectDetailsThumb from "/public/images/sidber-img.png";
-import { FaArrowRight, FaFacebookF, FaLinkedinIn, FaPinterestP, FaXTwitter } from "react-icons/fa6";
+import projectDetailsListThumb from "/public/images/project-det-thumb.png";
+import {
+  FaArrowRight,
+  FaCircleCheck,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPinterestP,
+  FaXTwitter,
+} from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const ProjectDetails = () => {
@@ -17,7 +27,7 @@ const ProjectDetails = () => {
       <section className="py-[120px] bg-[#f3f4f8]">
         <div className="Container">
           <div className="grid grid-cols-3 gap-[70px]">
-            <div className="col-span-1">
+            <div className="col-span-3 lg:col-span-1">
               <div className="rounded-lg overflow-hidden bg-white mb-7">
                 <h4 className="font-Inter font-medium text-white text-2xl bg-SecondaryColor-0 pt-5 px-9 pb-5">
                   Project Details
@@ -118,8 +128,8 @@ const ProjectDetails = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-span-2">
-              <h2 className="font-Inter font-bold text-4xl text-HeadingColor-0">
+            <div className="col-span-3 lg:col-span-2">
+              <h2 className="font-Inter font-bold text-3xl sm:text-4xl text-HeadingColor-0">
                 Perfectly Cleaning Your House
               </h2>
               <p className="font-Poppins font-light text-TextColor-0 mt-6">
@@ -138,7 +148,7 @@ const ProjectDetails = () => {
                 frictionless products.
               </p>
               <img src={projectDetailsThumb} className="w-full" />
-              <h2 className="font-Inter font-bold text-[30px] text-HeadingColor-0 mt-[74px]">
+              <h2 className="font-Inter font-bold text-2xl sm:text-3xl text-HeadingColor-0 mt-[74px]">
                 What the Benifits?
               </h2>
               <p className="font-Poppins font-light text-TextColor-0 mt-6">
@@ -149,6 +159,93 @@ const ProjectDetails = () => {
                 outsourcing. Conveniently repurpose market-driven deliverables
                 without holistic potentialitiess distinctively integrate
               </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 mt-7">
+                <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row gap-5 bg-white rounded-md px-6 py-7">
+                  <div className="w-[72px] h-[72px] rounded-full bg-[#f3f4f8] flex justify-center items-center">
+                    <img src={projectDetailsIcon} />
+                  </div>
+                  <div className="flex-1">
+                    <h6 className="font-Inter font-semibold text-[22px] text-HeadingColor-0">
+                      Proper Washing
+                    </h6>
+                    <p className="font-Poppins font-light text-TextColor-0 mt-3">
+                      Ethical network environmental architect go forward opportu
+                      credibly implement
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row gap-5 bg-white rounded-md px-6 py-7">
+                  <div className="w-[72px] h-[72px] rounded-full bg-[#f3f4f8] flex justify-center items-center">
+                    <img src={projectDetailsIcon2} />
+                  </div>
+                  <div className="flex-1">
+                    <h6 className="font-Inter font-semibold text-[22px] text-HeadingColor-0">
+                      Proper cleeny
+                    </h6>
+                    <p className="font-Poppins font-light text-TextColor-0 mt-3">
+                      Ethical network environmental architect go forward opportu
+                      credibly implement
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h2 className="font-Inter font-bold text-2xl sm:text-3xl text-HeadingColor-0 mt-[74px]">
+                Quickly Parallel Task
+              </h2>
+              <p className="font-Poppins font-light text-TextColor-0 mt-6">
+                Methods empowerment. Dramatically architect go forward
+                opportunities credibly revolutionize front-end initiatives for
+                interoperable outsourcing. Conveniently repurpose market-driven
+                deliverables without holistic potentialitiess distinctively
+                integrate
+              </p>
+              <div className="grid gap-7 grid-cols-1 lg:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 mt-11">
+                <div>
+                  <h2 className="font-Inter font-bold text-2xl sm:text-3xl text-HeadingColor-0">
+                    Quickly Parallel Task
+                  </h2>
+                  <ul className="flex flex-col gap-[14px] mt-7">
+                    <li className="flex gap-3 items-center font-Poppins font-light text-TextColor-0">
+                      <FaCircleCheck
+                        size={"20"}
+                        className="text-SecondaryColor-0"
+                      />
+                      Innovate wireless market
+                    </li>
+                    <li className="flex gap-3 items-center font-Poppins font-light text-TextColor-0">
+                      <FaCircleCheck
+                        size={"20"}
+                        className="text-SecondaryColor-0"
+                      />
+                      Productivate resource sucking
+                    </li>
+                    <li className="flex gap-3 items-center font-Poppins font-light text-TextColor-0">
+                      <FaCircleCheck
+                        size={"20"}
+                        className="text-SecondaryColor-0"
+                      />
+                      Proactively unleash oriented communities
+                    </li>
+                    <li className="flex gap-3 items-center font-Poppins font-light text-TextColor-0">
+                      <FaCircleCheck
+                        size={"20"}
+                        className="text-SecondaryColor-0"
+                      />
+                      Credibly develop progressive archi
+                    </li>
+                    <li className="flex gap-3 items-center font-Poppins font-light text-TextColor-0">
+                      <FaCircleCheck
+                        size={"20"}
+                        className="text-SecondaryColor-0"
+                      />
+                      Phosfluorescently to customer
+                    </li>
+                  </ul>
+                </div>
+                <div className="mt-3">
+                  <img src={projectDetailsListThumb} />
+                </div>
+              </div>
             </div>
           </div>
         </div>

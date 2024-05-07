@@ -7,6 +7,7 @@ import Home2 from "../Pages/Home2/Home2";
 import Home3 from "../Pages/Home3/Home3";
 import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 import ProjectDetails from "../Pages/InnerPage/ProjectDetails/ProjectDetails";
+import BlogDetails from "../Pages/InnerPage/BlogDetails/BlogDetails";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/projectDetails",
         element: <ProjectDetails />,
+      },
+      {
+        path: "/blogDetails",
+        element: <BlogDetails />,
       },
     ],
   },

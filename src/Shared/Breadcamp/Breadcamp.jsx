@@ -6,14 +6,14 @@ import breadCampShape from "/public/images/breatcome-shape.png";
 
 const Breadcamp = ({ breadCampTitle, url, breadCampLink,breadCampContent }) => {
   return (
-    <div className="bg-[url('/public/images/breatcome-bg.png')] bg-no-repeat bg-cover bg-center flex items-center h-[350px] sm:h-[450px] text-center pt-20">
+    <div className="bg-[url('/public/images/breatcome-bg.png')] bg-no-repeat bg-cover bg-center flex items-center h-[400px] sm:h-[450px] text-center pt-20">
       <div className="Container relative">
-        <img src={breadCampShape} className="absolute -top-24 right-24 animate-zoomInOut"/>
-        <img src={breadCampShape} className="absolute -bottom-24 left-0 animate-dance2"/>
+        <img src={breadCampShape} className="absolute -top-24 right-24 animate-zoomInOut hidden md:block"/>
+        <img src={breadCampShape} className="absolute -bottom-24 left-0 animate-dance2 hidden md:block"/>
         <h1 className="font-Inter font-bold text-4xl sm:text-[46px] text-white capitalize">
           {breadCampTitle}
         </h1>
-        <ul className="flex gap-3 items-center justify-center mt-2 sm:mt-5">
+        <ul className="flex flex-col sm:flex-row gap-2 sm:gap-3 items-center justify-center mt-8 sm:mt-5">
           <li>
             <Link to={"/"}>
               <button className="font-Inter text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
@@ -22,7 +22,7 @@ const Breadcamp = ({ breadCampTitle, url, breadCampLink,breadCampContent }) => {
             </Link>
           </li>
           <li>
-            <FaArrowRightLong className="text-white" />
+            <FaArrowRightLong className="text-white hidden sm:block" />
           </li>
           <li>
             <Link to={url}>
@@ -32,7 +32,7 @@ const Breadcamp = ({ breadCampTitle, url, breadCampLink,breadCampContent }) => {
             </Link>
           </li>
           <li>
-            <FaArrowRightLong className="text-white opacity-70" />
+            <FaArrowRightLong className="text-white opacity-70 hidden sm:block" />
           </li>
           <li>
             <Link to={url}>
