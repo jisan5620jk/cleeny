@@ -10,12 +10,14 @@ import { IoSearch } from "react-icons/io5";
 import { IoIosSend } from "react-icons/io";
 import { FaUserCircle } from "react-icons/fa";
 import {
+  FaArrowRightLong,
   FaCircleCheck,
   FaCommentsDollar,
   FaFacebookF,
   FaLinkedinIn,
   FaPinterestP,
   FaRegCalendarCheck,
+  FaRegFolderOpen,
   FaXTwitter,
 } from "react-icons/fa6";
 import { BiSolidQuoteAltRight, BiSolidShare } from "react-icons/bi";
@@ -24,13 +26,16 @@ const BlogDetails = () => {
   return (
     <>
       <Breadcamp
-        breadCampTitle={"House Floor Cleaning"}
-        breadCampLink={"Project Details"}
-        breadCampContent={"House Floor Cleaning"}
+        breadCampTitle={"Blog Details"}
+        url={"/blog"}
+        breadcampIcon={<FaArrowRightLong />}
+        breadcampIcon2={<FaArrowRightLong />}
+        breadCampLink={"Blog"}
+        breadCampContent={"Floor Cleaning Using New Equipment"}
       />
       <section className="py-28">
         <div className="Container">
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-7">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-12">
             <div className="col-span-2">
               <div className="border border-BorderColor-0 rounded-md overflow-hidden">
                 <div className="relative">
@@ -39,9 +44,9 @@ const BlogDetails = () => {
                     Cleaning
                   </h6>
                 </div>
-                <div className="px-[62px]">
+                <div className="px-4 sm:px-8">
                   <Link to={"/"}>
-                    <button className="font-Inter font-bold text-left text-2xl 2xl:text-3xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-9 mb-6">
+                    <button className="font-Inter font-bold text-left text-lg sm:text-2xl 2xl:text-3xl text-HeadingColor-0 transition-all duration-500 hover:text-SecondaryColor-0 mt-9 mb-6">
                       Newest Cleaning Equipment for House 2024
                     </button>
                   </Link>
@@ -74,12 +79,12 @@ const BlogDetails = () => {
                     before real-time portals. Quickly build efficient results
                     rather than
                   </p>
-                  <div className="flex flex-col bg-[#f3f4f8] sm:flex-row gap-7 px-11 py-10 rounded-md">
+                  <div className="flex flex-col bg-[#f3f4f8] sm:flex-row gap-7 px-4 sm:px-11 py-4 sm:py-10 rounded-md mt-12">
                     <div className="text-6xl text-SecondaryColor-0">
                       <BiSolidQuoteAltRight />
                     </div>
                     <div className="flex-1">
-                      <p className="font-Poppins text-HeadingColor-0 text-lg italic">
+                      <p className="font-Poppins text-HeadingColor-0 sm:text-lg italic">
                         “Monotonectally impact reliable alignments vis-a-vis
                         corporate architectures ortals through cross functional
                         deliverables. testing procedures”
@@ -90,7 +95,7 @@ const BlogDetails = () => {
                     </div>
                   </div>
                   <Link to={"/"}>
-                    <button className="font-Inter font-bold text-2xl sm:text-3xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-10 mb-4">
+                    <button className="font-Inter font-bold text-left text-xl sm:text-2xl md:text-3xl text-HeadingColor-0 transition-all duration-500 hover:text-SecondaryColor-0 mt-14 mb-4">
                       Modern Equipment 2024
                     </button>
                   </Link>
@@ -146,7 +151,7 @@ const BlogDetails = () => {
                     </div>
                   </div>
                   <Link to={"/"}>
-                    <button className="font-Inter font-bold text-2xl sm:text-3xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-10 mb-4">
+                    <button className="font-Inter font-bold text-left text-xl sm:text-2xl md:text-3xl text-HeadingColor-0 transition-all duration-500 hover:text-SecondaryColor-0 mt-10 mb-4">
                       Improve Cleaning System
                     </button>
                   </Link>
@@ -157,7 +162,7 @@ const BlogDetails = () => {
                     incentivize resource.
                   </p>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-5 sm:items-center justify-between border-t border-BorderColor1-0 mt-9 py-5 px-[62px]">
+                <div className="flex flex-col sm:flex-row gap-5 items-start sm:justify-between border-t border-BorderColor1-0 mt-9 py-5 px-4 sm:px-8">
                   <div>
                     <h6 className="font-Poppins text-lg font-medium">
                       <Link to={"/"}>
@@ -206,7 +211,7 @@ const BlogDetails = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#f3f4f8] px-[62px] py-14 rounded-md mt-[60px]">
+              <div className="bg-[#f3f4f8] px-4 sm:px-[62px] py-14 rounded-md mt-[60px]">
                 <h3 className="font-Inter font-semibold text-HeadingColor-0 text-2xl mb-10">
                   Comments 02
                 </h3>
@@ -234,7 +239,7 @@ const BlogDetails = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-6 mt-10 pl-[90px]">
+                <div className="flex flex-col sm:flex-row gap-6 mt-10 md:pl-[90px]">
                   <div>
                     <FaUserCircle className="text-[#e0e0e0] text-7xl" />
                   </div>
@@ -258,7 +263,7 @@ const BlogDetails = () => {
                     </Link>
                   </div>
                 </div>
-                <h3 className="font-Inter font-semibold text-HeadingColor-0 text-2xl mt-20 mb-10">
+                <h3 className="font-Inter font-semibold text-HeadingColor-0 text-xl sm:text-2xl mt-20 mb-10">
                   Add New Comments
                 </h3>
                 <form action="#" method="post">
@@ -306,25 +311,80 @@ const BlogDetails = () => {
               </div>
             </div>
             <div className="col-span-2 lg:col-span-1">
-              <div className="relative inline-block w-full mb-7 p-7 rounded-md bg-PrimaryColor-0">
+              <div className="relative inline-block w-full mb-7 p-4 sm:p-8 lg:p-6 xl:p-8 rounded-md bg-[#f3f4f8]">
                 <input
                   type="text"
                   name="search"
                   id="search"
                   placeholder="Search here..."
                   required
-                  className="w-full h-[60px] p-6 rounded font-Poppins"
+                  className="w-full h-[56px] p-6 rounded font-Poppins"
                 />
                 <button
                   type="submit"
-                  className=" text-xl text-PrimaryColor-0 transition-all duration-500 flex items-center justify-center hover:hue-rotate-[360deg] absolute right-12 top-1/2 -translate-y-1/2"
+                  className=" text-xl text-white rounded h-[56px] w-[56px] bg-SecondaryColor-0 transition-all duration-500 flex items-center justify-center hover:hue-rotate-[360deg] absolute right-7 top-1/2 -translate-y-1/2"
                 >
                   <IoSearch />
                 </button>
               </div>
-              <div className="px-8 bg-[#fff4f1] rounded-md pt-7 pb-4 mb-7">
-                <h4 className="font-Poppins font-bold text-[22px] text-HeadingColor-0 mb-8">
-                  Upcomming Events
+              <div className="bg-[#f3f4f8] rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-4 mb-7">
+                <h4 className="font-Inter font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-SecondaryColor-0">
+                  Categories
+                </h4>
+                <ul className="mt-8">
+                  <li>
+                    <Link to={"/"}>
+                      <button className="w-full font-Inter text-left font-light text-HeadingColor-0 transition-all duration-500 group px-7 py-3 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                        <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        Floor Cleaning
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/"}>
+                      <button className="w-full font-Inter text-left font-light text-HeadingColor-0 transition-all duration-500 group px-7 py-3 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                        <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        House Cleaning
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/"}>
+                      <button className="w-full font-Inter text-left font-light text-HeadingColor-0 transition-all duration-500 group px-7 py-3 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                        <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        Office Cleaning
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/"}>
+                      <button className="w-full font-Inter text-left font-light text-HeadingColor-0 transition-all duration-500 group px-7 py-3 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                        <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        Cleaning Specialist
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/"}>
+                      <button className="w-full font-Inter text-left font-light text-HeadingColor-0 transition-all duration-500 group px-7 py-3 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                        <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        Window Cleaning
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/"}>
+                      <button className="w-full font-Inter text-left font-light text-HeadingColor-0 transition-all duration-500 group px-7 py-3 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                        <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        kitchen Cleaning
+                      </button>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="px-4 sm:px-8 lg:px-6 xl:px-8 bg-[#f3f4f8] rounded-md pt-7 pb-4 mb-7">
+                <h4 className="font-Inter font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-SecondaryColor-0">
+                  Popular Post
                 </h4>
                 <Link to={"/blog-details"}>
                   <button className="group flex gap-4 mb-6">
@@ -332,148 +392,83 @@ const BlogDetails = () => {
                       <img src={itemthumb} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Poppins font-bold text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        Raise fund for clean & healthy foods
+                      <h6 className="font-Poppins font-medium text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-SecondaryColor-0">
+                        How to Proper Cleaning Floor Carpet
                       </h6>
-                      <p className="font-Poppins text-TextColor-0 text-[15px] mt-1">
-                        January 01, 2024
+                      <p className="font-Poppins text-SecondaryColor-0 text-sm mt-1">
+                        01 Jan, 2024
                       </p>
                     </div>
                   </button>
                 </Link>
-                <hr className="text-BorderColor2-0" />
                 <Link to={"/blogDetails"}>
                   <button className="group flex gap-4 my-6">
                     <div>
                       <img src={itemthumb2} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Poppins font-bold text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        Collect Funds for Kids Foods & Bevarage
+                      <h6 className="font-Poppins font-medium text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-SecondaryColor-0">
+                        New cleaning Equipment for House...
                       </h6>
-                      <p className="font-Poppins text-TextColor-0 text-[15px] mt-1">
-                        January 16, 2024
+                      <p className="font-Poppins text-SecondaryColor-0 text-sm mt-1">
+                        16 Jan, 2024
                       </p>
                     </div>
                   </button>
                 </Link>
-                <hr className="text-BorderColor2-0" />
                 <Link to={"/blogDetails"}>
                   <button className="group flex gap-4 my-6">
                     <div>
                       <img src={itemthumb3} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Poppins font-bold text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        Donate Money for Kids Educations
+                      <h6 className="font-Poppins font-medium text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-SecondaryColor-0">
+                        How to Carpet Cleaning Use New Equipment
                       </h6>
-                      <p className="font-Poppins text-TextColor-0 text-[15px] mt-1">
-                        January 27, 2024
+                      <p className="font-Poppins text-SecondaryColor-0 text-sm mt-1">
+                        27 Jan, 2024
                       </p>
                     </div>
                   </button>
                 </Link>
               </div>
-              <div className="bg-[#fff4f1] rounded-md px-9 pt-7 pb-4 mb-7">
-                <h4 className="font-Poppins font-bold text-[22px] text-HeadingColor-0 mb-8">
-                  Categories
+              <div className="bg-[#f3f4f8] rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-10 mb-7">
+                <h4 className="font-Inter font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-SecondaryColor-0">
+                  Tags
                 </h4>
-                <ul className="mt-8">
-                  <li>
-                    <Link to={"/"}>
-                      <button className="w-full font-Poppins text-left font-medium text-HeadingColor-0 transition-all duration-500 px-5 py-3 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        Charity
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/"}>
-                      <button className="w-full font-Poppins text-left font-medium text-HeadingColor-0 transition-all duration-500 px-5 py-3 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        Donations
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/"}>
-                      <button className="w-full font-Poppins text-left font-medium text-HeadingColor-0 transition-all duration-500 px-5 py-3 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        Healths
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/"}>
-                      <button className="w-full font-Poppins text-left font-medium text-HeadingColor-0 transition-all duration-500 px-5 py-3 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        Foods
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/"}>
-                      <button className="w-full font-Poppins text-left font-medium text-HeadingColor-0 transition-all duration-500 px-5 py-3 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        Kid Educations
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/"}>
-                      <button className="w-full font-Poppins text-left font-medium text-HeadingColor-0 transition-all duration-500 px-5 py-3 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        Fund Raising
-                      </button>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-[#fff4f1] rounded-md px-4 sm:px-8 lg:px-4 xl:px-8 pt-7 pb-10 mb-7">
-                <h4 className="font-Poppins font-bold text-[22px] text-HeadingColor-0">
-                  Tag Cloud
-                </h4>
-                <ul className="mt-8 inline-block">
+                <ul className="inline-block">
                   <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Poppins relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Charity
+                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
+                        Cleaning
                       </button>
                     </Link>
                   </li>
                   <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Poppins relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Educations
+                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
+                        Floor Cleaning
                       </button>
                     </Link>
                   </li>
                   <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Poppins relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Water
+                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
+                        House Cleaning
                       </button>
                     </Link>
                   </li>
                   <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Poppins relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Foods
+                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
+                        Window Cleaning
                       </button>
                     </Link>
                   </li>
                   <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Poppins relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Orphans
-                      </button>
-                    </Link>
-                  </li>
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Poppins relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Donations
-                      </button>
-                    </Link>
-                  </li>
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Poppins relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Healths
+                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
+                        Pool Cleaning
                       </button>
                     </Link>
                   </li>

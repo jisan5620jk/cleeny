@@ -8,6 +8,7 @@ import Home3 from "../Pages/Home3/Home3";
 import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 import ProjectDetails from "../Pages/InnerPage/ProjectDetails/ProjectDetails";
 import BlogDetails from "../Pages/InnerPage/BlogDetails/BlogDetails";
+import ProjectInner from "../Pages/InnerPage/ProjectInner/ProjectInner";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/home2",
         element: <Home2 />,
+      },
+      {
+        path: "/project",
+        element: <ProjectInner />,
       },
       {
         path: "/projectDetails",

@@ -8,6 +8,7 @@ import projectDetailsThumb from "/public/images/sidber-img.png";
 import projectDetailsListThumb from "/public/images/project-det-thumb.png";
 import {
   FaArrowRight,
+  FaArrowRightLong,
   FaCircleCheck,
   FaFacebookF,
   FaLinkedinIn,
@@ -22,6 +23,8 @@ const ProjectDetails = () => {
       <Breadcamp
         breadCampTitle={"House Floor Cleaning"}
         breadCampLink={"Project Details"}
+        breadcampIcon={<FaArrowRightLong />}
+        breadcampIcon2={<FaArrowRightLong />}
         breadCampContent={"House Floor Cleaning"}
       />
       <section className="py-[120px] bg-[#f3f4f8]">
