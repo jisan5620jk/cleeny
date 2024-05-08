@@ -12,7 +12,7 @@ const PricingAccordion = ({ children, title, id, active = false }) => {
     <div className="mb-5 rounded-md overflow-hidden">
       <h2>
         <button
-          className="flex items-center justify-between pl-10 pr-8 py-6 w-full text-left text-xl font-semibold font-Inter hover:text-SecondaryColor-0 group bg-white"
+          className="flex items-center justify-between pl-4 pr-2 md:pl-10 md:pr-8 lg:pl-6 lg:pr-4 xl:pl-10 xl:pr-8 py-6 w-full text-left font-semibold font-Inter hover:text-SecondaryColor-0 group bg-white"
           onClick={(e) => {
             e.preventDefault();
             setAccordionOpen(!accordionOpen);
@@ -21,7 +21,7 @@ const PricingAccordion = ({ children, title, id, active = false }) => {
           aria-controls={`accordion-text-${id}`}
         >
           <span
-            className={`text-HeadingColor-0 transition duration-400 group-hover:text-SecondaryColor-0 text-base sm:text-lg md:text-xl ${
+            className={`text-HeadingColor-0 transition duration-400 group-hover:text-SecondaryColor-0 text-base sm:text-lg md:text-xl lg:text-base xl:text-xl ${
               accordionOpen && "!text-SecondaryColor-0"
             }`}
           >
@@ -60,7 +60,7 @@ const PricingAccordion = ({ children, title, id, active = false }) => {
         id={`accordion-text-${id}`}
         role="region"
         aria-labelledby={`accordion-title-${id}`}
-        className={`grid font-Poppins font-light leading-[26px] text-TextColor-0 bg-white px-10 overflow-hidden transition-all duration-300 ease-in-out bg-normalBlack ${
+        className={`grid font-Poppins font-light leading-[26px] text-TextColor-0 bg-white px-4 md:px-10 lg:px-6 xl:px-10 overflow-hidden transition-all duration-300 ease-in-out bg-normalBlack ${
           accordionOpen
             ? "grid-rows-[1fr] opacity-100"
             : "grid-rows-[0fr] opacity-0"

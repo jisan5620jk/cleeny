@@ -7,7 +7,7 @@ const PricingFaq = () => {
     {
       title: "How to use modern equipment for cleaning?",
       text: "Foster visionary vortals without dynamic convergence. Interactively matrix multimedia based total linkage rather than leading-edges create technically sound",
-      active: false,
+      active: true,
     },
     {
       title: "What kinds of modern technology?",
@@ -24,7 +24,7 @@ const PricingFaq = () => {
   return (
     <main className="relative overflow-hidden py-28 bg-[#f3f4f8]">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:gap-10 lg:grid-cols-2 items-center">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center">
           <div>
             <img src={pricingFaqImg} />
           </div>

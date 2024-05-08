@@ -7,9 +7,9 @@ const PricingInner = () => {
   return (
     <>
       <Breadcamp
-        breadCampTitle={"Projects"}
+        breadCampTitle={"Affordable Price"}
         breadcampIcon={<FaArrowRightLong />}
-        breadCampContent={"Projects"}
+        breadCampContent={"Pricing"}
       />
       <Pricing />
       <div>

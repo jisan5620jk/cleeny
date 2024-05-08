@@ -10,6 +10,7 @@ import ProjectDetails from "../Pages/InnerPage/ProjectDetails/ProjectDetails";
 import BlogDetails from "../Pages/InnerPage/BlogDetails/BlogDetails";
 import ProjectInner from "../Pages/InnerPage/ProjectInner/ProjectInner";
 import PricingInner from "../Pages/InnerPage/PricingInner/PricingInner";
+import TeamInner from "../Pages/InnerPage/TeamInner/TeamInner";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/pricing",
         element: <PricingInner />,
+      },
+      {
+        path: "/teamInner",
+        element: <TeamInner />,
       },
       {
         path: "/blogDetails",
