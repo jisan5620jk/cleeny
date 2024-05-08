@@ -9,6 +9,7 @@ import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 import ProjectDetails from "../Pages/InnerPage/ProjectDetails/ProjectDetails";
 import BlogDetails from "../Pages/InnerPage/BlogDetails/BlogDetails";
 import ProjectInner from "../Pages/InnerPage/ProjectInner/ProjectInner";
+import PricingInner from "../Pages/InnerPage/PricingInner/PricingInner";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/projectDetails",
         element: <ProjectDetails />,
+      },
+      {
+        path: "/pricing",
+        element: <PricingInner />,
       },
       {
         path: "/blogDetails",
