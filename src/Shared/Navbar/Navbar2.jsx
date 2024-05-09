@@ -287,7 +287,6 @@ const Navbar = () => {
                       </ul>
                     </div>
                   </NavLink>
-
                   <NavLink
                     className={`${({ isActive, isPending }) =>
                       isPending

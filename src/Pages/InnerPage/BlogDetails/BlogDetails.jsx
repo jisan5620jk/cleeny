@@ -334,7 +334,7 @@ const BlogDetails = () => {
                 <ul className="mt-8">
                   <li>
                     <Link to={"/"}>
-                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-3 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         Floor Cleaning
                       </button>
@@ -342,7 +342,7 @@ const BlogDetails = () => {
                   </li>
                   <li>
                     <Link to={"/"}>
-                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-3 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         House Cleaning
                       </button>
@@ -350,7 +350,7 @@ const BlogDetails = () => {
                   </li>
                   <li>
                     <Link to={"/"}>
-                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-3 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         Office Cleaning
                       </button>
@@ -358,7 +358,7 @@ const BlogDetails = () => {
                   </li>
                   <li>
                     <Link to={"/"}>
-                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-3 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         Cleaning Specialist
                       </button>
@@ -366,7 +366,7 @@ const BlogDetails = () => {
                   </li>
                   <li>
                     <Link to={"/"}>
-                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-3 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         Window Cleaning
                       </button>
@@ -374,7 +374,7 @@ const BlogDetails = () => {
                   </li>
                   <li>
                     <Link to={"/"}>
-                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-3 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         kitchen Cleaning
                       </button>
@@ -392,7 +392,7 @@ const BlogDetails = () => {
                       <img src={itemthumb} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Poppins font-medium text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-SecondaryColor-0">
+                      <h6 className="font-Poppins font-medium text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-SecondaryColor-0">
                         How to Proper Cleaning Floor Carpet
                       </h6>
                       <p className="font-Poppins text-SecondaryColor-0 text-sm mt-1">
@@ -407,7 +407,7 @@ const BlogDetails = () => {
                       <img src={itemthumb2} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Poppins font-medium text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-SecondaryColor-0">
+                      <h6 className="font-Poppins font-medium text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-SecondaryColor-0">
                         New cleaning Equipment for House...
                       </h6>
                       <p className="font-Poppins text-SecondaryColor-0 text-sm mt-1">
@@ -422,7 +422,7 @@ const BlogDetails = () => {
                       <img src={itemthumb3} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Poppins font-medium text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-SecondaryColor-0">
+                      <h6 className="font-Poppins font-medium text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-SecondaryColor-0">
                         How to Carpet Cleaning Use New Equipment
                       </h6>
                       <p className="font-Poppins text-SecondaryColor-0 text-sm mt-1">

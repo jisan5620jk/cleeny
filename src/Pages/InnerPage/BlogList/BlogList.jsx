@@ -1,455 +1,327 @@
 import { Link } from "react-router-dom";
 import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
-import blogListImg from "/public/images/Componant2/blog/blog-1.jpg";
-import blogListImg2 from "/public/images/Componant2/blog/blog-2.jpg";
-import blogListImg3 from "/public/images/Componant2/blog/blog-3.jpg";
-import blogListImg4 from "/public/images/Componant2/blog/blog-4.jpg";
-import blogListImg5 from "/public/images/Componant2/blog/blog-5.jpg";
-import itemthumb from "/public/images/Componant2/blog/post4.jpg";
-import itemthumb2 from "/public/images/Componant2/blog/post5.jpg";
-import itemthumb3 from "/public/images/Componant2/blog/post6.jpg";
-import logo from "/public/images/Componant2/logo/logo-icon.png";
-import { VscHeart } from "react-icons/vsc";
+import blogListImg from "/public/images/blog-thumb13.png";
+import blogListImg2 from "/public/images/blog-thumb14.png";
+import blogListImg3 from "/public/images/blog-thumb15.png";
+import blogListImg4 from "/public/images/blog-thumb16.png";
+import blogListImg5 from "/public/images/sidber-img.png";
+import itemthumb from "/public/images/post1.png";
+import itemthumb2 from "/public/images/post2.png";
+import itemthumb3 from "/public/images/post3.png";
 import { IoSearch } from "react-icons/io5";
 import { FaUserCircle } from "react-icons/fa";
-import { FaCommentsDollar, FaRegCalendarCheck } from "react-icons/fa6";
-import { HiChevronDoubleRight } from "react-icons/hi2";
-import { RiArrowRightDoubleFill } from "react-icons/ri";
+import {
+  FaArrowRightLong,
+  FaRegCalendarCheck,
+  FaRegFolderOpen,
+} from "react-icons/fa6";
+import BlogListCard from "./BlogListCard";
+
+const blogListData = [
+  {
+    id: 1,
+    blogListImg: blogListImg,
+    thumbContent: "Cleaning",
+    blogListTilte: "Newest Cleaning Equipment for House 2024",
+    postByIcon: <FaUserCircle />,
+    postBy: "By Author",
+    postDateIcon: <FaRegCalendarCheck />,
+    postDate: "03 January, 2024",
+    postFileIcon: <FaRegFolderOpen />,
+    postFile: "Cleaning",
+    blogListDesc:
+      "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
+    blogListUrl: "/",
+    blogListBtn: "Continue Reading",
+    blogListBtnIcon: <FaArrowRightLong />,
+  },
+  {
+    id: 2,
+    blogListImg: blogListImg2,
+    thumbContent: "Cleaning",
+    blogListTilte: "Newest Cleaning Equipment for House 2024",
+    postByIcon: <FaUserCircle />,
+    postBy: "By Author",
+    postDateIcon: <FaRegCalendarCheck />,
+    postDate: "03 March, 2024",
+    postFileIcon: <FaRegFolderOpen />,
+    postFile: "Cleaning",
+    blogListDesc:
+      "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
+    blogListUrl: "/",
+    blogListBtn: "Continue Reading",
+    blogListBtnIcon: <FaArrowRightLong />,
+  },
+  {
+    id: 3,
+    blogListImg: blogListImg3,
+    thumbContent: "Cleaning",
+    blogListTilte: "Newest Cleaning Equipment for House 2024",
+    postByIcon: <FaUserCircle />,
+    postBy: "By Author",
+    postDateIcon: <FaRegCalendarCheck />,
+    postDate: "03 May, 2024",
+    postFileIcon: <FaRegFolderOpen />,
+    postFile: "Cleaning",
+    blogListDesc:
+      "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
+    blogListUrl: "/",
+    blogListBtn: "Continue Reading",
+    blogListBtnIcon: <FaArrowRightLong />,
+  },
+  {
+    id: 4,
+    blogListImg: blogListImg4,
+    thumbContent: "Cleaning",
+    blogListTilte: "Newest Cleaning Equipment for House 2024",
+    postByIcon: <FaUserCircle />,
+    postBy: "By Author",
+    postDateIcon: <FaRegCalendarCheck />,
+    postDate: "03 January, 2024",
+    postFileIcon: <FaRegFolderOpen />,
+    postFile: "Cleaning",
+    blogListDesc:
+      "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
+    blogListUrl: "/",
+    blogListBtn: "Continue Reading",
+    blogListBtnIcon: <FaArrowRightLong />,
+  },
+  {
+    id: 5,
+    blogListImg: blogListImg5,
+    thumbContent: "Cleaning",
+    blogListTilte: "Newest Cleaning Equipment for House 2024",
+    postByIcon: <FaUserCircle />,
+    postBy: "By Author",
+    postDateIcon: <FaRegCalendarCheck />,
+    postDate: "03 June, 2024",
+    postFileIcon: <FaRegFolderOpen />,
+    postFile: "Cleaning",
+    blogListDesc:
+      "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
+    blogListUrl: "/",
+    blogListBtn: "Continue Reading",
+    blogListBtnIcon: <FaArrowRightLong />,
+  },
+];
 
 const BlogList = () => {
   return (
     <>
       <Breadcamp
-        breadCampLink={"Blog List"}
-        breadCampTitle={"Blog List"}
-        url={"/blogList"}
+        breadCampTitle={"Blog With Sidebar"}
+        url={"/blog"}
+        breadcampIcon={<FaArrowRightLong />}
+        breadcampIcon2={<FaArrowRightLong />}
+        breadCampLink={"Blog"}
+        breadCampContent={"Blog With Sidebar"}
       />
-      <section className="py-28">
+      <section className="pt-[120px] pb-[90px]">
         <div className="Container">
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-7">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-12">
             <div className="col-span-2">
-              <div className="border border-BorderColor2-0 rounded-md pb-8 mb-7">
-                <div className="relative">
-                  <img src={blogListImg} className="w-full" />
-                  <h6 className="font-Manrope text-sm text-white px-5 py-2 rounded-se-2xl absolute bottom-0 left-0 bg-PrimaryColor-0">
-                    Healthy Foods
-                  </h6>
-                </div>
-                <div className="px-5 sm:px-10">
-                  <Link to={"/"}>
-                    <button className="font-Manrope font-black text-xl sm:text-2xl text-left text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-9 mb-6">
-                      Organic Fods Reserved for Childreen
-                    </button>
-                  </Link>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-7">
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaUserCircle className="text-4xl text-[#dedede]" />
-                      Jhon Alexon
-                    </h6>
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaRegCalendarCheck className="text-base text-PrimaryColor-0" />
-                      Jan 10, 2024
-                    </h6>
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaCommentsDollar className="text-base text-PrimaryColor-0" />
-                      02 Comments
-                    </h6>
-                  </div>
-                  <p className="font-Manrope text-TextColor-0 border-t border-BorderColor2-0 pt-5">
-                    Completely create leveraged best practices and B2B
-                    interfaces events productivate it’s a cutting-edge solutions
-                    with go forward supply chains has depended.
-                  </p>
-                  <Link to={"/"}>
-                    <button className="flex items-center gap-2 font-Manrope text-HeadingColor-0 font-medium mt-8 mb-2">
-                      Continue Reading
-                      <HiChevronDoubleRight className="text-PrimaryColor-0" />
-                    </button>
-                  </Link>
-                </div>
-              </div>
-              <div className="border border-BorderColor2-0 rounded-md pb-8 mb-7">
-                <div className="relative">
-                  <img src={blogListImg2} className="w-full" />
-                  <h6 className="font-Manrope text-sm text-white px-5 py-2 rounded-se-2xl absolute bottom-0 left-0 bg-PrimaryColor-0">
-                    Healthy Foods
-                  </h6>
-                </div>
-                <div className="px-5 sm:px-10">
-                  <Link to={"/"}>
-                    <button className="font-Manrope font-black text-xl sm:text-2xl text-left text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-9 mb-6">
-                      Help for Kids Education Donate Money
-                    </button>
-                  </Link>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-7">
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaUserCircle className="text-4xl text-[#dedede]" />
-                      Jhon Alexon
-                    </h6>
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaRegCalendarCheck className="text-base text-PrimaryColor-0" />
-                      Jan 10, 2024
-                    </h6>
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaCommentsDollar className="text-base text-PrimaryColor-0" />
-                      02 Comments
-                    </h6>
-                  </div>
-                  <p className="font-Manrope text-TextColor-0 border-t border-BorderColor2-0 pt-5">
-                    Completely create leveraged best practices and B2B
-                    interfaces events productivate it’s a cutting-edge solutions
-                    with go forward supply chains has depended.
-                  </p>
-                  <Link to={"/"}>
-                    <button className="flex items-center gap-2 font-Manrope text-HeadingColor-0 font-medium mt-8 mb-2">
-                      Continue Reading
-                      <HiChevronDoubleRight className="text-PrimaryColor-0" />
-                    </button>
-                  </Link>
-                </div>
-              </div>
-              <div className="border border-BorderColor2-0 rounded-md pb-8 mb-7">
-                <div className="relative">
-                  <img src={blogListImg3} className="w-full" />
-                  <h6 className="font-Manrope text-sm text-white px-5 py-2 rounded-se-2xl absolute bottom-0 left-0 bg-PrimaryColor-0">
-                    Healthy Foods
-                  </h6>
-                </div>
-                <div className="px-5 sm:px-10">
-                  <Link to={"/"}>
-                    <button className="font-Manrope font-black text-xl sm:text-2xl text-left text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-9 mb-6">
-                      Education helps for Street Childreen’s
-                    </button>
-                  </Link>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-7">
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaUserCircle className="text-4xl text-[#dedede]" />
-                      Jhon Alexon
-                    </h6>
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaRegCalendarCheck className="text-base text-PrimaryColor-0" />
-                      Jan 10, 2024
-                    </h6>
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaCommentsDollar className="text-base text-PrimaryColor-0" />
-                      02 Comments
-                    </h6>
-                  </div>
-                  <p className="font-Manrope text-TextColor-0 border-t border-BorderColor2-0 pt-5">
-                    Completely create leveraged best practices and B2B
-                    interfaces events productivate it’s a cutting-edge solutions
-                    with go forward supply chains has depended.
-                  </p>
-                  <Link to={"/"}>
-                    <button className="flex items-center gap-2 font-Manrope text-HeadingColor-0 font-medium mt-8 mb-2">
-                      Continue Reading
-                      <HiChevronDoubleRight className="text-PrimaryColor-0" />
-                    </button>
-                  </Link>
-                </div>
-              </div>
-              <div className="border border-BorderColor2-0 rounded-md pb-8 mb-7">
-                <div className="relative">
-                  <img src={blogListImg4} className="w-full" />
-                  <h6 className="font-Manrope text-sm text-white px-5 py-2 rounded-se-2xl absolute bottom-0 left-0 bg-PrimaryColor-0">
-                    Healthy Foods
-                  </h6>
-                </div>
-                <div className="px-5 sm:px-10">
-                  <Link to={"/"}>
-                    <button className="font-Manrope font-black text-xl sm:text-2xl text-left text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-9 mb-6">
-                      How to Make Good Health orphan Kids
-                    </button>
-                  </Link>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-7">
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaUserCircle className="text-4xl text-[#dedede]" />
-                      Jhon Alexon
-                    </h6>
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaRegCalendarCheck className="text-base text-PrimaryColor-0" />
-                      Jan 10, 2024
-                    </h6>
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaCommentsDollar className="text-base text-PrimaryColor-0" />
-                      02 Comments
-                    </h6>
-                  </div>
-                  <p className="font-Manrope text-TextColor-0 border-t border-BorderColor2-0 pt-5">
-                    Completely create leveraged best practices and B2B
-                    interfaces events productivate it’s a cutting-edge solutions
-                    with go forward supply chains has depended.
-                  </p>
-                  <Link to={"/"}>
-                    <button className="flex items-center gap-2 font-Manrope text-HeadingColor-0 font-medium mt-8 mb-2">
-                      Continue Reading
-                      <HiChevronDoubleRight className="text-PrimaryColor-0" />
-                    </button>
-                  </Link>
-                </div>
-              </div>
-              <div className="border border-BorderColor2-0 rounded-md pb-8 mb-7">
-                <div className="relative">
-                  <img src={blogListImg5} className="w-full" />
-                  <h6 className="font-Manrope text-sm text-white px-5 py-2 rounded-se-2xl absolute bottom-0 left-0 bg-PrimaryColor-0">
-                    Healthy Foods
-                  </h6>
-                </div>
-                <div className="px-5 sm:px-10">
-                  <Link to={"/"}>
-                    <button className="font-Manrope font-black text-xl sm:text-2xl text-left text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-9 mb-6">
-                      Help for Kids Education Donate Money
-                    </button>
-                  </Link>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-7">
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaUserCircle className="text-4xl text-[#dedede]" />
-                      Jhon Alexon
-                    </h6>
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaRegCalendarCheck className="text-base text-PrimaryColor-0" />
-                      Jan 10, 2024
-                    </h6>
-                    <h6 className="flex items-center gap-2 font-Manrope text-TextColor-0 text-sm">
-                      <FaCommentsDollar className="text-base text-PrimaryColor-0" />
-                      02 Comments
-                    </h6>
-                  </div>
-                  <p className="font-Manrope text-TextColor-0 border-t border-BorderColor2-0 pt-5">
-                    Completely create leveraged best practices and B2B
-                    interfaces events productivate it’s a cutting-edge solutions
-                    with go forward supply chains has depended.
-                  </p>
-                  <Link to={"/"}>
-                    <button className="flex items-center gap-2 font-Manrope text-HeadingColor-0 font-medium mt-8 mb-2">
-                      Continue Reading
-                      <HiChevronDoubleRight className="text-PrimaryColor-0" />
-                    </button>
-                  </Link>
-                </div>
-              </div>
-              <div className="flex justify-center mt-14">
-                <ul className="flex gap-3">
-                  <li>
-                    <Link to={"/"}>
-                      <button className="text-[17px] font-Manrope h-12 w-12 flex justify-center items-center rounded-full border border-BorderColor2-0 transition-all duration-500 z-[1] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-[1] before:bg-PrimaryColor-0 before:rounded-full before:scale-0 before:transition-all before:duration-500 hover:before:scale-100 hover:text-white">
-                        01
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/"}>
-                      <button className="text-[17px] font-Manrope h-12 w-12 flex justify-center items-center rounded-full border border-BorderColor2-0 transition-all duration-500 z-[1] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-[1] before:bg-PrimaryColor-0 before:rounded-full before:scale-0 before:transition-all before:duration-500 hover:before:scale-100 hover:text-white">
-                        02
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/"}>
-                      <button className="text-[17px] font-Manrope h-12 w-12 flex justify-center items-center rounded-full border border-BorderColor2-0 transition-all duration-500 z-[1] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-[1] before:bg-PrimaryColor-0 before:rounded-full before:scale-0 before:transition-all before:duration-500 hover:before:scale-100 hover:text-white">
-                        03
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/"}>
-                      <button className="text-lg font-Manrope h-12 w-12 flex justify-center items-center rounded-full border border-BorderColor2-0 transition-all duration-500 z-[1] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-[1] before:bg-PrimaryColor-0 before:rounded-full before:scale-0 before:transition-all before:duration-500 hover:before:scale-100 hover:text-white">
-                        <RiArrowRightDoubleFill />
-                      </button>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+              {blogListData.map(
+                ({
+                  id,
+                  blogListImg,
+                  thumbContent,
+                  blogListTilte,
+                  postByIcon,
+                  postBy,
+                  postDateIcon,
+                  postDate,
+                  postFileIcon,
+                  postFile,
+                  blogListDesc,
+                  blogListUrl,
+                  blogListBtn,
+                  blogListBtnIcon,
+                }) => {
+                  return (
+                    <div key={id} className="mb-7">
+                      <BlogListCard
+                        blogListImg={blogListImg}
+                        thumbContent={thumbContent}
+                        blogListTitle={blogListTilte}
+                        postByIcon={postByIcon}
+                        postBy={postBy}
+                        postDateIcon={postDateIcon}
+                        postDate={postDate}
+                        postFileIcon={postFileIcon}
+                        postFile={postFile}
+                        blogListDesc={blogListDesc}
+                        blogListUrl={blogListUrl}
+                        blogListBtn={blogListBtn}
+                        blogListBtnIcon={blogListBtnIcon}
+                      />
+                    </div>
+                  );
+                }
+              )}
             </div>
             <div className="col-span-2 lg:col-span-1">
-              <div className="relative inline-block w-full mb-7 p-7 rounded-md bg-PrimaryColor-0">
+              <div className="relative inline-block w-full mb-7 p-4 sm:p-8 lg:p-6 xl:p-8 rounded-md bg-[#f3f4f8]">
                 <input
                   type="text"
                   name="search"
                   id="search"
                   placeholder="Search here..."
                   required
-                  className="w-full h-[60px] p-6 rounded font-Manrope"
+                  className="w-full h-[56px] p-6 rounded font-Poppins"
                 />
                 <button
                   type="submit"
-                  className=" text-xl text-PrimaryColor-0 transition-all duration-500 flex items-center justify-center hover:hue-rotate-[360deg] absolute right-12 top-1/2 -translate-y-1/2"
+                  className=" text-xl text-white rounded h-[56px] w-[56px] bg-SecondaryColor-0 transition-all duration-500 flex items-center justify-center hover:hue-rotate-[360deg] absolute right-7 top-1/2 -translate-y-1/2"
                 >
                   <IoSearch />
                 </button>
               </div>
-              <div className="px-8 bg-[#fff4f1] rounded-md pt-7 pb-4 mb-7">
-                <h4 className="font-Manrope font-bold text-[22px] text-HeadingColor-0 mb-8">
-                  Upcomming Events
+              <div className="bg-[#f3f4f8] rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-4 mb-7">
+                <h4 className="font-Inter font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-SecondaryColor-0">
+                  Categories
                 </h4>
-                <Link to={"/blogDetails"}>
+                <ul className="mt-8">
+                  <li>
+                    <Link to={"/"}>
+                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                        <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        Floor Cleaning
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/"}>
+                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                        <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        House Cleaning
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/"}>
+                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                        <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        Office Cleaning
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/"}>
+                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                        <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        Cleaning Specialist
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/"}>
+                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                        <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        Window Cleaning
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/"}>
+                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                        <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        kitchen Cleaning
+                      </button>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="px-4 sm:px-8 lg:px-6 xl:px-8 bg-[#f3f4f8] rounded-md pt-7 pb-4 mb-7">
+                <h4 className="font-Inter font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-SecondaryColor-0">
+                  Popular Post
+                </h4>
+                <Link to={"/blog-details"}>
                   <button className="group flex gap-4 mb-6">
                     <div>
                       <img src={itemthumb} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Manrope font-bold text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        Raise fund for clean & healthy foods
+                      <h6 className="font-Poppins font-medium text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-SecondaryColor-0">
+                        How to Proper Cleaning Floor Carpet
                       </h6>
-                      <p className="font-Manrope text-TextColor-0 text-[15px] mt-1">
-                        January 01, 2024
+                      <p className="font-Poppins text-SecondaryColor-0 text-sm mt-1">
+                        01 Jan, 2024
                       </p>
                     </div>
                   </button>
                 </Link>
-                <hr className="text-BorderColor2-0" />
                 <Link to={"/blogDetails"}>
                   <button className="group flex gap-4 my-6">
                     <div>
                       <img src={itemthumb2} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Manrope font-bold text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        Collect Funds for Kids Foods & Bevarage
+                      <h6 className="font-Poppins font-medium text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-SecondaryColor-0">
+                        New cleaning Equipment for House...
                       </h6>
-                      <p className="font-Manrope text-TextColor-0 text-[15px] mt-1">
-                        January 16, 2024
+                      <p className="font-Poppins text-SecondaryColor-0 text-sm mt-1">
+                        16 Jan, 2024
                       </p>
                     </div>
                   </button>
                 </Link>
-                <hr className="text-BorderColor2-0" />
                 <Link to={"/blogDetails"}>
                   <button className="group flex gap-4 my-6">
                     <div>
                       <img src={itemthumb3} />
                     </div>
                     <div className="flex-1 text-left">
-                      <h6 className="font-Manrope font-bold text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        Donate Money for Kids Educations
+                      <h6 className="font-Poppins font-medium text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-SecondaryColor-0">
+                        How to Carpet Cleaning Use New Equipment
                       </h6>
-                      <p className="font-Manrope text-TextColor-0 text-[15px] mt-1">
-                        January 27, 2024
+                      <p className="font-Poppins text-SecondaryColor-0 text-sm mt-1">
+                        27 Jan, 2024
                       </p>
                     </div>
                   </button>
                 </Link>
               </div>
-              <div className="bg-[#fff4f1] rounded-md px-9 pt-7 pb-4 mb-7">
-                <h4 className="font-Manrope font-bold text-[22px] text-HeadingColor-0 mb-8">
-                  Categories
+              <div className="bg-[#f3f4f8] rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-10 mb-7">
+                <h4 className="font-Inter font-semibold text-2xl text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-SecondaryColor-0">
+                  Tags
                 </h4>
-                <ul className="mt-8">
-                  <li>
+                <ul className="inline-block">
+                  <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
-                      <button className="w-full font-Manrope text-left font-medium text-HeadingColor-0 transition-all duration-500 px-5 py-3 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        Charity
+                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
+                        Cleaning
                       </button>
                     </Link>
                   </li>
-                  <li>
+                  <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
-                      <button className="w-full font-Manrope text-left font-medium text-HeadingColor-0 transition-all duration-500 px-5 py-3 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        Donations
+                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
+                        Floor Cleaning
                       </button>
                     </Link>
                   </li>
-                  <li>
+                  <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
-                      <button className="w-full font-Manrope text-left font-medium text-HeadingColor-0 transition-all duration-500 px-5 py-3 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        Healths
+                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
+                        House Cleaning
                       </button>
                     </Link>
                   </li>
-                  <li>
+                  <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
-                      <button className="w-full font-Manrope text-left font-medium text-HeadingColor-0 transition-all duration-500 px-5 py-3 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        Foods
+                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
+                        Window Cleaning
                       </button>
                     </Link>
                   </li>
-                  <li>
+                  <li className="inline-block mr-[10px] mb-[10px]">
                     <Link to={"/"}>
-                      <button className="w-full font-Manrope text-left font-medium text-HeadingColor-0 transition-all duration-500 px-5 py-3 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        Kid Educations
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/"}>
-                      <button className="w-full font-Manrope text-left font-medium text-HeadingColor-0 transition-all duration-500 px-5 py-3 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        Fund Raising
+                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
+                        Pool Cleaning
                       </button>
                     </Link>
                   </li>
                 </ul>
-              </div>
-              <div className="bg-[#fff4f1] rounded-md px-4 sm:px-8 lg:px-4 xl:px-8 pt-7 pb-10 mb-7">
-                <h4 className="font-Manrope font-bold text-[22px] text-HeadingColor-0">
-                  Tag Cloud
-                </h4>
-                <ul className="mt-8 inline-block">
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Manrope relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Charity
-                      </button>
-                    </Link>
-                  </li>
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Manrope relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Educations
-                      </button>
-                    </Link>
-                  </li>
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Manrope relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Water
-                      </button>
-                    </Link>
-                  </li>
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Manrope relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Foods
-                      </button>
-                    </Link>
-                  </li>
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Manrope relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Orphans
-                      </button>
-                    </Link>
-                  </li>
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Manrope relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Donations
-                      </button>
-                    </Link>
-                  </li>
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded-full flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Manrope relative z-[1] before:absolute before:top-0 before:left-0 before:rounded-full before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Healths
-                      </button>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-[url('/public/images/Componant2/others/a-1.png')] bg-right bg-cover bg-no-repeat text-center py-[75px] rounded-md mb-7">
-                <Link to={"/"}>
-                  <img src={logo} className="m-auto" />
-                </Link>
-                <h4 className="font-Manrope font-bold text-3xl text-white mt-6 mb-6">
-                  Helping Orphan
-                  <br />
-                  People
-                </h4>
-                <Link to={"/donate"} className="flex justify-center">
-                  <button type="submit" className="primary-btn">
-                    Donate Now
-                    <VscHeart />
-                  </button>
-                </Link>
               </div>
             </div>
           </div>
