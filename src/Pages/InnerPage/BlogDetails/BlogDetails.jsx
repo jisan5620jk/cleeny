@@ -10,6 +10,8 @@ import { IoSearch } from "react-icons/io5";
 import { IoIosSend } from "react-icons/io";
 import { FaUserCircle } from "react-icons/fa";
 import {
+  FaAnglesLeft,
+  FaAnglesRight,
   FaArrowRightLong,
   FaCircleCheck,
   FaCommentsDollar,
@@ -211,6 +213,56 @@ const BlogDetails = () => {
                   </div>
                 </div>
               </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-[60px]">
+                <div className="rounded-md bg-[#f3f4f8] pt-8 pb-10 px-9">
+                  <Link to={"/"}>
+                    <button className="font-Inter font-medium text-lg text-HoverColor-0 flex items-center gap-2">
+                      <FaAnglesLeft size={"14"} />
+                      Previous Post
+                    </button>
+                  </Link>
+                  <Link
+                    to={"/"}
+                    className="flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:items-center gap-5 sm:items-center lg:items-start mt-5"
+                  >
+                    <div>
+                      <img src={itemthumb} />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="font-Inter font-medium sm:text-lg md:text-base 2xl:text-lg text-HoverColor-0 sm:leading-[26px]">
+                        Newest Cleaning Equipment for House 2024
+                      </h4>
+                      <p className="font-Poppins text-sm text-SecondaryColor-0 mt-1">
+                        01 Jan, 2024
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+                <div className="rounded-md bg-[#f3f4f8] pt-8 pb-10 px-9 flex flex-col items-end">
+                  <Link to={"/"}>
+                    <button className="font-Inter font-medium text-lg text-HoverColor-0 flex items-center gap-2">
+                      Next Post
+                      <FaAnglesRight size={"14"} />
+                    </button>
+                  </Link>
+                  <Link
+                    to={"/"}
+                    className="flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:items-center gap-5 sm:items-center lg:items-start mt-5 text-right"
+                  >
+                    <div className="flex-1">
+                      <h4 className="font-Inter font-medium sm:text-lg md:text-base 2xl:text-lg text-HoverColor-0 sm:leading-[26px]">
+                        10 Most Popular Cleaning Tips for House
+                      </h4>
+                      <p className="font-Poppins text-sm text-SecondaryColor-0 mt-1">
+                        09 Jan, 2024
+                      </p>
+                    </div>
+                    <div>
+                      <img src={itemthumb3} />
+                    </div>
+                  </Link>
+                </div>
+              </div>
               <div className="bg-[#f3f4f8] px-4 sm:px-[62px] py-14 rounded-md mt-[60px]">
                 <h3 className="font-Inter font-semibold text-HeadingColor-0 text-2xl mb-10">
                   Comments 02
@@ -264,7 +316,7 @@ const BlogDetails = () => {
                   </div>
                 </div>
                 <h3 className="font-Inter font-semibold text-HeadingColor-0 text-xl sm:text-2xl mt-20 mb-10">
-                  Add New Comments
+                  Post A Comments
                 </h3>
                 <form action="#" method="post">
                   <div className="grid sm:grid-cols-2 gap-4 sm:gap-7 mb-5">
@@ -297,7 +349,7 @@ const BlogDetails = () => {
                       type="checkbox"
                       name="terms"
                       id="terms"
-                      className="text-TextColor-0"
+                      className="text-SecondaryColor-0 cursor-pointer"
                     />
                     <p className="font-Poppins font-light text-TextColor-0">
                       I agree with the handling of your data by this data*
