@@ -193,7 +193,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between w-full px-10">
               <div className="text-white flex items-center gap-7">
                 <div>
-                  <TbGridDots size={"36"} className="hidden lg:block"/>
+                  <TbGridDots size={"36"} className="hidden lg:block" />
                 </div>
                 <ul
                   className={`${
@@ -312,12 +312,18 @@ const Navbar = () => {
                         </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
+                            <Link to="/serviceDetails" className="py-2 block">
+                              Service Details
+                            </Link>
+                          </li>
+                        </div>
+                        <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <li className="hover:ml-3 duration-300">
                             <Link to="/project" className="py-2 block">
                               Project
                             </Link>
                           </li>
                         </div>
-
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to="/projectDetails" className="py-2 block">

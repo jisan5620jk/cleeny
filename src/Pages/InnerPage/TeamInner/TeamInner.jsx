@@ -51,9 +51,9 @@ const TeamInner = () => {
   return (
     <>
       <Breadcamp
-        breadCampTitle={"Projects"}
+        breadCampTitle={"Team Member"}
         breadcampIcon={<FaArrowRightLong />}
-        breadCampContent={"Projects"}
+        breadCampContent={"Team Member"}
       />
       <section className="bg-[#f4f4f8] py-[120px]">
         <div className="Container">
