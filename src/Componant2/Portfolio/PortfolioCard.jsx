@@ -29,13 +29,11 @@ const PortfolioCard = ({
               </button>
             </Link>
           </div>
-          <div>
-            <Link to={portfolioUrl}>
-              <button className="w-[40px] h-[40px] rounded-full flex items-center justify-center text-HeadingColor-0 bg-PrimaryColor-0 -rotate-45">
-                {portfolioIcon}
-              </button>
-            </Link>
-          </div>
+          <Link to={portfolioUrl}>
+            <button className="w-[40px] h-[40px] rounded-full flex items-center justify-center text-HeadingColor-0 bg-PrimaryColor-0 -rotate-45">
+              {portfolioIcon}
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -168,7 +168,7 @@ const Navbar = () => {
             {/* small screen size */}
             <div className="px-3 w-full lg:hidden flex justify-between bg-khaki h-[70px] items-center p-3">
               <div className="w-28">
-                <Link to="/">
+                <Link to={"/"}>
                   <img
                     src={Logo}
                     className="block lg:hidden brightness-0 invert-[1]"
@@ -202,7 +202,7 @@ const Navbar = () => {
                 `}
                 >
                   <NavLink
-                    to="/"
+                    to={"/"}
                     className={`${({ isActive, isPending }) =>
                       isPending
                         ? "pending"
@@ -222,21 +222,21 @@ const Navbar = () => {
                       <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-PrimaryColor-0 ">
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/" className="py-2 block">
+                            <Link to={"/"} className="py-2 block">
                               Home One
                             </Link>
                           </li>
                         </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/Home2" className="py-2 block">
+                            <Link to={"/Home2"} className="py-2 block">
                               Home Two
                             </Link>
                           </li>
                         </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/Home3" className="py-2 block">
+                            <Link to={"/Home3"} className="py-2 block">
                               Home Three
                             </Link>
                           </li>
@@ -251,7 +251,7 @@ const Navbar = () => {
                         : isActive
                         ? "active"
                         : ""} text-white font-Poppins font-medium text-[15px]hover:text-PrimaryColor-0 lg:border-b-0 px-5 py-2 w-full block transition-all duration-300 group relative `}
-                    to="#"
+                    to={"#"}
                   >
                     <span>about</span>
                   </NavLink>
@@ -262,7 +262,7 @@ const Navbar = () => {
                         : isActive
                         ? "active"
                         : ""}text-white font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 py-2 w-full block transition-all duration-300 group relative `}
-                    to="#"
+                    to={"#"}
                   >
                     <span className="flex items-center">
                       Service
@@ -272,14 +272,14 @@ const Navbar = () => {
                       <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/events" className="py-2 block">
+                            <Link to={"/events"} className="py-2 block">
                               Our Events
                             </Link>
                           </li>
                         </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/eventdetails" className="py-2 block">
+                            <Link to={"/eventdetails"} className="py-2 block">
                               Event Details
                             </Link>
                           </li>
@@ -294,7 +294,7 @@ const Navbar = () => {
                         : isActive
                         ? "active"
                         : ""} text-white font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 py-2 w-full block transition-all duration-300 group relative `}
-                    to="#"
+                    to={"#"}
                   >
                     <span className="flex items-center">
                       Pages
@@ -304,49 +304,49 @@ const Navbar = () => {
                       <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/about" className="py-2 block">
+                            <Link to={"/about"} className="py-2 block">
                               About
                             </Link>
                           </li>
                         </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/serviceDetails" className="py-2 block">
+                            <Link to={"/serviceDetails"} className="py-2 block">
                               Service Details
                             </Link>
                           </li>
                         </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/project" className="py-2 block">
+                            <Link to={"/project"} className="py-2 block">
                               Project
                             </Link>
                           </li>
                         </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/projectDetails" className="py-2 block">
+                            <Link to={"/projectDetails"} className="py-2 block">
                               Project Details
                             </Link>
                           </li>
                         </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/pricing" className="py-2 block">
+                            <Link to={"/pricing"} className="py-2 block">
                               Pricing
                             </Link>
                           </li>
                         </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/teamInner" className="py-2 block">
+                            <Link to={"/teamInner"} className="py-2 block">
                               Team Member
                             </Link>
                           </li>
                         </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/contact" className="py-2 block">
+                            <Link to={"/contact"} className="py-2 block">
                               Contact
                             </Link>
                           </li>
@@ -362,7 +362,7 @@ const Navbar = () => {
                         : isActive
                         ? "active"
                         : ""} text-white font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 py-2 w-full block transition-all duration-300 group relative `}
-                    to="#"
+                    to={"#"}
                   >
                     <span className="flex items-center">
                       BLOG
@@ -372,14 +372,14 @@ const Navbar = () => {
                       <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-[#171717] ">
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/blogList" className="py-2 block">
+                            <Link to={"/blogList"} className="py-2 block">
                               Blog List
                             </Link>
                           </li>
                         </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to="/blogDetails" className="py-2 block">
+                            <Link to={"/blogDetails"} className="py-2 block">
                               Blog Details
                             </Link>
                           </li>
@@ -394,7 +394,7 @@ const Navbar = () => {
                         : isActive
                         ? "active"
                         : ""} text-white font-Poppins font-medium text-[15px] lg:border-b-0 px-5 py-2 w-full block transition-all duration-300`}
-                    to="/contact"
+                    to={"/contact"}
                   >
                     Contact
                   </NavLink>
