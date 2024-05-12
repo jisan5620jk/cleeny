@@ -251,7 +251,7 @@ const Navbar = () => {
                         : isActive
                         ? "active"
                         : ""} text-white font-Poppins font-medium text-[15px]hover:text-PrimaryColor-0 lg:border-b-0 px-5 py-2 w-full block transition-all duration-300 group relative `}
-                    to={"#"}
+                    to={"/about"}
                   >
                     <span>about</span>
                   </NavLink>
@@ -272,8 +272,8 @@ const Navbar = () => {
                       <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to={"/events"} className="py-2 block">
-                              Our Events
+                            <Link to={"/service"} className="py-2 block">
+                             Service
                             </Link>
                           </li>
                         </div>

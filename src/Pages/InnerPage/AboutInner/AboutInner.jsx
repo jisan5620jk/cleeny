@@ -1,25 +1,26 @@
-import About from "../../../Componant2/About/About";
+import { FaArrowRightLong } from "react-icons/fa6";
 import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
-import AboutService from "./AboutService";
-import Mission from "../../../Componant2/Mission/Mission";
-import AboutVolunteer from "./AboutVolunteer";
-import AboutSupport from "./AboutSupport";
+import About from "../../../Componant1/About/About";
+import Support from "../../../Componant2/Support/Support";
+import Process from "../../../Componant1/Process/Process";
+import TeamMember from "../../../Componant2/TeamMember/TeamMember";
+import Testimonial from "../../../Componant2/Testimonial/Testimonial";
 
 const AboutInner = () => {
-  return (
-    <>
-      <Breadcamp
-        breadCampTitle={"About Us"}
-        breadCampLink={"About Us"}
-        url={"/about"}
-      />
-      <About />
-      <AboutService />
-      <Mission />
-      <AboutVolunteer />
-      <AboutSupport />
-    </>
-  );
+    return (
+      <>
+        <Breadcamp
+          breadCampTitle={"About Us"}
+          breadcampIcon={<FaArrowRightLong />}
+          breadCampContent={"About Us"}
+        />
+        <About />
+        <Support/>
+        <Process/>
+        <TeamMember />
+        <Testimonial />
+      </>
+    );
 };
 
 export default AboutInner;
