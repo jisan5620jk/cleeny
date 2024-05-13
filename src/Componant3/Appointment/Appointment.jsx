@@ -30,7 +30,7 @@ const Appointment = () => {
               />
             </div>
           </div>
-          <div className="mr-2 mb-20">
+          <div className="mr-2">
             <h2 className="font-Inter font-bold text-3xl md:text-[40px] mb-11">
               Request A Quote
             </h2>

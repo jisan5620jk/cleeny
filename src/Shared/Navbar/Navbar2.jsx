@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { Link, NavLink } from "react-router-dom";
 import {
-    FaArrowRightLong,
+  FaArrowRightLong,
   FaBars,
   FaFacebookF,
   FaHandsClapping,
@@ -273,14 +273,14 @@ const Navbar = () => {
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to={"/service"} className="py-2 block">
-                             Service
+                              Service
                             </Link>
                           </li>
                         </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to={"/eventdetails"} className="py-2 block">
-                              Event Details
+                            <Link to={"/serviceDetails"} className="py-2 block">
+                              Service Details
                             </Link>
                           </li>
                         </div>
@@ -306,13 +306,6 @@ const Navbar = () => {
                           <li className="hover:ml-3 duration-300">
                             <Link to={"/about"} className="py-2 block">
                               About
-                            </Link>
-                          </li>
-                        </div>
-                        <div className=" px-5 group hover:bg-SecondaryColor-0 ">
-                          <li className="hover:ml-3 duration-300">
-                            <Link to={"/serviceDetails"} className="py-2 block">
-                              Service Details
                             </Link>
                           </li>
                         </div>
@@ -346,8 +339,15 @@ const Navbar = () => {
                         </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
-                            <Link to={"/contact"} className="py-2 block">
-                              Contact
+                            <Link to={"/testimonial"} className="py-2 block">
+                              Testimonial
+                            </Link>
+                          </li>
+                        </div>
+                        <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <li className="hover:ml-3 duration-300">
+                            <Link to={"/appiontment"} className="py-2 block">
+                              Appiontment
                             </Link>
                           </li>
                         </div>
@@ -370,6 +370,13 @@ const Navbar = () => {
                     </span>
                     <div className="absolute pt-5 lg:pt-8 z-20">
                       <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-[#171717] ">
+                        <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                          <li className="hover:ml-3 duration-300">
+                            <Link to={"/blogGrid"} className="py-2 block">
+                              Blog Grid
+                            </Link>
+                          </li>
+                        </div>
                         <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                           <li className="hover:ml-3 duration-300">
                             <Link to={"/blogList"} className="py-2 block">
