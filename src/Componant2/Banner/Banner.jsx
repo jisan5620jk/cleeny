@@ -11,6 +11,7 @@ const Banner = () => {
     loop: true,
     speed: 2000,
     autoplay: true,
+    duration:3000,
   };
   return (
     <div className="relative">

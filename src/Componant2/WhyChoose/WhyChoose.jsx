@@ -45,10 +45,10 @@ const WhyChoose = () => {
                 id="select"
                 className="w-full bg-transparent text-white border border-white outline-0 h-[57px] rounded py-3 px-6"
               >
-                <option value="service1">Select Service</option>
-                <option value="service2">Service1</option>
-                <option value="service3">Service2</option>
-                <option value="service4">Service3</option>
+                <option value="service1" className="text-HeadingColor-0">Select Service</option>
+                <option value="service2" className="text-HeadingColor-0">Service1</option>
+                <option value="service3" className="text-HeadingColor-0">Service2</option>
+                <option value="service4" className="text-HeadingColor-0">Service3</option>
               </select>
               <textarea
                 name="message"

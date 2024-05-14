@@ -6,7 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Appiontment = () => {
   return (
-    <section className="pb-[120px] bg-[#f3f4f8] relative">
+    <section className="pb-40 bg-[#f3f4f8] relative">
       <img
         src={WhyChooseShape}
         className="absolute right-20 -bottom-[88px] hidden 2xl:block"
