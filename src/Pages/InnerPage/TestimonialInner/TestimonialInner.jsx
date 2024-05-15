@@ -16,9 +16,9 @@ const TestimonialInner = () => {
     return (
       <>
         <Breadcamp
-          breadCampTitle={"About Us"}
+          breadCampTitle={"Testimonial"}
           breadcampIcon={<FaArrowRightLong />}
-          breadCampContent={"About Us"}
+          breadCampContent={"Testimonial"}
         />
         <section className="py-[120px] bg-[url('/public/images/testimonial-bg-four.png')] bg-cover bg-no-repeat bg-center">
           <div className="Container">
@@ -30,7 +30,7 @@ const TestimonialInner = () => {
                 Our Customer’s Feedback
               </h1>
             </div>
-            <div className="grid grid-cols-3 gap-7">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
               <div>
                 <TestimonialInnerCard
                   testiImg={testiImg}
@@ -49,7 +49,7 @@ const TestimonialInner = () => {
                   testiDesc={`“Competently customize timely action items with B2B leadership. Efficiently re alternative collaboration and idea-shar rather than turnkey interfaces. Rapid administrate cross”`}
                 />
               </div>
-              <div>
+              <div className="md:-mt-[72px] lg:mt-0">
                 <TestimonialInnerCard
                   testiImg={testiImg3}
                   testiRatingIcon={<MdOutlineStarPurple500 />}
@@ -58,7 +58,7 @@ const TestimonialInner = () => {
                   testiDesc={`“Competently cultivate worldwide e-tail professionally engineer high-payoff to Rapidiously network”`}
                 />
               </div>
-              <div className="-mt-12">
+              <div className="lg:-mt-[70px] xl:-mt-12">
                 <TestimonialInnerCard
                   testiImg={testiImg4}
                   testiRatingIcon={<MdOutlineStarPurple500 />}
@@ -67,7 +67,7 @@ const TestimonialInner = () => {
                   testiDesc={`“Competently cultivate worldwide e-tail professionally engineer high-payoff to Rapidiously network”`}
                 />
               </div>
-              <div>
+              <div className="md:-mt-[70px] lg:mt-0">
                 <TestimonialInnerCard
                   testiImg={testiImg5}
                   testiRatingIcon={<MdOutlineStarPurple500 />}
@@ -76,7 +76,7 @@ const TestimonialInner = () => {
                   testiDesc={`“Competently cultivate worldwide e-tail professionally engineer high-payoff to Rapidiously network”`}
                 />
               </div>
-              <div className="-mt-12">
+              <div className="lg:-mt-[70px] xl:-mt-12">
                 <TestimonialInnerCard
                   testiImg={testiImg6}
                   testiRatingIcon={<MdOutlineStarPurple500 />}
@@ -85,7 +85,7 @@ const TestimonialInner = () => {
                   testiDesc={`“Competently customize timely action items with B2B leadership. Efficiently re alternative collaboration and idea-shar rather than turnkey”`}
                 />
               </div>
-              <div className="-mt-12">
+              <div className="md:-mt-[94px] lg:-mt-[72px] xl:-mt-12">
                 <TestimonialInnerCard
                   testiImg={testiImg7}
                   testiRatingIcon={<MdOutlineStarPurple500 />}
@@ -103,7 +103,7 @@ const TestimonialInner = () => {
                   testiDesc={`“Competently cultivate worldwide e-tail professionally engineer high-payoff to Rapidiously network”`}
                 />
               </div>
-              <div className="-mt-6">
+              <div className="md:-mt-16 lg:-mt-12 xl:-mt-6">
                 <TestimonialInnerCard
                   testiImg={testiImg9}
                   testiRatingIcon={<MdOutlineStarPurple500 />}

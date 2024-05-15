@@ -17,8 +17,8 @@ import AboutInner from "../Pages/InnerPage/AboutInner/AboutInner";
 import ServiceInner from "../Pages/InnerPage/ServiceInner/ServiceInner";
 import BlogGrid from "../Pages/InnerPage/BlogGrid/BlogGrid";
 import TestimonialInner from "../Pages/InnerPage/TestimonialInner/TestimonialInner";
-import AppiontmentInner from "../Pages/InnerPage/Appiontment/AppiontmentInner";
 import ContactInner from "../Pages/InnerPage/ContactInner/ContactInner";
+import AppointmentInner from "../Pages/InnerPage/Appointment/AppointmentInner";
 
 const router = createBrowserRouter([
   {
@@ -73,8 +73,8 @@ const router = createBrowserRouter([
         element: <TestimonialInner />,
       },
       {
-        path: "/appiontment",
-        element: <AppiontmentInner />,
+        path: "/appointment",
+        element: <AppointmentInner />,
       },
       {
         path: "/blogGrid",

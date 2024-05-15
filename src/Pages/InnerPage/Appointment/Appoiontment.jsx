@@ -4,12 +4,12 @@ import boxImg3 from "/public/images/contact-icon2.png";
 import WhyChooseShape from "/public/images/contact-shape.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const Appiontment = () => {
+const Appointment = () => {
   return (
-    <section className="pb-40 bg-[#f3f4f8] relative">
+    <section className="pb-40 bg-[#f3f4f8] relative z-10">
       <img
         src={WhyChooseShape}
-        className="absolute right-20 -bottom-[88px] hidden 2xl:block"
+        className="absolute z-10 left-20 -bottom-0 hidden 2xl:block"
       />
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 2xl:gap-[142px]">
@@ -30,8 +30,8 @@ const Appiontment = () => {
                 </h5>
                 <p className="font-Poppins text-TextColor-0 opacity-70 mt-3">
                   Competently repurpose go forward benefits
-                  <br className="hidden sm:block 2xl:block" /> conveniently
-                  target e-business
+                  <br className="hidden sm:block lg:hidden xl:block" />
+                  conveniently target e-business
                 </p>
               </div>
             </div>
@@ -45,8 +45,8 @@ const Appiontment = () => {
                 </h5>
                 <p className="font-Poppins text-TextColor-0 opacity-70 mt-3">
                   Competently repurpose go forward benefits
-                  <br className="hidden sm:block 2xl:block" /> conveniently
-                  target e-business
+                  <br className="hidden sm:block lg:hidden xl:block" />
+                  conveniently target e-business
                 </p>
               </div>
             </div>
@@ -57,8 +57,8 @@ const Appiontment = () => {
               </button>
             </Link>
           </div>
-          <div className="flex justify-end -mt-8">
-            <div className="bg-SecondaryColor-0 w-full max-w-[430px] rounded-md pt-10 pb-[60px]">
+          <div className="flex lg:justify-end -mt-8">
+            <div className="bg-SecondaryColor-0 w-full lg:max-w-[430px] rounded-md pt-10 pb-[60px]">
               <div className="text-center">
                 <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[35px] xl:leading-[45px] 2xl:text-[44px] 2xl:leading-[54px] text-white">
                   Get Appoinment
@@ -111,7 +111,7 @@ const Appiontment = () => {
                 ></textarea>
                 <button
                   type="submit"
-                  className="w-full bg-PrimaryColor-0 font-medium font-Inter transition-all duration-500 hover:text-white text-TextColor-0 border-white outline-0 h-[60px] rounded py-3 flex items-center justify-center gap-2 relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0"
+                  className="w-full bg-PrimaryColor-0 border border-transparent font-medium font-Inter transition-all duration-500 hover:text-white text-TextColor-0 hover:border-white outline-0 h-[60px] rounded py-3 flex items-center justify-center gap-2 relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0"
                 >
                   Book Appionment <FaArrowRightLong />
                 </button>
@@ -124,4 +124,4 @@ const Appiontment = () => {
   );
 };
 
-export default Appiontment;
+export default Appointment;

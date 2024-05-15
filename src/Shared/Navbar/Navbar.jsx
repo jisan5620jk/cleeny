@@ -115,13 +115,13 @@ const Navbar = () => {
       </header>
       {/* top Navbar */}
       <header
-        className="header-section"
+        className="header-section bg-white"
         data-aos="zoom-in"
         data-aos-duration="1000"
       >
         <div className="Container">
           {/* main Navbar */}
-          <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[70px] bg-white">
+          <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[70px]">
             {/* website Logo */}
             <div className=" w-48 lg:w-52">
               <Link to="/">
@@ -214,9 +214,9 @@ const Navbar = () => {
                       : isActive
                       ? "active"
                       : ""} text-HeadingColor-0 hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-1 2xl:px-3 py-2 w-full block transition-all duration-300 group relative `}
-                  to="#"
+                  to="/about"
                 >
-                  <span>about</span>
+                  <span>About</span>
                 </NavLink>
                 <NavLink
                   className={`${({ isActive, isPending }) =>
@@ -235,15 +235,15 @@ const Navbar = () => {
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/events" className="py-2 block">
-                            Our Events
+                          <Link to="/service" className="py-2 block">
+                            Service
                           </Link>
                         </li>
                       </div>
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/eventdetails" className="py-2 block">
-                            Event Details
+                          <Link to="/serviceDetails" className="py-2 block">
+                            Service Details
                           </Link>
                         </li>
                       </div>
@@ -268,37 +268,43 @@ const Navbar = () => {
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/about" className="py-2 block">
-                            About
+                          <Link to="/project" className="py-2 block">
+                            Project
                           </Link>
                         </li>
                       </div>
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/volunteer" className="py-2 block">
-                            Volunteer
-                          </Link>
-                        </li>
-                      </div>
-
-                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/volunteer2" className="py-2 block">
-                            Become Volunteer
+                          <Link to="/projectDetails" className="py-2 block">
+                            Project Details
                           </Link>
                         </li>
                       </div>
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/gallary" className="py-2 block">
-                            Gallary
+                          <Link to="/pricing" className="py-2 block">
+                            Pricing
                           </Link>
                         </li>
                       </div>
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/contact" className="py-2 block">
-                            Contact
+                          <Link to="/teamInner" className="py-2 block">
+                            Team Member
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/testimonial" className="py-2 block">
+                            Testimonial
+                          </Link>
+                        </li>
+                      </div>
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/appointment" className="py-2 block">
+                            appointment
                           </Link>
                         </li>
                       </div>
@@ -320,7 +326,14 @@ const Navbar = () => {
                     <BiChevronDown className="ml-1" />
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-[#171717] ">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HoverColor-0 ">
+                      <div className=" px-5 group hover:bg-SecondaryColor-0 ">
+                        <li className="hover:ml-3 duration-300">
+                          <Link to="/blogGrid" className="py-2 block">
+                            Blog Grid
+                          </Link>
+                        </li>
+                      </div>
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/blogList" className="py-2 block">
@@ -354,12 +367,11 @@ const Navbar = () => {
                 <Link to={"/"}>
                   <IoSearch className="text-xl ml-2 mr-7 text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0" />
                 </Link>
-                <Link to={"/donate"} className="header-btn">
+                <Link to={"/appointment"} className="header-btn">
                   Get Free Quote
                 </Link>
               </div>
             </div>
-            {/* large device visible button and search icon */}
           </div>
         </div>
       </header>
