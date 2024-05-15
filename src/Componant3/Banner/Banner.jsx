@@ -23,7 +23,7 @@ const Banner = () => {
               <br className="lg:hidden xl:block"/>
               web services We try to Help you as soon as possible clean.
             </p>
-            <Link to={"/"}>
+            <Link to={"/about"}>
               <button className="primary-btn2 mt-1">
                 Get Started Now
                 <FaArrowRightLong size={"20"} />

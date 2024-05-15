@@ -18,7 +18,7 @@ const PortfolioData = [
     portfolioLocateIcon: <FaLocationDot />,
     portfolioLocation: "Sandigo, USA",
     portfolioTitle: "House Floor Cleaning",
-    portfolioUrl: "/",
+    portfolioUrl: "/projectDetails",
     portfolioIcon: <FaArrowRight />,
   },
   {
@@ -28,7 +28,7 @@ const PortfolioData = [
     portfolioLocateIcon: <FaLocationDot />,
     portfolioLocation: "Sandigo, USA",
     portfolioTitle: "House Floor Cleaning",
-    portfolioUrl: "/",
+    portfolioUrl: "/projectDetails",
     portfolioIcon: <FaArrowRight />,
   },
   {
@@ -38,7 +38,7 @@ const PortfolioData = [
     portfolioLocateIcon: <FaLocationDot />,
     portfolioLocation: "Sandigo, USA",
     portfolioTitle: "House Floor Cleaning",
-    portfolioUrl: "/",
+    portfolioUrl: "/projectDetails",
     portfolioIcon: <FaArrowRight />,
   },
   {
@@ -48,7 +48,7 @@ const PortfolioData = [
     portfolioLocateIcon: <FaLocationDot />,
     portfolioLocation: "Sandigo, USA",
     portfolioTitle: "House Floor Cleaning",
-    portfolioUrl: "/",
+    portfolioUrl: "/projectDetails",
     portfolioIcon: <FaArrowRight />,
   },
 ];
@@ -95,7 +95,7 @@ const Portfolio = () => {
             </h1>
           </div>
           <div>
-            <Link to={"/"}>
+            <Link to={"/project"}>
               <button className="primary-btn">
                 Veiw All Work
                 <FaArrowRightLong size={"20"} />

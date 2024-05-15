@@ -101,7 +101,7 @@ const WhyChoose = () => {
                 </p>
               </div>
             </div>
-            <Link to={"/"}>
+            <Link to={"/about"}>
               <button className="primary-btn mt-12">
                 More About Us
                 <FaArrowRightLong size={"20"} />

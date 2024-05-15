@@ -60,7 +60,7 @@ const About = () => {
                     Online Booking System available
                   </li>
                 </ul>
-                <Link to={"/"}>
+                <Link to={"/about"}>
                   <button className="primary-btn2 mt-9">
                     More About Us
                     <FaArrowRightLong size={"20"} />

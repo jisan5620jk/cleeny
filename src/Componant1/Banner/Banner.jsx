@@ -22,7 +22,7 @@ const Banner = () => {
               Need Clean of your home or office? Just Feel Free to Contact us.
               We try to Help you as soon as possible.
             </p>
-            <Link to={"/"}>
+            <Link to={"/contact"}>
               <button className="primary-btn">
                 Get Started Now
                 <FaArrowRightLong size={"20"} />

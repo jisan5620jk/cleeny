@@ -30,7 +30,7 @@ const Banner = () => {
                   <br />
                   And Stay Safe
                 </h1>
-                <Link to={"/"}>
+                <Link to={"/about"}>
                   <button className="primary-btn2">
                     Get Started Now
                     <FaArrowRightLong size={"20"} />
@@ -62,7 +62,7 @@ const Banner = () => {
                   <br />
                   And Stay Safe
                 </h1>
-                <Link to={"/"}>
+                <Link to={"/about"}>
                   <button className="primary-btn2">
                     Get Started Now
                     <FaArrowRightLong size={"20"} />

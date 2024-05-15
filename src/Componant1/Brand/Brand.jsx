@@ -34,8 +34,7 @@ const Brand = () => {
   };
   return (
     <div className="bg-[#f3f4f8] pt-[88px] pb-[76px]">
-      <div className="Container">
-        {" "}
+      <div className="Container">{" "}
         <Swiper {...settings}>
           <SwiperSlide>
             <div className="flex justify-center">

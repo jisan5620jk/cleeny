@@ -59,7 +59,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <Link to={"/"}>
+            <Link to={"/about"}>
               <button className="primary-btn2 mt-9">
                 More About Us
                 <FaArrowRightLong size={"20"} />

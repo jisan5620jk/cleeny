@@ -13,7 +13,7 @@ const PortfolioData = [
     portfolioThumb: portfolioThumb,
     portfolioSubTitle:"RENEWABLE POWER",
     portfolioTitle: "Window Cleaning",
-    portfolioUrl: "/",
+    portfolioUrl: "/projectDetails",
     portfolioIcon: <FaArrowRight />,
   },
   {
@@ -21,7 +21,7 @@ const PortfolioData = [
     portfolioThumb: portfolioThumb2,
     portfolioSubTitle:"RENEWABLE POWER",
     portfolioTitle: "Window Cleaning",
-    portfolioUrl: "/",
+    portfolioUrl: "/projectDetails",
     portfolioIcon: <FaArrowRight />,
   },
   {
@@ -29,7 +29,7 @@ const PortfolioData = [
     portfolioThumb: portfolioThumb3,
     portfolioSubTitle:"RENEWABLE POWER",
     portfolioTitle: "Window Cleaning",
-    portfolioUrl: "/",
+    portfolioUrl: "/projectDetails",
     portfolioIcon: <FaArrowRight />,
   },
   {
@@ -37,7 +37,7 @@ const PortfolioData = [
     portfolioThumb: portfolioThumb,
     portfolioSubTitle:"RENEWABLE POWER",
     portfolioTitle: "Window Cleaning",
-    portfolioUrl: "/",
+    portfolioUrl: "/projectDetails",
     portfolioIcon: <FaArrowRight />,
   },
 ];
