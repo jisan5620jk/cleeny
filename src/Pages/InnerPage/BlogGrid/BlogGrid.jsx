@@ -19,7 +19,7 @@ const blogData = [
     blogThumb: blogThumb,
     thumbDate: "02",
     thumbMonth: "MAY",
-    blogUrl: "/",
+    blogUrl: "/blogDetails",
     blogTitle: "Newest Cleaning Tools for House 2024",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
@@ -31,7 +31,7 @@ const blogData = [
     blogThumb: blogThumb2,
     thumbDate: "12",
     thumbMonth: "MAY",
-    blogUrl: "/",
+    blogUrl: "/blogDetails",
     blogTitle: "10 Most Popular Cleaning Tips for House",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
@@ -43,7 +43,7 @@ const blogData = [
     blogThumb: blogThumb3,
     thumbDate: "25",
     thumbMonth: "MAY",
-    blogUrl: "/",
+    blogUrl: "/blogDetails",
     blogTitle: "Floor Cleaning Use New Equipment",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
@@ -55,7 +55,7 @@ const blogData = [
     blogThumb: blogThumb4,
     thumbDate: "05",
     thumbMonth: "JUNE",
-    blogUrl: "/",
+    blogUrl: "/blogDetails",
     blogTitle: "Regular cleaning your dream House",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
@@ -67,7 +67,7 @@ const blogData = [
     blogThumb: blogThumb5,
     thumbDate: "10",
     thumbMonth: "JUNE",
-    blogUrl: "/",
+    blogUrl: "/blogDetails",
     blogTitle: "Carpet Cleaning Use New Equipment",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
@@ -79,7 +79,7 @@ const blogData = [
     blogThumb: blogThumb6,
     thumbDate: "15",
     thumbMonth: "JUNE",
-    blogUrl: "/",
+    blogUrl: "/blogDetails",
     blogTitle: "Proper Cleaning Use New Equipment",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
@@ -91,7 +91,7 @@ const blogData = [
     blogThumb: blogThumb7,
     thumbDate: "18",
     thumbMonth: "JUNE",
-    blogUrl: "/",
+    blogUrl: "/blogDetails",
     blogTitle: "Window Cleaning Use New Equipment",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
@@ -103,7 +103,7 @@ const blogData = [
     blogThumb: blogThumb8,
     thumbDate: "20",
     thumbMonth: "JUNE",
-    blogUrl: "/",
+    blogUrl: "/blogDetails",
     blogTitle: "Floor Cleaning Use New Equipment",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
@@ -115,7 +115,7 @@ const blogData = [
     blogThumb: blogThumb9,
     thumbDate: "25",
     thumbMonth: "JUNE",
-    blogUrl: "/",
+    blogUrl: "/blogDetails",
     blogTitle: "Door Cleaning Use New Equipment",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
@@ -146,7 +146,7 @@ const BlogGrid = () => {
               </div>
             </div>
             <div className="flex lg:justify-end">
-              <Link to={"/"}>
+              <Link to={"/blogDetails"}>
                 <button className="primary-btn">
                   Veiw All Blog
                   <FaArrowRightLong size={"20"} />

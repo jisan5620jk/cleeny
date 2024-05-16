@@ -12,7 +12,7 @@ const blogData = [
     blogThumb: blogThumb,
     thumbDate: "02",
     thumbMonth: "MAY",
-    blogUrl: "/blogList",
+    blogUrl: "/blogDetails",
     blogTitle: "Newest Cleaning Tools for House 2024",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
@@ -24,7 +24,7 @@ const blogData = [
     blogThumb: blogThumb2,
     thumbDate: "12",
     thumbMonth: "MAY",
-    blogUrl: "/blogList",
+    blogUrl: "/blogDetails",
     blogTitle: "10 Most Popular Cleaning Tips for House",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
@@ -36,7 +36,7 @@ const blogData = [
     blogThumb: blogThumb3,
     thumbDate: "25",
     thumbMonth: "MAY",
-    blogUrl: "/blogList",
+    blogUrl: "/blogDetails",
     blogTitle: "Floor Cleaning Use New Equipment",
     blogDesc:
       "Competently repurpose forward benefits conveniently target e-business",
