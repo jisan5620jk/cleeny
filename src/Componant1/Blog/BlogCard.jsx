@@ -15,7 +15,7 @@ const BlogCard = ({blogThumb,thumbDate,thumbMonth,blogUrl,blogTitle,blogDesc,btn
         </div>
         <div className="px-5 sm:px-7 pb-7">
           <Link to={blogUrl}>
-            <button className="font-Inter text-left font-semibold text-xl sm:text-[22px] text-HeadingColor-0 mt-7 mb-3">
+            <button className="font-Inter text-left font-semibold text-xl sm:text-[22px] text-HeadingColor-0 transition-all duration-500 group-hover:text-SecondaryColor-0 mt-7 mb-3">
               {blogTitle}
             </button>
           </Link>
