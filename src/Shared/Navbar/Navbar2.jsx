@@ -208,7 +208,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative`}
+                          : ""} text-white text-left font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative`}
                     >
                       <span className="flex items-center">
                         Home
@@ -250,7 +250,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white font-Poppins font-medium text-[15px]hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""} text-white text-left font-Poppins font-medium text-[15px]hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"/about"}
                     >
                       <span>about</span>
@@ -261,7 +261,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""}text-white font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""}text-white text-left font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"#"}
                     >
                       <span className="flex items-center">
@@ -296,7 +296,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""} text-white text-left font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"#"}
                     >
                       <span className="flex items-center">
@@ -360,7 +360,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
+                          : ""} text-white text-left font-Poppins font-medium text-[15px] hover:text-PrimaryColor-0 lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300 group relative `}
                       to={"#"}
                     >
                       <span className="flex items-center">
@@ -399,7 +399,7 @@ const Navbar = () => {
                           ? "pending"
                           : isActive
                           ? "active"
-                          : ""} text-white font-Poppins font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300`}
+                          : ""} text-white text-left font-Poppins font-medium text-[15px] lg:border-b-0 px-5 lg:px-3 xl:px-5 py-2 w-full block transition-all duration-300`}
                       to={"/contact"}
                     >
                       Contact
