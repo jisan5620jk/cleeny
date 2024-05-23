@@ -25,11 +25,11 @@ body {
 }
 
 .primary-btn {
-  @apply flex gap-2 items-center overflow-hidden bg-PrimaryColor-0 z-10 text-white px-9 py-[18px] relative rounded-[30px] text-[15px] font-medium font-Poppins before:bg-SecondaryColor-0 before:h-1/2 before:w-0 before:absolute before:top-0 before:left-0 before:right-auto before:-z-10 before:transition-all before:duration-500 after:bg-SecondaryColor-0 after:h-1/2 after:w-0 after:absolute after:bottom-0 after:right-0 after:left-auto after:duration-500 after:transition-all after:-z-10 hover:before:w-full hover:before:right-0 hover:before:left-auto hover:after:w-full hover:after:left-0 hover:after:right-auto;
+  @apply flex gap-2 items-center overflow-hidden bg-PrimaryColor-0 z-10 text-HeadingColor-0 transition-all duration-500 hover:text-white px-9 py-[18px] relative rounded-[30px] text-[15px] font-medium font-Poppins before:bg-SecondaryColor-0 before:h-1/2 before:w-0 before:absolute before:top-0 before:left-0 before:right-auto before:-z-10 before:transition-all before:duration-500 after:bg-SecondaryColor-0 after:h-1/2 after:w-0 after:absolute after:bottom-0 after:right-0 after:left-auto after:duration-500 after:transition-all after:-z-10 hover:before:w-full hover:before:right-0 hover:before:left-auto hover:after:w-full hover:after:left-0 hover:after:right-auto;
 }
 
 .primary-btn2 {
-  @apply flex gap-2 items-center overflow-hidden bg-SecondaryColor-0 z-10 px-[30px] py-[18px] relative rounded-[30px] text-[15px] text-white font-medium font-Poppins before:bg-PrimaryColor-0 before:h-1/2 before:w-0 before:absolute before:top-0 before:left-0 before:right-auto before:-z-10 before:transition-all before:duration-500 after:bg-PrimaryColor-0 after:h-1/2 after:w-0 after:absolute after:bottom-0 after:right-0 after:left-auto after:duration-500 after:transition-all after:-z-10 hover:before:w-full hover:before:right-0 hover:before:left-auto hover:after:w-full hover:after:left-0 hover:after:right-auto;
+  @apply flex gap-2 items-center overflow-hidden bg-SecondaryColor-0 z-10 px-[30px] py-[18px] relative rounded-[30px] text-[15px] text-white transition-all duration-500 hover:text-HeadingColor-0 font-medium font-Poppins before:bg-PrimaryColor-0 before:h-1/2 before:w-0 before:absolute before:top-0 before:left-0 before:right-auto before:-z-10 before:transition-all before:duration-500 after:bg-PrimaryColor-0 after:h-1/2 after:w-0 after:absolute after:bottom-0 after:right-0 after:left-auto after:duration-500 after:transition-all after:-z-10 hover:before:w-full hover:before:right-0 hover:before:left-auto hover:after:w-full hover:after:left-0 hover:after:right-auto;
 }
 
 .is-sticky {

@@ -24,8 +24,8 @@ const PricingCard = ({
         <img src={pricingShape} />
       </div>
       <div className="relative z-10 -top-6 mb-3">
-        <div className="w-[120px] h-[120px] rounded-e-xl rounded-b-xl bg-SecondaryColor-0 text-white flex flex-col items-center justify-center mx-auto font-Inter relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-e-xl before:rounded-b-xl before:transition-all before:duration-500 before:scale-0 before:-z-10 group-hover:before:scale-100 after:absolute after:top-0 after:-left-6 after:w-6 after:h-[14px] after:border-[12px] after:border-r-HoverColor-0 after:border-t-white after:border-l-white after:border-b-HoverColor-0">
-          <div className="flex items-baseline gap-1 transition-all duration-500 group-hover:items-stretch">
+        <div className="w-[120px] h-[120px] rounded-e-xl rounded-b-xl bg-SecondaryColor-0 transition-all duration-300 text-white  flex flex-col items-center justify-center mx-auto font-Inter relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-e-xl before:rounded-b-xl before:transition-all before:duration-500 before:scale-0 before:-z-10 group-hover:before:scale-100 after:absolute after:top-0 after:-left-6 after:w-6 after:h-[14px] after:transition-all after:duration-500 after:border-[12px] after:border-r-HoverColor-0 after:border-t-white after:border-l-white after:border-b-HoverColor-0 group-hover:after:border-r-[#bb9010] group-hover:after:border-b-[#bb9010]">
+          <div className="flex items-baseline gap-1 transition-all duration-500 group-hover:items-stretch group-hover:text-HeadingColor-0">
             <h6 className="font-semibold text-xl">{currency}</h6>
             <CountUp
               start={-11}
@@ -34,7 +34,9 @@ const PricingCard = ({
               className="text-[42px] font-bold"
             />
           </div>
-          <p>{pricingDateLine}</p>
+          <p className="transition-all duration-300 group-hover:text-HeadingColor-0">
+            {pricingDateLine}
+          </p>
         </div>
       </div>
       <h4 className="font-Inter font-semibold text-[22px] text-HeadingColor-0 pl-8 pr-10 border-l-[3px] border-SecondaryColor-0 py-2 bg-white rounded-r-full inline-block transition-all duration-500 group-hover:border-transparent">
