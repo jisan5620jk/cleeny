@@ -76,7 +76,7 @@ const PricingCard = ({
       </ul>
       <div className="px-[30px] -mt-1 pb-10">
         <Link to={pricingUrl}>
-          <button className="primary-btn2 mt-9 group-hover:before:w-full group-hover:before:right-0 group-hover:before:left-auto group-hover:after:w-full group-hover:after:left-0 group-hover:after:right-auto">
+          <button className="primary-btn2 mt-9 group-hover:before:w-full group-hover:before:right-0 group-hover:before:left-auto group-hover:after:w-full group-hover:after:left-0 group-hover:after:right-auto group-hover:text-HeadingColor-0">
             {pricingBtn}
             <FaArrowRightLong size={"20"} />
           </button>

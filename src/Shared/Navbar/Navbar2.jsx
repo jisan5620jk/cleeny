@@ -128,19 +128,19 @@ const Navbar = () => {
               <div className="flex items-center lg:gap-[18px] xl:gap-[60px]">
                 <Link
                   to={"/"}
-                  className="font-Poppins text-lg text-HeadingColor-0 sm:flex items-center gap-2"
+                  className="font-Poppins font-medium text-HeadingColor-0 sm:flex items-center gap-2"
                 >
                   <FaPhone size={"20"} className="text-SecondaryColor-0" />
                   +123 (4567) 890
                 </Link>
                 <Link
                   to={"/"}
-                  className="font-Poppins text-lg text-HeadingColor-0 sm:flex items-center gap-2 relative before:absolute before:top-1 before:-left-[30px] before:w-[1px] before:h-5 before:bg-BorderColor-0"
+                  className="font-Poppins font-medium text-HeadingColor-0 sm:flex items-center gap-2 relative before:absolute before:top-1 before:-left-[30px] before:w-[1px] before:h-5 before:bg-BorderColor-0"
                 >
                   <BsEnvelope size={"20"} className="text-SecondaryColor-0" />
                   example@gmail.com
                 </Link>
-                <p className="font-Poppins text-lg text-HeadingColor-0 md:flex items-center gap-2 relative before:absolute before:top-1 before:-left-[30px] before:w-[1px] before:h-5 before:bg-BorderColor-0">
+                <p className="font-Poppins font-medium text-HeadingColor-0 md:flex items-center gap-2 relative before:absolute before:top-1 before:-left-[30px] before:w-[1px] before:h-5 before:bg-BorderColor-0">
                   <FaRegClock size={"20"} className="text-SecondaryColor-0" />
                   Mon - Fri 9am to 5pm
                 </p>
@@ -189,9 +189,6 @@ const Navbar = () => {
               {/* All navLink are hear with active */}
               <div className="flex items-center justify-between w-full px-10">
                 <div className="text-white flex items-center gap-7">
-                  <div>
-                    <TbGridDots size={"36"} className="hidden lg:block" />
-                  </div>
                   <ul
                     className={`${
                       isOpen ? "block" : "hidden"
@@ -226,14 +223,14 @@ const Navbar = () => {
                           </div>
                           <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
-                              <Link to={"/Home2"} className="py-2 block">
+                              <Link to={"/home2"} className="py-2 block">
                                 Home Two
                               </Link>
                             </li>
                           </div>
                           <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
-                              <Link to={"/Home3"} className="py-2 block">
+                              <Link to={"/home3"} className="py-2 block">
                                 Home Three
                               </Link>
                             </li>

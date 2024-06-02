@@ -4,6 +4,7 @@ import processIcon2 from "/public/images/work-icon2.png";
 import processIcon3 from "/public/images/work-icon3.png";
 import processShape from "/public/images/work-shape3.png";
 import processShape2 from "/public/images/work-shape4.png";
+import boxShape from "/public/images/work-shape.png";
 import ProcessCard from "./ProcessCard";
 
 const processData = [
@@ -11,6 +12,7 @@ const processData = [
     id: 1,
     processIcon: processIcon,
     boxNumber: "1",
+    boxShape: boxShape,
     processTitle: "Find Us Online",
     processDesc: "Repurpose go forward benefits more conveniently e-business",
   },
@@ -18,6 +20,7 @@ const processData = [
     id: 2,
     processIcon: processIcon2,
     boxNumber: "2",
+    boxShape: boxShape,
     processTitle: "Choose Services",
     processDesc: "Repurpose go forward benefits more conveniently e-business",
   },
@@ -64,12 +67,20 @@ const Process = () => {
         <div className="pb-16 mt-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
             {processData.map(
-              ({ id, processIcon, processTitle, boxNumber, processDesc }) => {
+              ({
+                id,
+                processIcon,
+                processTitle,
+                boxNumber,
+                processDesc,
+                boxShape,
+              }) => {
                 return (
                   <div key={id}>
                     <ProcessCard
                       processIcon={processIcon}
                       boxNumber={boxNumber}
+                      boxShape={boxShape}
                       processTitle={processTitle}
                       processDesc={processDesc}
                     />

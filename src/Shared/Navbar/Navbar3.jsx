@@ -189,14 +189,14 @@ const Navbar = () => {
                       </div>
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/Home2" className="py-2 block">
+                          <Link to="/home2" className="py-2 block">
                             Home Two
                           </Link>
                         </li>
                       </div>
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/Home3" className="py-2 block">
+                          <Link to="/home3" className="py-2 block">
                             Home Three
                           </Link>
                         </li>
@@ -386,7 +386,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   to={"/appointment"}
-                  className="header-btn !text-white !bg-SecondaryColor-0 before:bg-PrimaryColor-0 after:bg-PrimaryColor-0"
+                  className="header-btn !text-white hover:!text-HeadingColor-0 !bg-SecondaryColor-0 before:bg-PrimaryColor-0 after:bg-PrimaryColor-0"
                 >
                   Get Free Quote
                 </Link>

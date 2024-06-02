@@ -64,8 +64,8 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
-          <div>
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-12">
+          <div className="2xl:col-span-3">
             <img src={footerLogo} />
             <p className="font-Poppins text-white mt-7 mb-9">
               Competently repurpose forward conveniently target e-business
@@ -94,7 +94,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="2xl:col-span-2">
             <h4 className="font-Inter text-2xl text-white font-semibold mb-[30px]">
               Company
             </h4>
@@ -141,7 +141,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="2xl:col-span-4">
             <h4 className="font-Inter text-2xl text-white font-semibold mb-9">
               Latest Blog
             </h4>
@@ -152,7 +152,8 @@ const Footer = () => {
               <div className="flex-1">
                 <Link to={"/"}>
                   <button className="font-Inter font-medium text-white text-left xl:text-base 2xl:text-lg transition-all duration-500 hover:text-PrimaryColor-0">
-                    10 Most Popular Clean Tips for Housey
+                    10 Most Popular Clean <br className="hidden 2xl:block" />{" "}
+                    Tips for Housey
                   </button>
                 </Link>
                 <p className="font-Poppins text-[#808CBF] text-sm pl-4 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-[#808CBF] mt-2">
@@ -167,7 +168,8 @@ const Footer = () => {
               <div className="flex-1">
                 <Link to={"/"}>
                   <button className="font-Inter font-medium text-white text-left xl:text-base 2xl:text-lg transition-all duration-500 hover:text-PrimaryColor-0">
-                    10 Most Popular Clean Tips for Housey
+                    Floor cleeny and <br className="hidden 2xl:block" /> Washing
+                    New...
                   </button>
                 </Link>
                 <p className="font-Poppins text-[#808CBF] text-sm pl-4 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-[#808CBF] mt-2">
@@ -176,7 +178,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="2xl:col-span-3">
             <h4 className="font-Inter text-2xl text-white font-semibold mb-10">
               Latest Blog
             </h4>
