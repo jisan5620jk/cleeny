@@ -121,7 +121,7 @@ const Navbar = () => {
       >
         <div className="Container">
           {/* main Navbar */}
-          <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[70px]">
+          <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[100px]">
             {/* website Logo */}
             <div className=" w-48 lg:w-52">
               <Link to="/">
