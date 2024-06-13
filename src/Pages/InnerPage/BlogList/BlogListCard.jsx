@@ -15,7 +15,7 @@ const BlogListCard = ({blogListImg,thumbContent,blogListTitle,postByIcon,postBy,
         </h6>
       </div>
       <div className="px-4 sm:px-8">
-        <Link to={"/"}>
+        <Link to={blogListUrl}>
           <button className="font-Inter font-bold text-left text-lg sm:text-2xl 2xl:text-3xl text-HeadingColor-0 transition-all duration-500 hover:text-SecondaryColor-0 mt-9 mb-6">
             {blogListTitle}
           </button>
@@ -32,7 +32,9 @@ const BlogListCard = ({blogListImg,thumbContent,blogListTitle,postByIcon,postBy,
             {postDate}
           </h6>
           <h6 className="flex items-center gap-2 font-Poppins text-TextColor-0 font-light">
-            <span className="text-lg text-SecondaryColor-0">{postFileIcon}</span>
+            <span className="text-lg text-SecondaryColor-0">
+              {postFileIcon}
+            </span>
             {postFile}
           </h6>
         </div>
@@ -42,10 +44,7 @@ const BlogListCard = ({blogListImg,thumbContent,blogListTitle,postByIcon,postBy,
       </div>
       <div className="border-t border-BorderColor-0 py-5 px-4 sm:px-8">
         <Link to={blogListUrl}>
-          <button
-            className="font-Inter font-medium text-HeadingColor-0 flex gap-2 items-center transition-all duration-500 hover:text-SecondaryColor-0 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-SecondaryColor-0 before:transition-all
-                     before:duration-500 hover:before:left-0 hover:before:w-full"
-          >
+          <button className="font-Inter font-medium text-HeadingColor-0 flex gap-2 items-center transition-all duration-500 hover:text-SecondaryColor-0 relative before:absolute before:bottom-0 before:right-0 before:w-0 before:h-[1px] before:bg-SecondaryColor-0 before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full">
             {blogListBtn} {blogListBtnIcon}
           </button>
         </Link>

@@ -192,7 +192,7 @@ const Navbar = () => {
                   <ul
                     className={`${
                       isOpen ? "block" : "hidden"
-                    } text-right lg:w-fit ease-in-out flex-1 lg:flex flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Poppins font-medium text-white transition-all duration-500
+                    } text-right lg:w-fit ease-in-out flex-1 lg:flex flex flex-col lg:flex-row capitalize text-base lg:bg-transparent py-3 lg:py-0 font-Poppins font-medium text-white transition-all duration-500
                 `}
                   >
                     <NavLink
@@ -349,7 +349,7 @@ const Navbar = () => {
                           </div>
                           <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
-                              <Link to={"/pricing"} className="py-2 block">
+                              <Link to={"/pricing_inner"} className="py-2 block">
                                 Pricing Plan
                               </Link>
                             </li>

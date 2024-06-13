@@ -111,7 +111,6 @@ const BlogList = () => {
     <>
       <Breadcamp
         breadCampTitle={"Blog With Sidebar"}
-        url={"/blog"}
         breadcampIcon={<FaArrowRightLong />}
         breadcampIcon2={<FaArrowRightLong />}
         breadCampLink={"Blog"}
@@ -183,7 +182,7 @@ const BlogList = () => {
                 </h4>
                 <ul className="mt-8">
                   <li>
-                    <Link to={"/blog_details"}>
+                    <Link to={"/service_details"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         Floor Cleaning
@@ -191,7 +190,7 @@ const BlogList = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/blog_details"}>
+                    <Link to={"/service_details2"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         House Cleaning
@@ -199,7 +198,7 @@ const BlogList = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/blog_details"}>
+                    <Link to={"/service_details3"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         Office Cleaning
@@ -207,7 +206,7 @@ const BlogList = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/blog_details"}>
+                    <Link to={"/service_details4"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         Cleaning Specialist
@@ -215,7 +214,7 @@ const BlogList = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/blog_details"}>
+                    <Link to={"/service_details5"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         Window Cleaning
@@ -223,7 +222,7 @@ const BlogList = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/blog_details"}>
+                    <Link to={"/service_details6"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         kitchen Cleaning
