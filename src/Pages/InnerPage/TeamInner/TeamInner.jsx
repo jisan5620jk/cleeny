@@ -24,7 +24,7 @@ const TeamInnerData = [
   {
     id: 3,
     teamInnerThumb: teamInnerThumb3,
-    teamInnerTitle: "Arahum Khan",
+    teamInnerTitle: "Abrahum Khan",
     teamInnerDesig: "House Cleaner",
   },
   {

@@ -97,7 +97,7 @@ const BlogDetails = () => {
                     </div>
                   </div>
                   <Link to={"/"}>
-                    <button className="font-Inter font-bold text-left text-xl sm:text-2xl md:text-3xl text-HeadingColor-0 transition-all duration-500 hover:text-SecondaryColor-0 mt-14 mb-4">
+                    <button className="font-Inter font-semibold text-left text-xl sm:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-SecondaryColor-0 mt-14 mb-4">
                       Modern Equipment 2024
                     </button>
                   </Link>
@@ -153,7 +153,7 @@ const BlogDetails = () => {
                     </div>
                   </div>
                   <Link to={"/"}>
-                    <button className="font-Inter font-bold text-left text-xl sm:text-2xl md:text-3xl text-HeadingColor-0 transition-all duration-500 hover:text-SecondaryColor-0 mt-10 mb-4">
+                    <button className="font-Inter font-semibold text-left text-xl sm:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-SecondaryColor-0 mt-10 mb-4">
                       Improve Cleaning System
                     </button>
                   </Link>
