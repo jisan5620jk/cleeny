@@ -453,7 +453,7 @@ const BlogDetails = () => {
                     </div>
                   </button>
                 </Link>
-                <Link to={"/blogDetails"}>
+                <Link to={"/blog_details"}>
                   <button className="group flex gap-4 my-6">
                     <div>
                       <img src={itemthumb2} />
@@ -468,7 +468,7 @@ const BlogDetails = () => {
                     </div>
                   </button>
                 </Link>
-                <Link to={"/blogDetails"}>
+                <Link to={"/blog_details"}>
                   <button className="group flex gap-4 my-6">
                     <div>
                       <img src={itemthumb3} />

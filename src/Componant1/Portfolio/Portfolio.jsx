@@ -18,7 +18,7 @@ const PortfolioData = [
     portfolioLocateIcon: <FaLocationDot />,
     portfolioLocation: "Sandigo, USA",
     portfolioTitle: "House Floor Cleaning",
-    portfolioUrl: "/projectDetails",
+    portfolioUrl: "/project_details",
     portfolioIcon: <FaArrowRight />,
   },
   {
@@ -28,7 +28,7 @@ const PortfolioData = [
     portfolioLocateIcon: <FaLocationDot />,
     portfolioLocation: "Sandigo, USA",
     portfolioTitle: "House Floor Cleaning",
-    portfolioUrl: "/projectDetails",
+    portfolioUrl: "/project_details",
     portfolioIcon: <FaArrowRight />,
   },
   {
@@ -38,7 +38,7 @@ const PortfolioData = [
     portfolioLocateIcon: <FaLocationDot />,
     portfolioLocation: "Sandigo, USA",
     portfolioTitle: "House Floor Cleaning",
-    portfolioUrl: "/projectDetails",
+    portfolioUrl: "/project_details",
     portfolioIcon: <FaArrowRight />,
   },
   {
@@ -48,7 +48,7 @@ const PortfolioData = [
     portfolioLocateIcon: <FaLocationDot />,
     portfolioLocation: "Sandigo, USA",
     portfolioTitle: "House Floor Cleaning",
-    portfolioUrl: "/projectDetails",
+    portfolioUrl: "/project_details",
     portfolioIcon: <FaArrowRight />,
   },
 ];

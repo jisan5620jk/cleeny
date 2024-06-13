@@ -37,7 +37,7 @@ const ServiceDetails = () => {
                 </h4>
                 <ul className="mt-8">
                   <li>
-                    <Link to={"/serviceDetails"}>
+                    <Link to={"/service_details"}>
                       <button className="w-full font-Inter text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-SecondaryColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-white transition-all duration-500 group-hover:text-white" />
@@ -48,7 +48,7 @@ const ServiceDetails = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/serviceDetails2"}>
+                    <Link to={"/service_details2"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
@@ -59,7 +59,7 @@ const ServiceDetails = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/serviceDetails3"}>
+                    <Link to={"/service_details3"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
@@ -70,7 +70,7 @@ const ServiceDetails = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/serviceDetails4"}>
+                    <Link to={"/service_details4"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
@@ -81,7 +81,7 @@ const ServiceDetails = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/serviceDetails5"}>
+                    <Link to={"/service_details5"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
@@ -92,7 +92,7 @@ const ServiceDetails = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/serviceDetails6"}>
+                    <Link to={"/service_details6"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
                           <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />

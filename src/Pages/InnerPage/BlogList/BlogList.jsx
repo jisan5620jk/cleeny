@@ -32,7 +32,7 @@ const blogListData = [
     postFile: "Cleaning",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blogDetails",
+    blogListUrl: "/blog_details",
     blogListBtn: "Continue Reading",
     blogListBtnIcon: <FaArrowRightLong />,
   },
@@ -49,7 +49,7 @@ const blogListData = [
     postFile: "Cleaning",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blogDetails",
+    blogListUrl: "/blog_details",
     blogListBtn: "Continue Reading",
     blogListBtnIcon: <FaArrowRightLong />,
   },
@@ -66,7 +66,7 @@ const blogListData = [
     postFile: "Cleaning",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blogDetails",
+    blogListUrl: "/blog_details",
     blogListBtn: "Continue Reading",
     blogListBtnIcon: <FaArrowRightLong />,
   },
@@ -83,7 +83,7 @@ const blogListData = [
     postFile: "Cleaning",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blogDetails",
+    blogListUrl: "/blog_details",
     blogListBtn: "Continue Reading",
     blogListBtnIcon: <FaArrowRightLong />,
   },
@@ -100,7 +100,7 @@ const blogListData = [
     postFile: "Cleaning",
     blogListDesc:
       "Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities transition mission top critical supply chains after enterprise",
-    blogListUrl: "/blogDetails",
+    blogListUrl: "/blog_details",
     blogListBtn: "Continue Reading",
     blogListBtnIcon: <FaArrowRightLong />,
   },
@@ -183,7 +183,7 @@ const BlogList = () => {
                 </h4>
                 <ul className="mt-8">
                   <li>
-                    <Link to={"/blogDetails"}>
+                    <Link to={"/blog_details"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         Floor Cleaning
@@ -191,7 +191,7 @@ const BlogList = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/blogDetails"}>
+                    <Link to={"/blog_details"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         House Cleaning
@@ -199,7 +199,7 @@ const BlogList = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/blogDetails"}>
+                    <Link to={"/blog_details"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         Office Cleaning
@@ -207,7 +207,7 @@ const BlogList = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/blogDetails"}>
+                    <Link to={"/blog_details"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         Cleaning Specialist
@@ -215,7 +215,7 @@ const BlogList = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/blogDetails"}>
+                    <Link to={"/blog_details"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         Window Cleaning
@@ -223,7 +223,7 @@ const BlogList = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/blogDetails"}>
+                    <Link to={"/blog_details"}>
                       <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center gap-2 rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                         kitchen Cleaning
@@ -251,7 +251,7 @@ const BlogList = () => {
                     </div>
                   </button>
                 </Link>
-                <Link to={"/blogDetails"}>
+                <Link to={"/blog_details"}>
                   <button className="group flex gap-4 my-6">
                     <div>
                       <img src={itemthumb2} />
@@ -266,7 +266,7 @@ const BlogList = () => {
                     </div>
                   </button>
                 </Link>
-                <Link to={"/blogDetails"}>
+                <Link to={"/blog_details"}>
                   <button className="group flex gap-4 my-6">
                     <div>
                       <img src={itemthumb3} />
@@ -288,35 +288,35 @@ const BlogList = () => {
                 </h4>
                 <ul className="inline-block">
                   <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/blogDetails"}>
+                    <Link to={"/blog_details"}>
                       <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
                         Cleaning
                       </button>
                     </Link>
                   </li>
                   <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/blogDetails"}>
+                    <Link to={"/blog_details"}>
                       <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
                         Floor Cleaning
                       </button>
                     </Link>
                   </li>
                   <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/blogDetails"}>
+                    <Link to={"/blog_details"}>
                       <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
                         House Cleaning
                       </button>
                     </Link>
                   </li>
                   <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/blogDetails"}>
+                    <Link to={"/blog_details"}>
                       <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
                         Window Cleaning
                       </button>
                     </Link>
                   </li>
                   <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/blogDetails"}>
+                    <Link to={"/blog_details"}>
                       <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Inter text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
                         Pool Cleaning
                       </button>

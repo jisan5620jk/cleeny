@@ -124,7 +124,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/teamInner"}>
+                <Link to={"/team_inner"}>
                   <button className="flex items-center gap-2 font-Inter text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-4">
                     <FaChevronRight className="text-sm opacity-50" />
                     Meet Our Team
@@ -132,7 +132,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/blogList"}>
+                <Link to={"/blog_list"}>
                   <button className="flex items-center gap-2 font-Inter text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1">
                     <FaChevronRight className="text-sm opacity-50" />
                     Latest Blog
@@ -150,7 +150,7 @@ const Footer = () => {
                 <img src={blogThumb} />
               </div>
               <div className="flex-1">
-                <Link to={"/blogDetails"}>
+                <Link to={"/blog_details"}>
                   <button className="font-Inter font-medium text-white text-left xl:text-base 2xl:text-lg transition-all duration-500 hover:text-PrimaryColor-0">
                     10 Most Popular Clean <br className="hidden 2xl:block" />{" "}
                     Tips for Housey
@@ -166,7 +166,7 @@ const Footer = () => {
                 <img src={blogThumb2} />
               </div>
               <div className="flex-1">
-                <Link to={"/blogDetails"}>
+                <Link to={"/blog_details"}>
                   <button className="font-Inter font-medium text-white text-left xl:text-base 2xl:text-lg transition-all duration-500 hover:text-PrimaryColor-0">
                     Floor cleeny and <br className="hidden 2xl:block" /> Washing
                     New...

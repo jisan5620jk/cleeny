@@ -58,38 +58,39 @@ const router = createBrowserRouter([
         element: <ServiceInner />,
       },
       {
-        path: "/serviceDetails",
+        path: "/service_details",
         element: <ServiceDetails />,
       },
       {
-        path: "/serviceDetails2",
+        path: "/service_details2",
         element: <ServiceDetails2 />,
       },
       {
-        path: "/serviceDetails3",
+        path: "/service_details3",
         element: <ServiceDetails3 />,
       },
       {
-        path: "/serviceDetails4",
+        path: "/service_details4",
         element: <ServiceDetails4 />,
       },
       {
-        path: "/serviceDetails5",
+        path: "/service_details5",
         element: <ServiceDetails5 />,
       },
       {
-        path: "/serviceDetails6",
+        path: "/service_details6",
         element: <ServiceDetails6 />,
       },
       {
-        path: "/pricingInner",
+        path: "/pricing_inner",
         element: <PricingInner />,
-      },{
-        path: "/projectDetails",
+      },
+      {
+        path: "/project_details",
         element: <ProjectDetails />,
       },
       {
-        path: "/teamInner",
+        path: "/team_inner",
         element: <TeamInner />,
       },
       {
@@ -101,15 +102,15 @@ const router = createBrowserRouter([
         element: <AppointmentInner />,
       },
       {
-        path: "/blogGrid",
+        path: "/blog_grid",
         element: <BlogGrid />,
       },
       {
-        path: "/blogList",
+        path: "/blog_list",
         element: <BlogList />,
       },
       {
-        path: "/blogDetails",
+        path: "/blog_details",
         element: <BlogDetails />,
       },
 

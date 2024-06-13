@@ -239,7 +239,7 @@ const Navbar = () => {
                       </div>
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/serviceDetails" className="py-2 block">
+                          <Link to="/service_details" className="py-2 block">
                             Service Details
                           </Link>
                         </li>
@@ -278,14 +278,14 @@ const Navbar = () => {
                       </div>
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/serviceDetails" className="py-2 block">
+                          <Link to="/service_details" className="py-2 block">
                             Service Details
                           </Link>
                         </li>
                       </div>
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/teamInner" className="py-2 block">
+                          <Link to="/team_inner" className="py-2 block">
                             Team Member
                           </Link>
                         </li>
@@ -299,7 +299,7 @@ const Navbar = () => {
                       </div>
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/projectDetails" className="py-2 block">
+                          <Link to="/project_details" className="py-2 block">
                             Project Detials
                           </Link>
                         </li>
@@ -346,21 +346,21 @@ const Navbar = () => {
                     <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm py-4 bg-HoverColor-0 ">
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/blogGrid" className="py-2 block">
+                          <Link to="/blog_grid" className="py-2 block">
                             Blog Grid
                           </Link>
                         </li>
                       </div>
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/blogList" className="py-2 block">
+                          <Link to="/blog_list" className="py-2 block">
                             Blog List
                           </Link>
                         </li>
                       </div>
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
-                          <Link to="/blogDetails" className="py-2 block">
+                          <Link to="/blog_details" className="py-2 block">
                             Blog Details
                           </Link>
                         </li>
