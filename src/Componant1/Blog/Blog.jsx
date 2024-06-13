@@ -77,6 +77,7 @@ const Blog = () => {
                 blogThumb,
                 thumbDate,
                 thumbMonth,
+                blogUrl,
                 blogTitle,
                 blogDesc,
                 btnContent,
@@ -88,6 +89,7 @@ const Blog = () => {
                       blogThumb={blogThumb}
                       thumbDate={thumbDate}
                       thumbMonth={thumbMonth}
+                      blogUrl={blogUrl}
                       blogTitle={blogTitle}
                       blogDesc={blogDesc}
                       btnContent={btnContent}

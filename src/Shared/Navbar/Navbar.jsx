@@ -236,7 +236,7 @@ const Navbar = () => {
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/service" className="py-2 block">
-                            Service
+                           Our Service
                           </Link>
                         </li>
                       </div>
@@ -250,7 +250,6 @@ const Navbar = () => {
                     </ul>
                   </div>
                 </NavLink>
-
                 <NavLink
                   className={`${({ isActive, isPending }) =>
                     isPending
@@ -276,7 +275,7 @@ const Navbar = () => {
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/service" className="py-2 block">
-                            Service
+                            Our Service
                           </Link>
                         </li>
                       </div>

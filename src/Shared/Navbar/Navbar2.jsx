@@ -267,7 +267,7 @@ const Navbar = () => {
                           <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
                               <Link to={"/service"} className="py-2 block">
-                                Service
+                                Our Service
                               </Link>
                             </li>
                           </div>
@@ -308,11 +308,8 @@ const Navbar = () => {
                           </div>
                           <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                             <li className="hover:ml-3 duration-300">
-                              <Link
-                                to={"/service"}
-                                className="py-2 block"
-                              >
-                                Service
+                              <Link to={"/service"} className="py-2 block">
+                                Our Service
                               </Link>
                             </li>
                           </div>
@@ -431,7 +428,7 @@ const Navbar = () => {
                   <Link to={"/"}>
                     <IoSearch className="text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0" />
                   </Link>
-                  <Link to={"/apiontment"}>
+                  <Link to={"/appointment"}>
                     <button className="font-Inter font-medium text-white relative before:absolute before:top-[2px] before:-left-[30px] before:w-[2px] before:h-5 before:bg-white flex items-center gap-2">
                       Free Appoinment <FaArrowRightLong />
                     </button>

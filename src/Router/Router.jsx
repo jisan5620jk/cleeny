@@ -19,6 +19,11 @@ import BlogGrid from "../Pages/InnerPage/BlogGrid/BlogGrid";
 import TestimonialInner from "../Pages/InnerPage/TestimonialInner/TestimonialInner";
 import ContactInner from "../Pages/InnerPage/ContactInner/ContactInner";
 import AppointmentInner from "../Pages/InnerPage/Appointment/AppointmentInner";
+import ServiceDetails5 from "../Pages/InnerPage/ServiceDetails/ServiceDetails5";
+import ServiceDetails4 from "../Pages/InnerPage/ServiceDetails/ServiceDetails4";
+import ServiceDetails6 from "../Pages/InnerPage/ServiceDetails/ServiceDetails6";
+import ServiceDetails3 from "../Pages/InnerPage/ServiceDetails/ServiceDetails3";
+import ServiceDetails2 from "../Pages/InnerPage/ServiceDetails/ServiceDetails2";
 
 const router = createBrowserRouter([
   {
@@ -57,12 +62,31 @@ const router = createBrowserRouter([
         element: <ServiceDetails />,
       },
       {
-        path: "/projectDetails",
-        element: <ProjectDetails />,
+        path: "/serviceDetails2",
+        element: <ServiceDetails2 />,
       },
       {
-        path: "/pricing",
+        path: "/serviceDetails3",
+        element: <ServiceDetails3 />,
+      },
+      {
+        path: "/serviceDetails4",
+        element: <ServiceDetails4 />,
+      },
+      {
+        path: "/serviceDetails5",
+        element: <ServiceDetails5 />,
+      },
+      {
+        path: "/serviceDetails6",
+        element: <ServiceDetails6 />,
+      },
+      {
+        path: "/pricingInner",
         element: <PricingInner />,
+      },{
+        path: "/projectDetails",
+        element: <ProjectDetails />,
       },
       {
         path: "/teamInner",
@@ -88,6 +112,7 @@ const router = createBrowserRouter([
         path: "/blogDetails",
         element: <BlogDetails />,
       },
+
       {
         path: "/contact",
         element: <ContactInner />,

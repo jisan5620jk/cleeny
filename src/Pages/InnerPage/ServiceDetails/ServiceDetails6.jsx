@@ -17,15 +17,15 @@ import { BsFileEarmarkPdf } from "react-icons/bs";
 import ReactCompareImage from "react-compare-image";
 import ServiceFaq from "./Accordion/ServiceFaq";
 
-const ServiceDetails = () => {
+const ServiceDetails6 = () => {
   return (
     <>
       <Breadcamp
-        breadCampTitle={"Floor Cleaning"}
+        breadCampTitle={"kitchen Cleaning"}
         breadCampLink={"Serivces"}
         breadcampIcon={<FaArrowRightLong />}
         breadcampIcon2={<FaArrowRightLong />}
-        breadCampContent={"Floor Cleaning"}
+        breadCampContent={"kitchen Cleaning"}
       />
       <section className="py-[120px] bg-white">
         <div className="Container">
@@ -38,9 +38,9 @@ const ServiceDetails = () => {
                 <ul className="mt-8">
                   <li>
                     <Link to={"/serviceDetails"}>
-                      <button className="w-full font-Inter text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-SecondaryColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
-                          <FaRegFolderOpen className="text-white transition-all duration-500 group-hover:text-white" />
+                          <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
                           Floor Cleaning
                         </span>
                         <FaArrowRightLong className="text-white" />
@@ -93,9 +93,9 @@ const ServiceDetails = () => {
                   </li>
                   <li>
                     <Link to={"/serviceDetails6"}>
-                      <button className="w-full font-Inter text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
+                      <button className="w-full font-Inter text-left text-white transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-SecondaryColor-0 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
                         <span className="flex items-center gap-3">
-                          <FaRegFolderOpen className="text-SecondaryColor-0 transition-all duration-500 group-hover:text-white" />
+                          <FaRegFolderOpen className="text-white transition-all duration-500 group-hover:text-white" />
                           kitchen Cleaning
                         </span>
                         <FaArrowRightLong className="text-white" />
@@ -249,4 +249,4 @@ const ServiceDetails = () => {
   );
 };
 
-export default ServiceDetails;
+export default ServiceDetails6;

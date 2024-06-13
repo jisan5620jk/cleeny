@@ -58,7 +58,7 @@ const WhyChoose = () => {
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-PrimaryColor-0 font-medium font-Inter transition-all duration-500 hover:text-white text-TextColor-0 border-white outline-0 h-[60px] rounded py-3 flex items-center justify-center gap-2 relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0"
+                className="w-full bg-PrimaryColor-0 border border-transparent hover:border-white font-medium font-Inter transition-all duration-500 hover:text-white text-TextColor-0 outline-0 h-[60px] rounded py-3 flex items-center justify-center gap-2 relative z-10 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-SecondaryColor-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0"
               >
                 Book Appionment <FaArrowRightLong />
               </button>
