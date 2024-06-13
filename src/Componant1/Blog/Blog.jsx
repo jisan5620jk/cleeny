@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRightLong } from "react-icons/fa6";
-import blogThumb from "/public/images/blog-thumb.png";
-import blogThumb2 from "/public/images/blog-thumb2.png";
-import blogThumb3 from "/public/images/blog-thumb3.png";
+import blogThumb from "/images/blog-thumb.png";
+import blogThumb2 from "/images/blog-thumb2.png";
+import blogThumb3 from "/images/blog-thumb3.png";
 import BlogCard from "./BlogCard";
 import { Link } from "react-router-dom";
 

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import bannerShape1 from "/public/images/hero-shape2.png";
-import bannerShape2 from "/public/images/hero-shape.png";
+import bannerShape1 from "/images/hero-shape2.png";
+import bannerShape2 from "/images/hero-shape.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -11,13 +11,13 @@ const Banner = () => {
     loop: true,
     speed: 2000,
     autoplay: true,
-    duration:3000,
+    duration: 3000,
   };
   return (
     <div className="relative">
       <Swiper {...settings}>
         <SwiperSlide>
-          <section className="bg-[url('/public/images/slider-bg.png')] bg-cover bg-center bg-no-repeat h-[800px] flex items-center">
+          <section className="bg-[url('/images/slider-bg.png')] bg-cover bg-center bg-no-repeat h-[800px] flex items-center">
             <div className="Container">
               <div className="relative">
                 <h5 className="font-Inter text-lg text-PrimaryColor-0 font-medium">
@@ -49,7 +49,7 @@ const Banner = () => {
           </section>
         </SwiperSlide>
         <SwiperSlide>
-          <section className="bg-[url('/public/images/slider-bg2.png')] bg-cover bg-center bg-no-repeat h-[800px] flex items-center">
+          <section className="bg-[url('/images/slider-bg2.png')] bg-cover bg-center bg-no-repeat h-[800px] flex items-center">
             <div className="Container">
               <div className="relative">
                 <h5 className="font-Inter text-lg text-PrimaryColor-0 font-medium">

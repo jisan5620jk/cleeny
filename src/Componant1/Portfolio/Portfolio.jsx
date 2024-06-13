@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRight, FaArrowRightLong, FaLocationDot } from "react-icons/fa6";
-import portfolioThumb from "/public/images/portfolio-img.png";
-import portfolioThumb2 from "/public/images/portfolio-img2.png";
-import portfolioThumb3 from "/public/images/portfolio-img3.png";
+import portfolioThumb from "/images/portfolio-img.png";
+import portfolioThumb2 from "/images/portfolio-img2.png";
+import portfolioThumb3 from "/images/portfolio-img3.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -83,7 +83,7 @@ const Portfolio = () => {
     },
   };
   return (
-    <section className="portfolio2 bg-[url('/public/images/portfolio-bg.png')] bg-cover bg-center bg-no-repeat py-28 portfolio">
+    <section className="portfolio2 bg-[url('/images/portfolio-bg.png')] bg-cover bg-center bg-no-repeat py-28 portfolio">
       <div className="Container">
         <div className="flex flex-col md:flex-row gap-7 md:items-center justify-between">
           <div>

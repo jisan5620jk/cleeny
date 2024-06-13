@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
-import blogListImg from "/public/images/sidber-thumb.png";
-import blogDetailsImg from "/public/images/blog-thumb8.png";
-import blogDetailsImg2 from "/public/images/blog-thumb9.png";
-import itemthumb from "/public/images/post1.png";
-import itemthumb2 from "/public/images/post2.png";
-import itemthumb3 from "/public/images/post3.png";
+import blogListImg from "/images/sidber-thumb.png";
+import blogDetailsImg from "/images/blog-thumb8.png";
+import blogDetailsImg2 from "/images/blog-thumb9.png";
+import itemthumb from "/images/post1.png";
+import itemthumb2 from "/images/post2.png";
+import itemthumb3 from "/images/post3.png";
 import { IoSearch } from "react-icons/io5";
 import { IoIosSend } from "react-icons/io";
 import { FaUserCircle } from "react-icons/fa";

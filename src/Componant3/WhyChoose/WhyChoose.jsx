@@ -1,12 +1,12 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import boxImg from "/public/images/feature-icon.png";
-import boxImg3 from "/public/images/feature-icon3.png";
-import WhyChooseShape from "/public/images/contact-shape.png";
+import boxImg from "/images/feature-icon.png";
+import boxImg3 from "/images/feature-icon3.png";
+import WhyChooseShape from "/images/contact-shape.png";
 import { Link } from "react-router-dom";
 
 const WhyChoose = () => {
   return (
-    <section className="pt-[120px] bg-[url('/public/images/contact-bg.png')] bg-cover bg-center bg-no-repeat relative">
+    <section className="pt-[120px] bg-[url('/images/contact-bg.png')] bg-cover bg-center bg-no-repeat relative">
       <img
         src={WhyChooseShape}
         className="absolute left-20 -bottom-[88px] hidden 2xl:block"

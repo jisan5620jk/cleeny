@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
-import brandThumb from "/public/images/brand-img.png";
-import brandThumb2 from "/public/images/brand-img2.png";
-import brandThumb3 from "/public/images/brand-img3.png";
-import brandThumb4 from "/public/images/brand-img4.png";
-import brandThumb5 from "/public/images/brand-img5.png";
+import brandThumb from "/images/brand-img.png";
+import brandThumb2 from "/images/brand-img2.png";
+import brandThumb3 from "/images/brand-img3.png";
+import brandThumb4 from "/images/brand-img4.png";
+import brandThumb5 from "/images/brand-img5.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -34,7 +34,8 @@ const Brand = () => {
   };
   return (
     <div className="bg-[#f3f4f8] pt-[88px] pb-[76px]">
-      <div className="Container">{" "}
+      <div className="Container">
+        {" "}
         <Swiper {...settings}>
           <SwiperSlide>
             <div className="flex justify-center">

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
-import profilethumb from "/public/images/project-det-team-thumb.png";
-import wedgetIcon from "/public/images/widget-icon.png";
-import projectDetailsIcon from "/public/images/sidber-icon.png";
-import projectDetailsIcon2 from "/public/images/sidber-icon2.png";
-import projectDetailsThumb from "/public/images/sidber-img.png";
-import projectDetailsListThumb from "/public/images/project-det-thumb.png";
+import profilethumb from "/images/project-det-team-thumb.png";
+import wedgetIcon from "/images/widget-icon.png";
+import projectDetailsIcon from "/images/sidber-icon.png";
+import projectDetailsIcon2 from "/images/sidber-icon2.png";
+import projectDetailsThumb from "/images/sidber-img.png";
+import projectDetailsListThumb from "/images/project-det-thumb.png";
 import {
   FaArrowRight,
   FaArrowRightLong,
@@ -107,7 +107,7 @@ const ProjectDetails = () => {
                   </li>
                 </ul>
               </div>
-              <div className="rounded-lg px-9 overflow-hidden bg-[url('/public/images/widget-thumb.png')] bg-cover bg-no-repeat bg-center py-[50px]">
+              <div className="rounded-lg px-9 overflow-hidden bg-[url('/images/widget-thumb.png')] bg-cover bg-no-repeat bg-center py-[50px]">
                 <img src={wedgetIcon} />
                 <h6 className="font-Inter font-medium text-lg text-white mt-5 mb-2">
                   Call Us Anytime

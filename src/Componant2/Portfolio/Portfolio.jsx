@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRight, FaArrowRightLong, FaLocationDot } from "react-icons/fa6";
-import portfolioThumb from "/public/images/portfolio-img.png";
-import portfolioThumb2 from "/public/images/portfolio-img7.png";
-import portfolioThumb3 from "/public/images/portfolio-img2.png";
+import portfolioThumb from "/images/portfolio-img.png";
+import portfolioThumb2 from "/images/portfolio-img7.png";
+import portfolioThumb3 from "/images/portfolio-img2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";

@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import bannerThumb from "/public/images/hero-thumb.png";
-import bannerShape1 from "/public/images/hero-shape2.png";
-import bannerShape2 from "/public/images/hero-shape.png";
+import bannerThumb from "/images/hero-thumb.png";
+import bannerShape1 from "/images/hero-shape2.png";
+import bannerShape2 from "/images/hero-shape.png";
 import { FaArrowRightLong, FaPhone } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/public/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[75rem] lg:h-[814px] flex items-center">
+    <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[75rem] lg:h-[814px] flex items-center">
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-36 md:gap-32 lg:gap-0 items-center">
           <div>
@@ -30,7 +30,7 @@ const Banner = () => {
             </Link>
           </div>
           <div className="relative">
-            <div className="bg-[url('/public/images/hero-shape3.png')] bg-no-repeat bg-contain bg-right h-[130px] w-[205px] flex flex-col items-center justify-center gap-1 absolute left-0 sm:-top-[6rem] -top-[8rem] lg:-left-[6rem] lg:-top-[5rem] xl:-top-[2rem]">
+            <div className="bg-[url('/images/hero-shape3.png')] bg-no-repeat bg-contain bg-right h-[130px] w-[205px] flex flex-col items-center justify-center gap-1 absolute left-0 sm:-top-[6rem] -top-[8rem] lg:-left-[6rem] lg:-top-[5rem] xl:-top-[2rem]">
               <TypeAnimation
                 sequence={["Help Line", 1000, "Call Us", 1000]}
                 wrapper="span"
@@ -45,13 +45,21 @@ const Banner = () => {
                 repeat={Infinity}
               />
               <div className="flex items-center gap-2">
-                <FaPhone size={'20'} className="text-PrimaryColor-0"/>
-                <h6 className="font-Inter font-bold text-white text-2xl">246900</h6>
+                <FaPhone size={"20"} className="text-PrimaryColor-0" />
+                <h6 className="font-Inter font-bold text-white text-2xl">
+                  246900
+                </h6>
               </div>
             </div>
             <img src={bannerThumb} />
-            <img src={bannerShape1} className="absolute right-0 top-0 animate-zoomInOut"/>
-            <img src={bannerShape2} className="absolute left-0 bottom-0 animate-rotational"/>
+            <img
+              src={bannerShape1}
+              className="absolute right-0 top-0 animate-zoomInOut"
+            />
+            <img
+              src={bannerShape2}
+              className="absolute left-0 bottom-0 animate-rotational"
+            />
           </div>
         </div>
       </div>

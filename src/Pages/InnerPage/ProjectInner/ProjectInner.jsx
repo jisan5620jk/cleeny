@@ -1,11 +1,11 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
-import projectThumb from "/public/images/project-img.png";
-import projectThumb2 from "/public/images/project-img2.png";
-import projectThumb3 from "/public/images/project-img3.png";
-import projectThumb4 from "/public/images/project-img4.png";
-import projectThumb5 from "/public/images/project-img5.png";
-import projectThumb6 from "/public/images/project-img6.png";
+import projectThumb from "/images/project-img.png";
+import projectThumb2 from "/images/project-img2.png";
+import projectThumb3 from "/images/project-img3.png";
+import projectThumb4 from "/images/project-img4.png";
+import projectThumb5 from "/images/project-img5.png";
+import projectThumb6 from "/images/project-img6.png";
 import { MdLocationOn } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";

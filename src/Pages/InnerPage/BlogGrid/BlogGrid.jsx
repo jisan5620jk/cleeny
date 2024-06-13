@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 import { FaAngleRight, FaArrowRightLong } from "react-icons/fa6";
-import blogThumb from "/public/images/blog-thumb.png";
-import blogThumb2 from "/public/images/blog-thumb2.png";
-import blogThumb3 from "/public/images/blog-thumb3.png";
-import blogThumb4 from "/public/images/blog-thumb3.png";
-import blogThumb5 from "/public/images/blog-thumb7.png";
-import blogThumb6 from "/public/images/blog-thumb8.png";
-import blogThumb7 from "/public/images/blog-thumb9.png";
-import blogThumb8 from "/public/images/blog-thumb10.png";
-import blogThumb9 from "/public/images/blog-thumb11.png";
+import blogThumb from "/images/blog-thumb.png";
+import blogThumb2 from "/images/blog-thumb2.png";
+import blogThumb3 from "/images/blog-thumb3.png";
+import blogThumb4 from "/images/blog-thumb3.png";
+import blogThumb5 from "/images/blog-thumb7.png";
+import blogThumb6 from "/images/blog-thumb8.png";
+import blogThumb7 from "/images/blog-thumb9.png";
+import blogThumb8 from "/images/blog-thumb10.png";
+import blogThumb9 from "/images/blog-thumb11.png";
 import BlogCard from "./BlogCard";
 import { Link } from "react-router-dom";
 import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
@@ -162,6 +162,7 @@ const BlogGrid = () => {
                   blogThumb,
                   thumbDate,
                   thumbMonth,
+                  blogUrl,
                   blogTitle,
                   blogDesc,
                   btnContent,
@@ -173,6 +174,7 @@ const BlogGrid = () => {
                         blogThumb={blogThumb}
                         thumbDate={thumbDate}
                         thumbMonth={thumbMonth}
+                        blogUrl={blogUrl}
                         blogTitle={blogTitle}
                         blogDesc={blogDesc}
                         btnContent={btnContent}
@@ -189,13 +191,19 @@ const BlogGrid = () => {
       <div>
         <ul className="flex items-center gap-2 justify-center pb-[120px] pt-[80px]">
           <li>
-            <button className="h-[50px] w-[50px] font-Inter rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">01</button>
+            <button className="h-[50px] w-[50px] font-Inter rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+              01
+            </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-Inter rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">02</button>
+            <button className="h-[50px] w-[50px] font-Inter rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+              02
+            </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-Inter rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">03</button>
+            <button className="h-[50px] w-[50px] font-Inter rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+              03
+            </button>
           </li>
           <li>
             <button className="h-[50px] w-[50px] font-Inter rounded-full border-BorderColor-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">

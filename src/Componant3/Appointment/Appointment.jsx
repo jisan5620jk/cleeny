@@ -1,7 +1,7 @@
 import { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import { IoPlayOutline } from "react-icons/io5";
-import appointmentThumb from "/public/images/appointment-thumb.jpg"
+import appointmentThumb from "/images/appointment-thumb.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Appointment = () => {

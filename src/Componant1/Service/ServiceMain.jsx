@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRightLong, FaCheck } from "react-icons/fa6";
-import serviceThumb from "/public/images/service-img.png";
-import serviceThumb2 from "/public/images/service-img2.png";
-import serviceThumb3 from "/public/images/service-img3.png";
-import serviceShape from "/public/images/service-shape.png";
-import serviceIcon from "/public/images/service-icon.png";
-import serviceIcon2 from "/public/images/service-icon2.png";
-import serviceIcon3 from "/public/images/service-icon3.png";
+import serviceThumb from "/images/service-img.png";
+import serviceThumb2 from "/images/service-img2.png";
+import serviceThumb3 from "/images/service-img3.png";
+import serviceShape from "/images/service-shape.png";
+import serviceIcon from "/images/service-icon.png";
+import serviceIcon2 from "/images/service-icon2.png";
+import serviceIcon3 from "/images/service-icon3.png";
 import ServiceCard from "./ServiceCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

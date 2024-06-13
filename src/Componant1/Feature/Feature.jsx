@@ -1,6 +1,6 @@
-import boxImg from "/public/images/feature-icon.png";
-import boxImg2 from "/public/images/feature-icon2.png";
-import boxImg3 from "/public/images/feature-icon3.png";
+import boxImg from "/images/feature-icon.png";
+import boxImg2 from "/images/feature-icon2.png";
+import boxImg3 from "/images/feature-icon3.png";
 
 const Feature = () => {
   return (

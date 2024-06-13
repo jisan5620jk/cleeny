@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import pricingShape from "/public/images/pricing-shape.png";
+import pricingShape from "/images/pricing-shape.png";
 import { FaCheck } from "react-icons/fa6";
 import PricingCard from "./PricingCard";
 

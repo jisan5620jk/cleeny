@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
-import testiImg from "/public/images/testi-thumb-2.png";
-import testiImg2 from "/public/images/testi-thumb.png";
-import testiIcon from "/public/images/testi-icon.png";
+import testiImg from "/images/testi-thumb-2.png";
+import testiImg2 from "/images/testi-thumb.png";
+import testiIcon from "/images/testi-icon.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -76,7 +76,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="bg-[url('/public/images/testi-bg.png')] bg-cover bg-center bg-no-repeat py-28">
+    <section className="bg-[url('/images/testi-bg.png')] bg-cover bg-center bg-no-repeat py-28">
       <div className="Container">
         <div className="text-center">
           <h5 className="font-Inter font-medium text-PrimaryColor-0">

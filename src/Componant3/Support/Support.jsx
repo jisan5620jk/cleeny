@@ -1,10 +1,10 @@
 import { MdPhone } from "react-icons/md";
 import { Link } from "react-router-dom";
-import supportShape from "/public/images/address-thumb.png";
+import supportShape from "/images/address-thumb.png";
 
 const Support = () => {
   return (
-    <div className="bg-[url('/public/images/address-bg.png')] bg-cover bg-center bg-no-repeat py-[60px] relative">
+    <div className="bg-[url('/images/address-bg.png')] bg-cover bg-center bg-no-repeat py-[60px] relative">
       <img
         src={supportShape}
         className="absolute bottom-0 w-[inherit] h-[inherit] left-1/2 hidden lg:block"

@@ -1,8 +1,8 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import aboutThumb from "/public/images/about-thumb3.png";
-import aboutShape from "/public/images/about-shape5.png";
-import aboutIcon from "/public/images/about-icon.png";
-import aboutIcon2 from "/public/images/about-icon2.png";
+import aboutThumb from "/images/about-thumb3.png";
+import aboutShape from "/images/about-shape5.png";
+import aboutIcon from "/images/about-icon.png";
+import aboutIcon2 from "/images/about-icon2.png";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -19,7 +19,7 @@ const About = () => {
             </div>
           </div>
           <div>
-            <h5 className="font-Inter text-lg text-SecondaryColor-0 font-medium pl-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
+            <h5 className="font-Inter text-lg text-SecondaryColor-0 font-medium pl-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/images/cleaning-shapes.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
               ABOUT CLEENY
             </h5>
             <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[46px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-HeadingColor-0 mt-3 mb-4">

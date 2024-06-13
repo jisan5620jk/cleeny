@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import boxImg from "/public/images/contact-icon.png";
-import boxImg3 from "/public/images/contact-icon2.png";
-import WhyChooseShape from "/public/images/contact-shape.png";
+import boxImg from "/images/contact-icon.png";
+import boxImg3 from "/images/contact-icon2.png";
+import WhyChooseShape from "/images/contact-shape.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Appointment = () => {

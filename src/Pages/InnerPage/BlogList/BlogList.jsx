@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import Breadcamp from "../../../Shared/Breadcamp/Breadcamp";
-import blogListImg from "/public/images/blog-thumb13.png";
-import blogListImg2 from "/public/images/blog-thumb14.png";
-import blogListImg3 from "/public/images/blog-thumb15.png";
-import blogListImg4 from "/public/images/blog-thumb16.png";
-import blogListImg5 from "/public/images/sidber-img.png";
-import itemthumb from "/public/images/post1.png";
-import itemthumb2 from "/public/images/post2.png";
-import itemthumb3 from "/public/images/post3.png";
+import blogListImg from "/images/blog-thumb13.png";
+import blogListImg2 from "/images/blog-thumb14.png";
+import blogListImg3 from "/images/blog-thumb15.png";
+import blogListImg4 from "/images/blog-thumb16.png";
+import blogListImg5 from "/images/sidber-img.png";
+import itemthumb from "/images/post1.png";
+import itemthumb2 from "/images/post2.png";
+import itemthumb3 from "/images/post3.png";
 import { IoSearch } from "react-icons/io5";
 import { FaUserCircle } from "react-icons/fa";
 import {

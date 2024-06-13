@@ -1,8 +1,16 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-import teamShape from "/public/images/team-shape.png"
+import teamShape from "/images/team-shape.png";
 
-const TeamCard = ({teamThumb,teamTitle,teamDesignation,teamIcon,teamIcon2,teamIcon3,teamIcon4}) => {
+const TeamCard = ({
+  teamThumb,
+  teamTitle,
+  teamDesignation,
+  teamIcon,
+  teamIcon2,
+  teamIcon3,
+  teamIcon4,
+}) => {
   return (
     <div className="group">
       <div className=" flex justify-center relative z-20 -mb-[6rem]">
@@ -15,7 +23,10 @@ const TeamCard = ({teamThumb,teamTitle,teamDesignation,teamIcon,teamIcon2,teamIc
         className="text-center bg-white rounded-md pt-[126px] 2xl:pt-[140px] relative z-10 overflow-hidden
        before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-SecondaryColor-0 before:transition-all before:duration-500 before:-z-10 group-hover:before:top-0 group-hover:before:h-full"
       >
-        <img src={teamShape} className="absolute bottom-1/4 left-1/4 animate-dance2 -z-10"/>
+        <img
+          src={teamShape}
+          className="absolute bottom-1/4 left-1/4 animate-dance2 -z-10"
+        />
         <h5 className="font-Inter font-semibold text-[22px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
           {teamTitle}
         </h5>

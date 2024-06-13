@@ -8,7 +8,7 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { BiChevronDown } from "react-icons/bi";
-import Logo from "/public/images/logo.png";
+import Logo from "/images/logo.png";
 import { useState, useEffect } from "react";
 import { IoMdCall, IoMdClose } from "react-icons/io";
 import { VscHeart } from "react-icons/vsc";
@@ -161,7 +161,7 @@ const Navbar = () => {
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
-                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0  flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Poppins font-medium sm:text-base text-white transition-all duration-500
+                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0  flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-Poppins font-medium text-white transition-all duration-500
                 `}
               >
                 <NavLink
@@ -182,7 +182,7 @@ const Navbar = () => {
                     data-aos="zoom-in-left"
                     data-aos-duration="1000"
                   >
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HoverColor-0 ">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm py-4 bg-HoverColor-0 ">
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/" className="py-2 block">
@@ -232,11 +232,11 @@ const Navbar = () => {
                     <BiChevronDown className="ml-1" />
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm py-4 bg-HeadingColor-0 ">
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/service" className="py-2 block">
-                           Our Service
+                            Our Service
                           </Link>
                         </li>
                       </div>
@@ -264,7 +264,7 @@ const Navbar = () => {
                     <BiChevronDown className="ml-1" />
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm py-4 bg-HeadingColor-0 ">
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/about" className="py-2 block">
@@ -346,7 +346,7 @@ const Navbar = () => {
                     <BiChevronDown className="ml-1" />
                   </span>
                   <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HoverColor-0 ">
+                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm py-4 bg-HoverColor-0 ">
                       <div className=" px-5 group hover:bg-SecondaryColor-0 ">
                         <li className="hover:ml-3 duration-300">
                           <Link to="/blogGrid" className="py-2 block">

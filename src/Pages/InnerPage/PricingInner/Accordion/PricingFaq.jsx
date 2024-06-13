@@ -1,5 +1,5 @@
 import PricingAccordion from "./PricingAccordion";
-import pricingFaqImg from "/public/images/faq-thumb.png"
+import pricingFaqImg from "/images/faq-thumb.png";
 
 const PricingFaq = () => {
   //  All Faqs and  answers.
@@ -57,4 +57,3 @@ const PricingFaq = () => {
 };
 
 export default PricingFaq;
-

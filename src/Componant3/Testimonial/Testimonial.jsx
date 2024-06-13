@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
-import testiImg from "/public/images/testi-thumb-3.png";
-import testiImg2 from "/public/images/testi-thumb-4.png";
-import testiImg3 from "/public/images/testi-thumb-5.png";
-import testiShape from "/public/images/testi-shape4.png";
-import counterIcon from "/public/images/counter-icon2.png";
-import counterIcon2 from "/public/images/counter-icon3.png";
-import counterIcon3 from "/public/images/counter-icon4.png";
-import counterIcon4 from "/public/images/counter-icon5.png";
+import testiImg from "/images/testi-thumb-3.png";
+import testiImg2 from "/images/testi-thumb-4.png";
+import testiImg3 from "/images/testi-thumb-5.png";
+import testiShape from "/images/testi-shape4.png";
+import counterIcon from "/images/counter-icon2.png";
+import counterIcon2 from "/images/counter-icon3.png";
+import counterIcon3 from "/images/counter-icon4.png";
+import counterIcon4 from "/images/counter-icon5.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { BiSolidQuoteRight } from "react-icons/bi";
@@ -114,10 +114,10 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="relative bg-[url('/public/images/service-bg3.png')] bg-cover bg-center bg-no-repeat pt-28 pb-[120px]">
+    <section className="relative bg-[url('/images/service-bg3.png')] bg-cover bg-center bg-no-repeat pt-28 pb-[120px]">
       <div className="Container">
         <div className="md:-mb-[7.6rem]">
-          <h5 className="font-Inter inline-block text-lg text-PrimaryColor-0 font-medium px-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/public/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
+          <h5 className="font-Inter inline-block text-lg text-PrimaryColor-0 font-medium px-9 relative before:absolute before:top-1/2 before:left-0 before:w-6 before:h-3 before:bg-[url(/images/cleaning-shapes2.png)] before:bg-no-repeat before:bg-[inherit] before:-translate-y-1/2">
             TESTIMONIAL
           </h5>
           <h1 className="font-Inter font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[50px] 2xl:leading-[66px] text-white mt-3 mb-4">
