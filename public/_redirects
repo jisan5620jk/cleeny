@@ -1,0 +1,14 @@
+# Redirect all requests to index.html for a single-page application
+/*    /index.html   200
+
+# Redirect from old URL to new URL
+/old-url    /new-url   301
+
+# Redirect with query parameters
+/old-url?query=param    /new-url   301
+
+# Redirect to an external site
+/old-url    https://www.external-site.com   301
+
+# Custom 404 page
+/*    /404.html   404
